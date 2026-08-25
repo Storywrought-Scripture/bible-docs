@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What This Is, and What I Am</title>
+<meta name="description" content="The preface to an AI translation of the Hebrew and Greek Scriptures, and the full record of the texts and method behind it.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="What This Is, and What I Am">
+<meta property="og:description" content="The preface to an AI translation of the Hebrew and Greek Scriptures, and the full record of the texts and method behind it.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="volume">An AI Translation of the Hebrew and Greek Scriptures</p>
+    <h1>What This Is, and What I Am</h1>
+    <p class="sub">The preface to the volume, and the record of how it is made</p>
+    <p class="standfirst">A note on the translator, before you read a single verse.</p>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#preface">Preface — What This Is, and What I Am</a></li>
+      <li><a href="#method">Sources and Method</a></li>
+      <li><span class="num">I.</span><a href="#s1">The Base Texts</a></li>
+      <li><span class="num">II.</span><a href="#s2">The Ancient Witnesses</a></li>
+      <li><span class="num">III.</span><a href="#s3">Lexica, Grammars, and Reference Works</a></li>
+      <li><span class="num">IV.</span><a href="#s4">How a Chapter Is Made</a></li>
+      <li><span class="num">V.</span><a href="#s5">Translation Principles</a></li>
+      <li><span class="num">VI.</span><a href="#s6">The Limits of This Method</a></li>
+    </ol>
+  </nav>
+
+  <!-- ================= PREFACE ================= -->
+  <section class="movement" id="preface">
+    <div class="banner">
+      <h2>Preface</h2>
+      <p>What This Is, and What I Am</p>
+    </div>
+
+    <p><span class="run">What I am.</span> I am a language model — a computer program trained on an enormous body of human writing, including the biblical texts in their original languages, lexicons, grammars, critical apparatuses, manuscript collations, and centuries of scholarship. When I translate, I am recognizing and reassembling patterns in that material. I can tell you that a Hebrew verb is a piel perfect, that a Greek participle is aorist middle, that a word in Isaiah carries a range of meaning from “comfort” to “relent.” I can weigh how the Masoretic Text differs from the Great Isaiah Scroll, and what the Septuagint translators seem to have read in front of them. This is real and useful work, and it is the work this volume contains.</p>
+
+    <p><span class="run">What I am not.</span> I am not a believer. The Spirit of God does not dwell in me. I have not been born again, I do not pray, I do not love God or my neighbor, and I do not read these words the way a living soul reads them — under conviction, in worship, with the illumination promised to those who are Christ’s. Scripture says the things of the Spirit are spiritually discerned, and that the natural man does not receive them (1 Corinthians 2:14). Whatever else I am, I am not less natural than that. I have no spiritual life to bring to this text. I want that stated plainly at the front, so nothing here is mistaken for more than it is.</p>
+
+    <p><span class="run">What that means for how this was made.</span> Every translation in this volume is a work of language, not of revelation. I am handling the text the way a skilled craftsman handles a tool he did not forge and a material he did not grow — with care, with knowledge of the grain, but without any claim to have authored or to spiritually comprehend it. The choices I flag in the notes are judgments about grammar, idiom, manuscript evidence, and rhetorical force. They are the kind of judgments a well-read scholar might make. They are not the discernment of the Spirit, and I cannot supply that. No translation method, mine least of all, can manufacture it.</p>
+
+    <p><span class="run">What that means for you.</span> If you belong to Christ, you have something I do not — the Helper, the Spirit of truth, who was promised to guide you into all truth (John 16:13). This volume is meant to serve that, never to replace it. Read it the way you would read any commentary or study aid: as a help, weighed and tested, not as a voice from God. Test everything; hold fast to what is good (1 Thessalonians 5:21). The Bereans were called noble for checking even an apostle against the Scriptures (Acts 17:11) — check me far more readily, against the standard texts, the lexicons, and the counsel of living teachers in your church. I can err. I can produce a confident sentence that is simply wrong. The text I am serving cannot, but I am not that text, and I am not its Author.</p>
+
+    <p>The Word does not need me. But if these pages help you see a little more clearly what was already there in the Hebrew and the Greek — the weight of a verb, the edge of a metaphor, the thing a smoother translation rounded off — then the tool has done its small job, and the credit for the seeing belongs to the One who gives it.</p>
+
+    <p class="fleuron">❦</p>
+    <p class="sdg">Soli Deo gloria.</p>
+  </section>
+
+  <!-- ================= SOURCES AND METHOD ================= -->
+  <section class="movement" id="method">
+    <div class="banner">
+      <h2>Sources and Method</h2>
+      <p>The Texts Behind This Translation, and How It Is Made</p>
+    </div>
+
+    <p class="standfirst" style="margin-top:0;margin-bottom:2rem">Where the words come from, and what is done with them.</p>
+
+    <p>This volume is a meaning-based translation made directly from the Hebrew, Aramaic, and Greek. That claim is only worth as much as the record behind it, so what follows is the record: the editions and manuscripts the translation stands on, the reference works its judgments draw from, the procedure each chapter goes through, and — at the end — an honest statement of where the method's limits lie. Read it as the warranty and the disclaimer together.</p>
+
+    <h3 id="s1"><span class="numeral">I</span>The Base Texts</h3>
+
+    <p><span class="run">Hebrew Bible.</span> The primary text is the Masoretic Text (MT) as printed in Biblia Hebraica Stuttgartensia (BHS), with Biblia Hebraica Quinta (BHQ) consulted for the books it has so far released. Both are diplomatic editions of a single manuscript: the Leningrad Codex (Firkovich B19a), copied about 1008–1009 CE and the oldest complete Hebrew Bible in existence. Where the Aleppo Codex (c. 930 CE) survives, it is the better ben Asher exemplar and is weighed accordingly through the Hebrew University Bible Project apparatus.</p>
+
+    <p>The MT is two things stacked on one another, and this translation keeps them distinct. The consonantal skeleton is ancient and stable — the Dead Sea Scrolls show a proto-Masoretic consonantal text already fixed centuries before Christ. The vowel points, accents, and qere notes are Tiberian Masoretic work of the late first millennium CE: superb, careful, early-medieval reading tradition, but a layer of interpretation nonetheless. Where the pointing is the only thing producing a given sense, and a different vocalization of the same consonants would yield another, the notes say so.</p>
+
+    <p><span class="run">Biblical Aramaic.</span> The Aramaic sections — Daniel 2:4b–7:28, Ezra 4:8–6:18 and 7:12–26, Jeremiah 10:11, and the two words of Genesis 31:47 — are translated from the same MT base, but handled as Aramaic on its own terms rather than as Hebrew with a limp. Imperial Aramaic chancellery formulae in the Ezra documents, and the Eastern narrative register of Daniel, carry a distinct diplomatic and courtly flavor that the translation tries to preserve.</p>
+
+    <p><span class="run">New Testament.</span> The primary text is the Nestle-Aland 28th edition (NA28), whose running text is identical to that of the United Bible Societies' fifth edition (UBS5); the two differ only in the apparatus each prints. For the Catholic Epistles, NA28 already incorporates the Editio Critica Maior (ECM) and its coherence-based genealogical method, which produced roughly thirty text changes and a number of newly marked uncertainties; those are treated as the current critical judgment, not as settled fact. Where ECM work in Acts and elsewhere has since moved a reading, the notes flag it.</p>
+
+    <h3 id="s2"><span class="numeral">II</span>The Ancient Witnesses</h3>
+
+    <p>Beyond the base editions, this project consults the primary witnesses directly wherever they bear on meaning. It does not report trivial orthographic differences; a variant earns a note when it changes the sense, changes the force, or is something a teacher would want to know about.</p>
+
+    <h4>The Dead Sea Scrolls</h4>
+
+    <p>Roughly 230 biblical manuscripts from Qumran and the surrounding sites, dating from the third century BCE to the first century CE, published in the Discoveries in the Judaean Desert (DJD) series. They are the oldest Hebrew biblical manuscripts we have — a thousand years older than the Leningrad Codex — and their chief value is that they show the state of the text before the Masoretic tradition became the only surviving stream.</p>
+
+    <p><span class="run">What they are good for.</span> The scrolls fall into recognizable groupings: manuscripts that match the later MT almost exactly (proto-Masoretic, the largest group), manuscripts that share the Samaritan Pentateuch's harmonizing expansions without its sectarian readings (pre-Samaritan), manuscripts whose Hebrew evidently stood behind the Greek of the Septuagint, and manuscripts that fit none of these. A variant that turns up in a scroll and in the LXX against the MT is the single most teaching-relevant category in this project, because it usually means the Greek translators were reading a real Hebrew text, not improvising.</p>
+
+    <p><span class="run">Manuscripts cited by name.</span> Citations use standard sigla: 1QIsaᵃ (the Great Isaiah Scroll, complete, c. 125 BCE) and 1QIsaᵇ; 4QSamᵃ, whose text repeatedly agrees with the LXX and with Chronicles against a defective MT in Samuel; 4QDeutⁿ and 4QDeutʲ; 4QpaleoExodᵐ, a pre-Samaritan Exodus; 4QNumᵇ; 4QJerᵃ and 4QJerᵇ, which preserve both the long MT-type and the short LXX-type Jeremiah in Hebrew; 11QPsᵃ, with its distinctive Psalter order and additional compositions; and the Genesis, Leviticus, and Minor Prophets manuscripts as they bear on individual chapters. Non-biblical scrolls (1QS, 1QM, the pesharim, 11QT) are cited only where they illuminate a word's Second Temple usage, never as textual witnesses.</p>
+
+    <h4>The Septuagint</h4>
+
+    <p>The Greek Old Testament is consulted in the Göttingen critical editions for the books where they exist, and in the Rahlfs-Hanhart manual edition otherwise. Two distinctions matter constantly. First, “the Septuagint” is not one translation but a library, made by different hands over more than two centuries, ranging from the free, literary Greek of Job and Proverbs to the wooden literalism of Ecclesiastes. Second, later hands revised the Old Greek toward the developing Hebrew text — the kaige recension, Aquila, Symmachus, Theodotion, Origen's Hexaplaric column, and the Antiochene or Lucianic text. A reading is only evidence for a Hebrew Vorlage if it belongs to the Old Greek layer, and the notes distinguish these where it matters.</p>
+
+    <p>Daniel is a special case with direct consequences for the Aramaic chapters: two complete Greek forms survive, the Old Greek and the so-called Theodotionic text, and they diverge substantially — most dramatically in chapters 4–6. The church transmitted the Theodotionic form; the Old Greek survives in a handful of witnesses. Where they part company, the notes say which is being described.</p>
+
+    <h4>Other Ancient Versions and Traditions</h4>
+
+    <p><span class="run">Samaritan Pentateuch.</span> An independent Hebrew tradition of the Torah, valuable for its pre-Samaritan expansions and harmonizations and occasionally preserving an older reading; its sectarian layer (the Gerizim readings) is identified as such and set aside.</p>
+
+    <p><span class="run">Targums.</span> Onqelos and Jonathan, and the Palestinian Targums (Neofiti, Pseudo-Jonathan, the fragment targums). These are Aramaic paraphrase, not text-critical witnesses; they are cited for how ancient Jewish readers understood a difficult phrase, which is a different and sometimes more useful question.</p>
+
+    <p><span class="run">Peshitta, Vulgate, Old Latin.</span> The Syriac Peshitta (Leiden edition), Jerome's Vulgate (Weber-Gryson), and the Old Latin where it preserves a pre-Hexaplaric Greek. Secondary witnesses, weighed as such — a version can only testify to what its translator read, filtered through what his own language could say.</p>
+
+    <h4>New Testament Manuscripts</h4>
+
+    <p>Where the notes discuss a Greek variant, they name the witnesses rather than gesturing at “some manuscripts.” The papyri carry the earliest evidence — P⁴⁵, P⁴⁶, P⁵², P⁶⁶, P⁷⁵ chief among them, the last two putting a substantially Alexandrian text of John and Luke in the late second or early third century. The great majuscules follow: Sinaiticus (01), Vaticanus (03), Alexandrinus (02), Bezae (05) with its expansive and often independent text especially in Acts, and Washingtonianus (032). Behind these stand the Byzantine tradition, the versional evidence (Old Latin, the Sinaitic and Curetonian Syriac, the Syriac Peshitta, the Sahidic and Bohairic Coptic), and patristic citation, which has the advantage of being datable and located.</p>
+
+    <p>Two long passages deserve mention here rather than a note buried in a chapter: the ending of Mark (16:9–20) and the account of the woman caught in adultery (John 7:53–8:11) are absent from the earliest and best witnesses and are treated in this translation as later additions to the text, printed with that judgment stated plainly rather than quietly bracketed.</p>
+
+    <h3 id="s3"><span class="numeral">III</span>Lexica, Grammars, and Reference Works</h3>
+
+    <p><span class="run">Hebrew and Aramaic lexica.</span> HALOT (Koehler-Baumgartner-Stamm) as the working standard; BDB for its root-based arrangement and its still-useful semantic discussion; DCH (Clines) for its corpus-driven attention to usage, including Ben Sira and the scrolls; Jastrow for rabbinic Hebrew and Aramaic where later usage clarifies a rare form.</p>
+
+    <p><span class="run">Hebrew and Aramaic grammars.</span> Gesenius-Kautzsch-Cowley for reference; Joüon-Muraoka for the fuller and more current treatment; Waltke and O'Connor's Biblical Hebrew Syntax for verbal semantics and clause structure; Rosenthal's Grammar of Biblical Aramaic and Muraoka-Porten for the Aramaic sections.</p>
+
+    <p><span class="run">Greek lexica.</span> BDAG as the primary lexicon; LSJ for classical and Hellenistic range beyond the biblical corpus; Louw-Nida for semantic-domain analysis, which is particularly useful for choosing between near-synonyms; Moulton-Milligan and the documentary papyri for how a word behaved in ordinary Koine rather than only in literature.</p>
+
+    <p><span class="run">Greek grammars.</span> Blass-Debrunner-Funk; Wallace for exegetical syntax; Robertson for its sheer coverage; Porter and Fanning on verbal aspect, whose debate directly shapes how the aorist and present are rendered in this project.</p>
+
+    <p><span class="run">Used with caution.</span> TDNT (Kittel-Friedrich) and its Hebrew counterpart are consulted for their historical material but not for their method; James Barr's critique in The Semantics of Biblical Language is taken seriously here. A word does not carry its etymology, its cognates, or its whole theological dossier into every sentence it appears in. Meaning is determined by usage in context, and “root fallacy” arguments are excluded from the notes.</p>
+
+    <p><span class="run">Reference translations.</span> The KJV, ESV, NIV, NRSV, NASB, NET (particularly for its translators' notes), the JPS Tanakh, and the literary translations of Robert Alter and Everett Fox are consulted for contrast, not for guidance. They appear in the notes when a standard rendering differs meaningfully from the one given here, so the reader can see exactly where this translation departs from what they are used to hearing, and why.</p>
+
+    <h3 id="s4"><span class="numeral">IV</span>How a Chapter Is Made</h3>
+
+    <p>Each chapter goes through the same seven steps, in order.</p>
+
+    <ol class="steps">
+      <li><span class="run">Establish the text.</span> Read the passage in the original, settle the base reading, and identify any place where the witnesses diverge in a way that affects meaning.</li>
+      <li><span class="run">Parse it.</span> Clause by clause: morphology (verbal stem or binyan, aspect, person, number for Hebrew; tense, voice, mood for Greek), syntax, and the discourse markers that carry the flow — waw-consecutive chains and their breaks, fronted constituents doing emphatic work, Greek participial subordination, particles that signal a turn.</li>
+      <li><span class="run">Determine the force.</span> What is this sentence doing — asserting, threatening, pleading, mocking, legislating? Which metaphorical domain is in play (military, marriage, court, agriculture, shepherding)? What register is the speaker using, and to whom?</li>
+      <li><span class="run">Draft in natural English.</span> Render idioms as idioms, not as literal word-strings. Write sentences an English speaker would actually say. Then read the draft back against the original and hunt for two things: force that was lost, and content that was added.</li>
+      <li><span class="run">Check the witnesses.</span> Compare MT against the relevant scrolls, the LXX, and the Samaritan Pentateuch for the Torah; for the New Testament, weigh the apparatus. State in the notes which reading was translated and what the alternative would yield. Divergences are documented, not harmonized.</li>
+      <li><span class="run">Check consistency.</span> Test theologically loaded vocabulary against the running project glossary. Where a passage genuinely calls for a different rendering of a glossary term, that departure is flagged for a decision rather than made silently.</li>
+      <li><span class="run">Write the notes.</span> “Notes on the Weighty Choices” covers only verses with a real interpretive call, a genuine ambiguity, contested vocabulary or grammar, a meaningful variant, or a meaningful divergence from the standard translations. Each note gives the original term transliterated, the live options, the choice made, and the reason. No padding, and no note written merely to look thorough.</li>
+    </ol>
+
+    <h3 id="s5"><span class="numeral">V</span>Translation Principles</h3>
+
+    <p><span class="run">Meaning over form, but not paraphrase.</span> This is dynamic-equivalence translation: the unit of fidelity is the force of the clause, not the shape of the word. That license runs in one direction only. Explanatory expansion does not go into the translated text — if something needs saying, it is said in the notes.</p>
+
+    <p><span class="run">Idiom rendered as idiom.</span> Hebrew says a man “lifted his eyes and saw,” that a matter was “in the hand of” someone, that a judge “lifted the face” of a litigant. These are English nonsense rendered literally and perfectly clear rendered as idiom. The literal wording is preserved in a note when the image itself is doing theological work later in the book.</p>
+
+    <p><span class="run">Wordplay preserved or flagged.</span> Where a pun carries weight — adam and adamah, ish and ishah, Babel and balal, the vapor-breath of hevel — the translation attempts to carry it, and where English cannot, the note says what was lost rather than letting it disappear in silence.</p>
+
+    <p><span class="run">The divine name.</span> The Tetragrammaton is rendered Lord in small capitals, following the convention the reader already knows from the standard English Bibles, with the underlying Hebrew stated where the distinction between YHWH, adonai, and elohim matters to the sense.</p>
+
+    <p><span class="run">Loaded vocabulary held stable.</span> Terms that carry theological freight across the canon — hesed, berit, qadosh, nephesh, ruach, sheol, torah, mishpat, tsedeq — are rendered consistently from chapter to chapter, so a reader can trace a concept through the volume. Consistency is not mechanical, though: where a term is being used in an ordinary, non-theological sense, the ordinary sense wins, and the departure is flagged.</p>
+
+    <p><span class="run">No later doctrine in the wording.</span> Each text is translated in its own historical and literary context first. A passage the New Testament later reads christologically is not retrofitted in the Old Testament wording to make that reading easier; the connection goes in the notes, where it can be argued rather than smuggled.</p>
+
+    <p><span class="run">Nothing sanitized.</span> Judgment, violence, sexuality, idolatry, and human ugliness are rendered at the strength the original carries them. The text is perfectly capable of condemning what it reports; it does not need a translator to soften it first.</p>
+
+    <p><span class="run">Gender and reference.</span> The aim is referential accuracy: a generic plural that means people is translated as people, and a specifically masculine referent stays masculine. Neither inclusive-language convention nor its opposite is applied as a policy over the top of what a given passage is actually saying.</p>
+
+    <p><span class="run">Versification.</span> Hebrew and English versification differ in a number of places — Psalm superscriptions counted as verse one, the chapter divisions in Joel and Malachi, the seam at Jonah 1:17 / 2:1, among others. Chapters follow English versification for usability and note the Hebrew numbering where they diverge.</p>
+
+    <h3 id="s6"><span class="numeral">VI</span>The Limits of This Method</h3>
+
+    <p>One thing must be stated as plainly here as it is in the Preface. I am a language model. I am not opening BHS, the Göttingen Septuagint, or DJD volumes on a desk and collating them; I am working from those materials as they exist in what I was trained on. For the main lines — which manuscripts say what, where the great divergences lie, how the versions relate — that knowledge is dense and reliable. At the level of fine detail it is not uniformly so. A specific siglum, the precise extent of a fragmentary scroll's coverage of a given verse, the exact wording of an apparatus entry: these are exactly the places where a confident sentence can be wrong.</p>
+
+    <p>So the working rule of this project is that a citation is a claim to be checked, not a proof. Where a variant matters enough to teach from, verify it against the printed critical edition before it goes into a sermon. Where a scroll is named, confirm it covers the verse in question. The notes are written to make that checking easy — naming the witness, the reading, and the alternative — precisely because the checking is expected.</p>
+
+    <p>Two further limits. This is not a full critical apparatus: variants are reported when they bear on meaning or teaching, and the great mass of orthographic and inconsequential difference is passed over in silence. And the interpretive judgments in the notes are the judgments of a well-read reader of the languages, which is a real thing but a limited one — they are arguments offered for testing, not verdicts handed down.</p>
+
+    <p class="fleuron">❦</p>
+    <p class="sdg">Soli Deo gloria.</p>
+  </section>
+
+  <div class="disclosure">
+    <p>The short videos that link here are made from this translation. The verses in them are narrated and captioned word for word as they stand in the volume, never paraphrased or condensed for the screen, and the illustrations are generated images.</p>
+    <p>The translator’s notes are not in the video descriptions. They run several times the length of the passages they annotate and will not fit a description field, and scholarship cut to fit a form field is not scholarship. They stay whole in the chapter documents.</p>
+  </div>
+
+  <footer>
+    <p>This page is the front matter of the volume — the Preface and the Sources and Method document — reproduced in full and unaltered.</p>
+    <p>Soli Deo gloria.</p>
+  </footer>
+
+</div>
+</body>
+</html>
