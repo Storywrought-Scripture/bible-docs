@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 37 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 37 -- Joseph Sold">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 37 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 37 -- Joseph Sold">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 37</h1></header>
+<p class="lede">Joseph Sold</p>
+<div class="notes">
+<div class="note">
+<span class="ref">37:2</span>
+<p>ʾēlleh tōlᵉḏôṯ yaʿăqōḇ (“These are the generations of Jacob”): the book&#x27;s structural formula — it occurs eleven times (2:4; 5:1; 6:9; 10:1; 11:10; 11:27; 25:12; 25:19; 36:1; 36:9; and here), marking ten sections, since Esau is given the formula twice — and here it introduces not a genealogy but the longest sustained narrative in Genesis, and one in which Jacob is barely an actor. The formula normally opens a list; opening the Joseph story with it signals that what follows is the account of what became of Jacob&#x27;s house. dibbāṯām rāʿâ, “a bad report of them,” is deliberately vague — the Hebrew does not say whether the report was true, and dibbâ elsewhere often means slander. The narrator gives the reader three reasons for the brothers&#x27; hatred in four verses — the reports, the favouritism, the robe — and then adds the dreams. Verse 3&#x27;s ben-zᵉqunîm, “a son of his old age,” is not a statement about birth order: Benjamin is younger, and 44:20 applies the same word zᵉqunîm to him, “a young boy of his old age.”</p></div>
+<div class="note">
+<span class="ref">37:3</span>
+<p>kᵉṯōneṯ passîm (“an ornamented robe”): the meaning is genuinely uncertain and the familiar English is a guess of long standing. passîm may derive from pas, the flat of the hand or foot, giving a garment reaching to the extremities — hence “long-sleeved” or “ankle-length” — or may denote strips or coloured pieces. The Septuagint&#x27;s chitōna poikilon, “many-coloured tunic,” gives the Vulgate&#x27;s tunicam polymitam and so the King James&#x27;s “coat of many colours,” which has no direct support in the Hebrew. What settles the sense of the garment&#x27;s significance is its only appearance outside this chapter: at 2 Samuel 13:18–19 it is what the virgin daughters of the king wore, so it is a mark of rank and of exemption from labour, worn by someone who is not expected to work. That is why it enrages men who are out with the flocks. I have rendered it “ornamented robe” and recorded that the colours are a translator&#x27;s tradition rather than a fact of the text.</p></div>
+<div class="note">
+<span class="ref">37:4</span>
+<p>wᵉlōʾ yāḵᵉlû dabbᵉrô lᵉšālōm (“could not speak a peaceable word to him”): literally “could not speak him to peace.” The word šālôm runs through the chapter as a quiet thread: they cannot speak it here; Jacob sends Joseph at verse 14 to see šᵉlôm — the welfare — of his brothers and of the flock; and what he finds instead is the pit. The English keeps the connection where it can.</p></div>
+<div class="note">
+<span class="ref">37:7–11</span>
+<p>The dreams come in a matched pair, which in this book marks certainty — compare Pharaoh&#x27;s two dreams at 41:32, where Joseph says the doubling means the thing is fixed by God. The first is agricultural and among equals, sheaves in a field; the second is cosmic, and it takes in the parents as well. Note that Joseph never claims an interpretation — his brothers supply “reign over us” and “rule us,” and his father supplies the identification of sun, moon and stars. The narrator does not say whether telling them was innocence or provocation. Note also the difficulty in verse 10: Jacob names “your mother,” but Rachel died at 35:19. Readings take it as Leah standing in the mother&#x27;s role, as Bilhah, as a formulaic completion of the family triad, or as a sign that this dream belongs to a tradition in which Rachel is still alive. šāmar ʾeṯ-haddāḇār, “kept the matter in mind,” is what Jacob does instead of dismissing it.</p></div>
+<div class="note">
+<span class="ref">37:15–17</span>
+<p>wayyimṣāʾēhû ʾîš (“And a man found him”): an unnamed man in a field, three verses, and then he is gone. He has no part in the plot except to send Joseph on to Dothan, and without him Joseph turns back and nothing in the rest of the book happens. The narrator introduces him with the same word, ʾîš, used of the wrestler at the Jabbok (32:24), and offers no comment on either. Later tradition made him an angel; the text says a man.</p></div>
+<div class="note">
+<span class="ref">37:20, 33</span>
+<p>ḥayyâ rāʿâ ʾăḵālāṯhû (“a wild animal devoured him”): the brothers invent the lie at verse 20, and at verse 33 Jacob speaks it himself, unprompted — they never have to say it. They present the evidence and let him draw the conclusion, which is the more effective deception and also the more cowardly. Note that the instrument is a garment soaked in the blood of a slaughtered goat: Jacob deceived his own father using goatskins and his brother&#x27;s clothes (27:15–16), and is now deceived by his sons using a goat and his son&#x27;s clothes. The book does not remark on it. ṭārōp̄ ṭōrap̄ yôsēp̄, “torn to pieces, torn to pieces,” is the emphatic infinitive doubled, and it is also the legal term of 31:39 for an animal killed by a predator, for which a shepherd was not liable.</p></div>
+<div class="note">
+<p>37:21–22, 26–27  Two brothers intervene and neither of them says the thing is wrong. Reuben proposes the pit as a delaying tactic, intending to come back for him, and the narrator tells us the private motive at verse 22 — to return him to his father, which would also repair his own standing after 35:22. Judah proposes the sale, and his stated reason is mah-beṣaʿ, “what profit is there,” with the appeal to brotherhood added after the commercial argument. Joseph&#x27;s life is saved twice, once by a man managing his father and once by a man doing a deal. Both brothers matter later: Reuben offers his own sons as surety at 42:37, and Judah offers himself at 44:33, which is the change the whole novella turns on.</p></div>
+<div class="note">
+<span class="ref">37:25–28, 36</span>
+<p>yišmᵉʿēʾlîm … miḏyānîm … mᵉḏānîm (“Ishmaelites” … “Midianites” … “Medanites”): the traders are named inconsistently and the seam is one of the most discussed in the Pentateuch. Verse 25 has an Ishmaelite caravan; verse 27 has Judah propose selling to the Ishmaelites; verse 28 begins with Midianite traders passing by, then says “they drew Joseph up out of the pit and sold Joseph to the Ishmaelites”; verse 36 gives a third name — the Masoretic text reads hammᵉḏānîm, the Medanites, and Medan is Midian&#x27;s brother at 25:2, though the form may equally be a variant spelling of the same gentilic — and has them sell him in Egypt; the ancient versions read “Midianites” there and nearly every English translation follows them, but the Masoretic text does not, and neither have I; and at 39:1 Potiphar buys him from the Ishmaelites. Read as a single account, the subject of “drew up” in verse 28 is ambiguous — it may be the brothers or the passing Midianites — and on one reading the Midianites find Joseph in the pit and steal him, so that the brothers never sell him at all, which is what Joseph himself says at 40:15, that he was stolen. Source-critical readings see two strands interwoven, one in which Reuben tries to rescue Joseph and Midianites take him, and one in which Judah proposes a sale to Ishmaelites. The terms may also overlap, since Judges 8:24 calls the defeated Midianite host Ishmaelites — explaining their golden earrings with the words “because they were Ishmaelites.” I have translated the Hebrew exactly as it stands, including the ambiguity of subject in verse 28, and left the difficulty visible; smoothing it to one people is where most English versions quietly decide the question. ʿeśrîm kāsep̄, twenty pieces of silver: at Leviticus 27:5 twenty shekels is the valuation set on a male between five and twenty years old — the sum by which a vow of such a person is discharged, not a price on a person, and Joseph at seventeen falls inside that band. The one figure the Torah attaches to a slave is higher, and it is not a market price either: thirty shekels, the indemnity paid to a slave&#x27;s master when an ox gores him, at Exodus 21:32.</p></div>
+<div class="note">
+<span class="ref">37:35</span>
+<p>ʾērēḏ ʾel-bᵉnî ʾāḇēl šᵉʾōlâ (“I will go down to my son, mourning, to Sheol”): the first occurrence of šᵉʾôl in the Bible. It is the common destination of the dead — a shadowy place beneath, not a place of reward or punishment, and not yet distinguished by the fate of the righteous and the wicked. Jacob&#x27;s expectation is simply that he will join his son there, still mourning. Note also the reference to “all his daughters,” though only Dinah has been named; the phrase is a formal totality rather than a count. And note that the reader knows Joseph is alive while Jacob does not, and will not for twenty-two years — a gap the narrative holds open across eight chapters, longer than any other in Genesis.</p></div>
+</div>
+<nav class="chapnav"><a href="../36/">&larr; Genesis 36</a><a href="../">All chapters</a><a href="../38/">Genesis 38 &rarr;</a></nav>
+</body>
+</html>

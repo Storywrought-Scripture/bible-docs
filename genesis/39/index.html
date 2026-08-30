@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 39 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 39 -- Potiphar’s House, and the Prison">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 39 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 39 -- Potiphar’s House, and the Prison">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 39</h1></header>
+<p class="lede">Potiphar’s House, and the Prison</p>
+<div class="notes">
+<div class="note">
+<span class="ref">39:2, 3, 5, 21, 23</span>
+<p>wayᵉhî YHWH ʾeṯ-yôsēp̄ (“And the Lord was with Joseph”): the divine name is used eight times in this chapter — at verses 2, 3 (twice), 5 (twice), 21 and 23 (twice) — and almost nowhere else in the Joseph narrative, which otherwise speaks of ʾĕlōhîm, God. It is also the only place in the Joseph story where the narrator says repeatedly and in his own voice that God is acting around Joseph. The Lord acts twice in the narrator&#x27;s voice in chapter 38, but on Judah&#x27;s sons, and God speaks directly to Jacob at 46:2–4 — to the father, not the son. Where Joseph is concerned the reader has to infer it everywhere else, and Joseph himself supplies the theology retrospectively at 45:5–8 and 50:20. Source-critical readings assign the difference to a separate strand. Whatever its origin, the effect in the finished text is that the two lowest points of Joseph&#x27;s life — sold into a house, and thrown into a prison — are the two places the narrator insists on the presence most plainly, framing the chapter at both ends with the same sentence.</p></div>
+<div class="note">
+<span class="ref">39:6</span>
+<p>yᵉp̄ēh-ṯōʾar wîp̄ēh marʾeh (“beautiful in form and beautiful to look at”): the identical phrase used of his mother Rachel at 29:17. It is applied to no man anywhere else in Genesis. The narrator places it in the last clause before the temptation begins, which makes it a plot fact rather than a compliment. Note also the mordant detail in the same verse: Potiphar gave no thought to anything with him except the food he ate, which either records an Egyptian scruple about eating with foreigners (compare 43:32) or is a dry euphemism; both readings have been proposed.</p></div>
+<div class="note">
+<span class="ref">39:7–12</span>
+<p>šiḵᵉḇâ ʿimmî (“Lie with me”): two words, and they are the only words she is given until she has an audience. She says them at verse 7 and again at verse 12, and verse 10 tells us she said them day after day. Joseph&#x27;s refusal is his longest speech so far in the book — thirty-five words of Hebrew against the twenty-two of the sheaves dream at 37:6–7, though the plea to the cupbearer at 40:12–15 will be longer still — and its reasoning is worth reading in order: first that it would betray a master who has trusted him with everything, then — as the last and shortest clause — wᵉḥāṭāʾṯî lēʾlōhîm, “and sin against God.” He argues from loyalty and closes with God. Note that he never says the woman is at fault.</p></div>
+<div class="note">
+<span class="ref">39:12, 13, 15, 16, 18</span>
+<p>wayyaʿăzōḇ biḡḏô bᵉyāḏāh (“he left his garment in her hand”): the second time a garment of Joseph&#x27;s is used as false evidence against him, and the parallel is exact. His brothers stripped him of the ornamented robe, dipped it in goat&#x27;s blood and presented it to their father as proof of a death that had not happened (37:31–33); his master&#x27;s wife keeps his garment and presents it as proof of an assault that did not happen. In both cases the object is produced and allowed to speak, and in both cases the man who receives it believes it at once. The lie is visible here in a single preposition. The narrator twice says the garment was left bᵉyāḏāh, in her hand — but a garment in her hand is a woman holding a man, so both her tellings say ʾeṣlî, beside me, and verse 16 has her lay it ʾeṣlāh, beside her, before her husband comes home. The English keeps all three. Joseph loses a garment each time he loses a life, and at 41:14 he changes his clothes to stand before Pharaoh. The narrator never comments on the pattern.</p></div>
+<div class="note">
+<span class="ref">39:14, 17</span>
+<p>ʾîš ʿiḇrî … lᵉṣaḥeq bānû (“a Hebrew man” … “to make sport of us”): two things are doing work here. She does not name Joseph at any point; to the household he is “a Hebrew man,” and to her husband “the Hebrew slave you brought us” — she attaches the blame to him in the same sentence, and aligns herself with the servants against the foreigner. ʿiḇrî is used in Genesis almost always by or to outsiders, as a term for the family from the perspective of others. And the verb ṣāḥaq in its intensive form stands at four places in the book: Lot&#x27;s sons-in-law think he is joking at 19:14, Sarah sees Ishmael mᵉṣaḥēq at 21:9, Abimelech sees Isaac mᵉṣaḥēq with Rebekah at 26:8, and here it is used in an accusation of assault. It is also, once again, the root of Isaac&#x27;s name. The English cannot carry one word through all four: 21:9 and 26:8 read “laughing” and 19:14 “joking,” and an accusation of assault cannot be made in English with either — so here it is “make sport of.” The thread is in the Hebrew and is recorded rather than reproduced; see the notes at 19:14, 21:9 and 26:8.</p></div>
+<div class="note">
+<span class="ref">39:19–20</span>
+<p>wayyiḥar ʾappô (“his anger burned”): the narrator does not say whom Potiphar was angry with, and the omission is probably deliberate. What is known of Egyptian judicial practice in this period comes from scattered decrees and trial records rather than from a law code, and a slave accused of assaulting his master&#x27;s wife would have been in grave danger; Joseph is instead put in the prison that holds the king&#x27;s own prisoners, which is a place of some standing and where he is promptly given authority. A number of readers take this as a sign that Potiphar did not entirely believe the story but had no choice once it was public. The text neither says so nor rules it out.</p></div>
+<div class="note">
+<span class="ref">39:20</span>
+<p>bêṯ hassōhar (“the round-house”): a term that occurs six times in this chapter (vv. 20 twice, 21, 22 twice, 23) and twice in the next (40:3, 5) — eight occurrences in all — and nowhere else in the Hebrew Bible. Chapter 41 does not use it: at 41:14 Joseph is brought out of habbôr, “the pit.” Its derivation is unknown; it may be an Egyptian loanword, or connected to a root for roundness, hence the traditional guess of a round fortress or tower. I have rendered it “round-house” to keep the word distinct rather than flattening it into “prison.” Genesis has two other words for the place and uses both in the next chapter — Joseph and the two officials are held bᵉmišmār, “under guard” (40:3, 4, 7), and Joseph calls it habbôr, “the pit” (40:15), the same word as the pit at 37:24. bêṯ hassōhar is none of these, and the distinction is worth keeping visible. (The term the later books use, bêṯ hakkeleʾ, appears nowhere in the Pentateuch.) The unusual vocabulary is one of several Egyptian details in the Joseph story.</p></div>
+<div class="note">
+<p>39:1–23 (the parallel)  The episode has a well-known Egyptian counterpart in the Tale of Two Brothers, a New Kingdom text in which the wife of the elder brother propositions the younger, is refused, and accuses him to her husband. The parallel is real and the two are frequently discussed together. What it demonstrates is that the narrative type was current in the world this story is set in; it does not establish literary dependence in either direction, and the two tales diverge sharply in everything that follows. Per this project&#x27;s stated limits, the comparison is one to check against a published translation of the papyrus rather than to take on report.</p></div>
+<div class="note">
+<span class="ref">39:21</span>
+<p>wayyēṭ ʾēlāyw ḥāseḏ (“and extended faithful kindness to him”): ḥeseḏ held to the glossary rendering fixed at 19:19. The idiom is literally to stretch out faithful kindness toward someone, and it is used of God toward a man in a prison. The chapter closes as it opened, with the same clause about the Lord being with him and making him succeed, so that the two halves — the great house and the gaol — are given identical frames. The narrator&#x27;s point is made by symmetry, and the situation the symmetry describes is that nothing has visibly improved.</p></div>
+</div>
+<nav class="chapnav"><a href="../38/">&larr; Genesis 38</a><a href="../">All chapters</a><a href="../40/">Genesis 40 &rarr;</a></nav>
+</body>
+</html>

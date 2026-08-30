@@ -12,7 +12,7 @@ meant to be read by anyone.
 - `index.html` — the preface and *Sources and Method*, self-contained. No build step, no
   dependencies, no external requests.
 - `genesis/` — the translation notes, **one page per chapter**: `genesis/3/` is the notes on
-  Genesis 3. Chapters 1–36 are published; the rest follow as they clear review.
+  Genesis 3. Chapters 1–40 are published; the rest follow as they clear review.
 - `genesis/index.html` — the chapter list.
 - `.nojekyll` — stops GitHub Pages running the pages through Jekyll.
 
