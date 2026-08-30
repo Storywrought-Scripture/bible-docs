@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 35 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 35 -- Back to Bethel, and Three Graves">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 35 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 35 -- Back to Bethel, and Three Graves">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 35</h1></header>
+<p class="lede">Back to Bethel, and Three Graves</p>
+<div class="notes">
+<div class="note">
+<span class="ref">35:2–4</span>
+<p>hāsirû ʾeṯ-ʾĕlōhê hannēḵār (“Put away the foreign gods”): the household of the man who wrestled with God is carrying other people&#x27;s gods, and has been since 31:19, when Rachel stole her father&#x27;s tᵉrāp̄îm. The text does not say whether those are among what is hidden here, and Rachel is not named. The rings from their ears go in with the images — earrings are elsewhere associated with cultic use, as in the making of the calf at Exodus 32:2–4. hiṭṭahărû wᵉhaḥălîp̄û śimlōṯêḵem, “purify yourselves and change your clothes,” is the language of preparation for an encounter, as at Exodus 19:10. Note that the verb at verse 4 is wayyiṭmōn, from ṭāman, to hide — not qāḇar, the verb of the three burials in this chapter — and that Jacob hides them under the terebinth near Shechem, the town his sons have just destroyed, and then leaves.</p></div>
+<div class="note">
+<span class="ref">35:5</span>
+<p>ḥittaṯ ʾĕlōhîm (“a terror of God”): a divine dread falling on the surrounding cities so that nobody pursues. Coming directly after chapter 34, the verse answers Jacob&#x27;s fear at 34:30 that the Canaanites and Perizzites would gather and destroy him — and it answers it without saying anything about whether his sons were right. The construction with ʾĕlōhîm may be intensive, “a great terror,” as at 23:6, or may name its source; the two are not easy to separate here.</p></div>
+<div class="note">
+<span class="ref">35:8</span>
+<p>dᵉḇōrâ mêneqeṯ riḇqâ (“Deborah, Rebekah&#x27;s nurse”): a woman who has not been named before — Rebekah&#x27;s nurse is mentioned without a name at 24:59 — dies, and gets a grave, a named tree and an etymology, ʾallôn bāḵûṯ, “oak of weeping.” Rebekah&#x27;s own death is never narrated anywhere in the Bible. She is last heard speaking at 27:46, and the only notice of her burial comes secondhand at 49:31, from Jacob on his deathbed. That the nurse gets a death notice and the matriarch does not is one of the book&#x27;s stranger silences, and it is not explained.</p></div>
+<div class="note">
+<span class="ref">35:10</span>
+<p>yiśrāʾēl yihyeh šᵉmeḵā (“Israel will be your name”): the renaming is given a second time, here by God at Bethel and without a struggle, where at 32:28 it came from the man at the Jabbok. The two accounts are usually assigned to different sources, and the doubling is not smoothed here. Note that this version says your name will no longer be called Jacob and yet the narrator goes on using Jacob freely — including at 35:14 and 35:15, and throughout the Joseph story — which is not true of Abram, whose old name disappears entirely after 17:5. Verses 11–12 restate the promise in the vocabulary of chapter 17: ʾēl šadday, be fruitful and multiply, kings from your loins, the land.</p></div>
+<div class="note">
+<span class="ref">35:18</span>
+<p>ben-ʾônî … binyāmîn (“Ben-oni” … “Benjamin”): the only place in the Hebrew Bible where a father overrides the name a mother has given. ben-ʾônî is “son of my ʾôn,” and ʾôn can mean either sorrow, trouble (as in ʾāwen), or strength, vigour — so her name for him is either “son of my sorrow” or “son of my strength,” and dying in childbirth she may well have meant both. binyāmîn is “son of the right hand,” the favoured side, or “son of the south,” since in Hebrew orientation the right hand faces south. Jacob takes a name spoken with a woman&#x27;s last breath and turns it toward the future. The Hebrew leaves ʾôn open and so does this translation, which transliterates rather than choosing.</p></div>
+<div class="note">
+<span class="ref">35:19–20</span>
+<p>bᵉḏereḵ ʾep̄rāṯâ hîʾ bêṯ lāḥem (“on the road to Ephrath — that is Bethlehem”): the gloss identifying Ephrath with Bethlehem appears here and at 48:7, and it creates a geographical problem. 1 Samuel 10:2 places Rachel&#x27;s tomb at Zelzah on the border of Benjamin, well north of Bethlehem and much closer to Bethel, which is also where the journey in this chapter is coming from; Jeremiah 31:15 has Rachel weeping at Ramah, likewise in Benjamin. The likeliest account is that the tomb was originally located in Benjamin — the territory of her younger son — and that the Bethlehem identification is a later gloss, which then became the traditional site. I have translated the gloss as the Hebrew has it and recorded the difficulty.</p></div>
+<div class="note">
+<span class="ref">35:22</span>
+<p>wayyiškaḇ ʾeṯ-bilhâ pîleḡeš ʾāḇîw (“Reuben went and lay with Bilhah his father&#x27;s concubine”): one sentence, no explanation, no consequence narrated here, and the immediate continuation is a list of the twelve sons — Reuben&#x27;s name first. Sleeping with a father&#x27;s concubine is a claim on his position, as Absalom&#x27;s act on the roof makes explicit at 2 Samuel 16:21–22, so this is generally read as a grab at the succession while Jacob is grieving. It costs Reuben the birthright: Jacob&#x27;s word at 49:3–4 strips him for exactly this. The narrator&#x27;s only comment is two words, wayyišmaʿ yiśrāʾēl, “and Israel heard of it,” and then silence. The Masoretic Text marks a paragraph break in the middle of this verse — a pisqāʾ bᵉʾemṣaʿ pāsûq — an unusual scribal signal, generally taken as marking the gap where something has been left unsaid. Per the project&#x27;s stated limits, that is a feature to verify against a printed critical edition.</p></div>
+<div class="note">
+<span class="ref">35:26</span>
+<p>ʾăšer yullaḏ-lô bᵉp̄addan ʾărām (“who were born to him in Paddan-aram”): the summary is not quite accurate on its own terms — Benjamin has just been born in Canaan, ten verses earlier. This is the kind of loose seam that regularly appears where the book gathers a list, and it is left as it stands rather than corrected. Note the ordering of the list: the sons are grouped by mother, and the two wives&#x27; sons come before the two slave women&#x27;s — which puts Bilhah&#x27;s and Zilpah&#x27;s four, born fifth through eighth, after Joseph and Benjamin.</p></div>
+<div class="note">
+<span class="ref">35:29</span>
+<p>wayyiqbᵉrû ʾōṯô ʿēśāw wᵉyaʿăqōḇ bānāyw (“and Esau and Jacob his sons buried him”): as with Isaac and Ishmael at 25:9, Genesis brings the estranged brothers to their father&#x27;s grave and says nothing about how they stand with each other. Esau is named first, as the elder, which is the last small correction the book makes to the order these two have been fighting over since the womb. Isaac dies at a hundred and eighty, the longest-lived of the three patriarchs, having had only one chapter of the book given over to his own story; his death is recorded here out of strict chronology: Isaac is still alive when Joseph is sold, and dies some twelve years later, during Joseph&#x27;s imprisonment.</p></div>
+</div>
+<nav class="chapnav"><a href="../34/">&larr; Genesis 34</a><a href="../">All chapters</a><a href="../36/">Genesis 36 &rarr;</a></nav>
+</body>
+</html>

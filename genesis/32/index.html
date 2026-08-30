@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 32 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 32 -- Wrestling at the Jabbok">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 32 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 32 -- Wrestling at the Jabbok">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 32</h1></header>
+<p class="lede">Wrestling at the Jabbok</p>
+<div class="notes">
+<div class="note">
+<span class="ref">32:1–3</span>
+<p>malʾăḵê ʾĕlōhîm … malʾāḵîm (“messengers of God” … “messengers”): the same noun in consecutive verses, first of the divine encounter at Mahanaim and then of the human envoys Jacob sends to Esau. Hebrew has one word for both, and the narrator sets them side by side deliberately: Jacob meets God&#x27;s messengers and immediately dispatches his own. English forces a choice, and rendering the first “angels” and the second “messengers” conceals the join, so I have used “messengers” for both and noted it. Per the glossary, nothing is described of them beyond what the text states — and it states nothing at all. maḥănayim is a dual form, “two camps,” which is then what Jacob makes of his own household at verse 7 and what he says he has become at verse 10.</p></div>
+<div class="note">
+<span class="ref">32:6</span>
+<p>wᵉḡam hōlēḵ liqrāʾṯᵉḵā wᵉʾarbaʿ mēʾôṯ ʾîš ʿimmô (“he is also coming to meet you — and four hundred men are with him”): the messengers report a fact and no intention, and the narrative is careful never to say what Esau meant by it. Four hundred men is a fighting force — the number David takes against Nabal at 1 Samuel 25:13 — and Jacob reads it as one. Chapter 33 will show Esau running to embrace him. The text withholds Esau&#x27;s purpose from the reader exactly as it is withheld from Jacob, and the whole night at the Jabbok happens inside that gap.</p></div>
+<div class="note">
+<span class="ref">32:10</span>
+<p>qāṭōntî mikkōl haḥăsāḏîm (“I am too small for all the faithful kindness”): qāṭōntî is literally “I am small,” and the sense is that he is unworthy of, or outweighed by, what he has received. ḥeseḏ is held to “faithful kindness” per the glossary, here paired again with ʾĕmeṯ, truth or reliability, as at 24:27. This is the longest unbroken prayer in Genesis — Abraham&#x27;s intercession at 18:23–32 is longer overall, but it is a dialogue broken by God&#x27;s replies — and much the longest thing Jacob says to God. Its shape is worth noting: he addresses God by his fathers&#x27; names, quotes God&#x27;s own command back at him, admits unworthiness, states the danger plainly, and closes by quoting the promise a second time. He asks for exactly one thing — rescue — and the argument he offers is not his own merit but God&#x27;s word. Neither quotation is exact, though. God said “the land of your fathers … and I will be with you” at 31:3, where Jacob has “your land … and I will do you good”; and the promise of seed “like the sand of the sea” was made to Abraham at 22:17, where what Jacob himself was given at 28:14 was “like the dust of the earth.” Whether that is a man enlarging a promise in the dark or the narrator&#x27;s own conflation, the text does not say.</p></div>
+<div class="note">
+<span class="ref">32:20</span>
+<p>ʾăḵappᵉrâ p̄ānāyw … ʾûlay yiśśāʾ p̄ānāy (“let me cover his face … perhaps he will lift my face”): the chapter turns on the word pānîm, face, which appears seven times in verses 16–21 alone — four of them invisible in English, rendered “ahead of” — and ten times in the chapter, before giving the place its name at verse 30. ʾăḵappᵉrâ is the verb behind kippur, atonement — its concrete sense is to cover or wipe over — so Jacob speaks of covering his brother&#x27;s face with a gift, and “lifting the face” is the standing idiom for receiving someone favourably. English cannot hold the sequence in one word, so the literal renderings are kept and the pattern is recorded here: he plans to cover a face, then must see a face, and instead sees God&#x27;s face in the dark and is not destroyed.</p></div>
+<div class="note">
+<span class="ref">32:24</span>
+<p>wayyēʾāḇēq ʾîš ʿimmô (“and a man wrestled with him”): the text says ʾîš, a man, and never says anything else. The identification is left open for the whole scene: the stranger will not give a name (verse 29), Jacob concludes he has seen God (verse 30), Hosea 12:4 calls him malʾāḵ, a messenger, and later tradition has read him variously as God, an angel, Esau&#x27;s guardian spirit, or Jacob&#x27;s own self. The Hebrew supports none of these over the others. The verb ʾāḇaq occurs only here and in verse 25, and is generally connected to ʾāḇāq, dust — grappling in the dust — which also puns on yabbōq, the Jabbok, and, by metathesis of the same consonants, on yaʿăqōḇ, Jacob — the man, the river and the wrestling made to sound like one another. I have translated ʾîš as “man” throughout and left the identification exactly where the narrator leaves it.</p></div>
+<div class="note">
+<span class="ref">32:25</span>
+<p>wattēqaʿ kap̄-yereḵ yaʿăqōḇ (“the socket of Jacob&#x27;s hip was wrenched”): the stranger cannot overcome him and wins by a touch, which is the paradox the story is built on — Jacob is told he has prevailed, and he leaves permanently injured. yārēḵ is the same word used of the oath gesture at 24:2 and 47:29 — rendered “thigh” there and “hip” here, since English has no one word for both the joint and the limb — the thigh and loins as the seat of generative power; a blow there is not incidental in a book about descendants. Note that the injury is the one thing in the episode that persists into daylight: he limps at verse 31 and the nation keeps a food practice from it at verse 32.</p></div>
+<div class="note">
+<span class="ref">32:28</span>
+<p>yiśrāʾēl kî-śārîṯā ʿim-ʾĕlōhîm (“Israel — for you have striven with God”): the name is explained from śārâ, to strive or contend, with ʾēl, God. Grammatically the name would more naturally mean “God strives,” or “God rules,” since Hebrew names of this pattern normally have the divine element as the subject; the explanation given here makes the man the subject instead. That is characteristic of biblical name etymologies, which are sound-plays making a point rather than derivations (compare Babel at 11:9). ʿim-ʾĕlōhîm wᵉʿim-ʾănāšîm, “with God and with men,” gathers up the whole life: Esau, Isaac, Laban, and now this. And note that the abolition formula is the same one used of Abram at 17:5 — your name will no longer be said to be Jacob — but the narrator does not honour it: he goes on calling him Jacob for the rest of the book, alternating the two, where Abram never reappears. God repeats the renaming at 35:10, and the narrator ignores that too.</p></div>
+<div class="note">
+<span class="ref">32:29</span>
+<p>lāmmâ zeh tišʾal lišmî (“Why is it that you ask my name?”): the request is refused and the refusal is not explained. To know a name is, in this literature, to have some purchase; the same evasion appears at Judges 13:18, where the messenger tells Manoah his name is “wonderful,” beyond knowing. Jacob has spent the book acquiring things by knowing how to ask — a birthright, a blessing, a wage agreement — and here he gets a blessing and is denied the name. The blessing itself is given without content: the narrator says only wayᵉḇāreḵ ʾōṯô šām, “and he blessed him there.”</p></div>
+<div class="note">
+<span class="ref">32:30</span>
+<p>pᵉnîʾēl kî-rāʾîṯî ʾĕlōhîm pānîm ʾel-pānîm wattinnāṣēl nap̄šî (“Peniel — because I have seen God face to face, and my life was delivered”): pᵉnê ʾēl is “the face of God.” The assumption behind the naming is the standing one in the Hebrew Bible, that seeing God is fatal — stated outright at Exodus 33:20 — so Jacob&#x27;s remark is one of survival rather than of intimacy. nap̄šî is rendered “my life” here, the animating self, which is the same contextual choice flagged at 9:4–5 and 12:5 and still awaiting a decision; it is recorded rather than treated as a new departure. The place name shifts to pᵉnûʾēl in verse 31, a normal variation.</p></div>
+<div class="note">
+<span class="ref">32:32</span>
+<p>gîḏ hannāšeh (“the sinew of the thigh”): the only food practice in Genesis the narrator traces to a past event rather than to a command — 9:4&#x27;s blood prohibition is spoken by God, where this one is simply reported as what the people do — and the only place the narrator steps out to say “to this day” about a custom of the children of Israel. The exact anatomy is uncertain — traditionally the sciatic nerve — and nāšeh is itself obscure, occurring nowhere else. The observance is not commanded here by God and appears nowhere in the legislation of the Pentateuch, which is unusual. Note the phrase “the children of Israel,” used for the first time in the book immediately after the man receives the name.</p></div>
+</div>
+<nav class="chapnav"><a href="../31/">&larr; Genesis 31</a><a href="../">All chapters</a><a href="../33/">Genesis 33 &rarr;</a></nav>
+</body>
+</html>

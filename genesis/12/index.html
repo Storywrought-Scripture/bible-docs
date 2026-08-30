@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 12 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 12 -- The Call of Abram">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 12 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 12 -- The Call of Abram">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 12</h1></header>
+<p class="lede">The Call of Abram</p>
+<div class="notes">
+<div class="note">
+<span class="ref">12:1</span>
+<p>leḵ-lᵉḵā (“Go”): two words that have carried an enormous amount of interpretation. The imperative lēḵ is followed by lᵉḵā, “to you” or “for yourself” — a construction Hebrew uses fairly often for emphasis, so “go, you” or simply an emphatic “go” is the plain sense and is what I have rendered. Rabbinic reading hears more: “go to yourself,” go toward what you are to become. That is a real hearing of the grammar rather than an invention, but it is a hearing, and putting it in the translation would settle what the Hebrew leaves as ordinary emphasis. What is not ambiguous is the shape of the sentence. The three phrases narrow: your land, your kindred, your father&#x27;s house — country, clan, household, from the widest tie to the one that actually holds a man. Each step costs more than the last, and the destination is withheld: ʾel-hāʾāreṣ ʾăšer ʾarʾekkā, “to the land I will show you.”</p></div>
+<div class="note">
+<span class="ref">12:2–3</span>
+<p>waʾăḇāreḵᵉḵā … wᵉniḇrᵉḵû (“I will bless you” … “will be blessed”): the root bāraḵ stands five times in these two verses, and it is answering the eleven chapters behind it. Genesis to this point has been a book of curses — the serpent (3:14), the ground (3:17), Cain (4:11), Canaan (9:25) — and the word ʾārûr has fallen four times. Blessing has been rarer and thinner — six occurrences in eleven chapters (1:22, 1:28, 2:3, 5:2, 9:1, 9:26), the last of them in the same speech as the curse on Canaan. Here it arrives five times in a single sentence. It does not become continuous after this: twenty later chapters have no blessing in them at all, including an unbroken run from 40 to 46. But from here on it is the vocabulary the promise is carried in — restated to Isaac at 26:3–4, to Jacob at 28:14, and gathered into two whole chapters at the end of the book. The middle clause is unusual: wehyēh bᵉrāḵâ, “and be a blessing,” is an imperative rather than another promise, so Abram is not only the recipient but the instrument, and the fifth occurrence is the one that reaches everyone else. Note also the two different curse-verbs in verse 3, which English flattens: those who bless Abram God will bless, but the one who treats him lightly (mᵉqallelḵā, from qālal, to make light, to hold cheap) God will curse (ʾāʾōr, from ʾārar, the heavy word of 3:14 and 4:11). The contempt is casual and the answer is not.</p></div>
+<div class="note">
+<span class="ref">12:3</span>
+<p>wᵉniḇrᵉḵû ḇᵉḵā kōl mišpᵉḥōṯ hāʾăḏāmâ (“in you all the families of the ground will be blessed”): the most consequential grammatical question in the chapter. niḇrᵉḵû is nip̄ʿal, which in Hebrew is normally passive — “shall be blessed” — but can also be reflexive, giving “shall bless themselves by you,” that is, shall use Abram&#x27;s name as the model in a blessing formula (“may God make you like Abram”). Both are available and the difference is large: the passive makes Abram the channel of blessing to the nations, the reflexive makes him only its proverbial standard. Two things bear on it. The parallel promises at 22:18 and 26:4 use the hiṯpaʿēl, which leans reflexive; those at 18:18 and 28:14 use the nip̄ʿal again. And the Septuagint read it as passive (eneulogēthēsontai), which is the reading Galatians 3:8 and Acts 3:25 quote and build on. I have translated the passive, following the Greek tradition and the majority of English versions, and record that the reflexive is a live grammatical option that a translation cannot settle by grammar alone. mišpᵉḥōṯ hāʾăḏāmâ, “families of the ground,” uses the same mišpāḥâ that sorted the seventy nations in chapter 10 — the promise is addressed to that table.</p></div>
+<div class="note">
+<span class="ref">12:5</span>
+<p>hannep̄eš ʾăšer-ʿāśû ḇᵉḥārān (“the people they had acquired in Haran”): literally “the nep̄eš they had made in Haran,” and the phrase is odd enough that it has been read three ways. Most plainly it means the household they had accumulated — servants and dependants — with ʿāśâ used in the sense of acquiring or amassing, as it is of wealth elsewhere. A rabbinic tradition reads “the souls they had made” as converts, people brought to the worship of God. A third reading takes it as slaves, which is what a large household of this kind largely was. I have rendered “the people they had acquired,” which keeps the ownership the Hebrew implies without deciding between the plainer and the pious readings. This volume&#x27;s glossary holds nep̄eš to “being, creature”; here it is used collectively of persons, and “the beings they had made” is not English, so the ordinary sense wins as it did at 9:4–5. Flagged rather than made silently.</p></div>
+<div class="note">
+<span class="ref">12:6</span>
+<p>wᵉhakkᵉnaʿănî ʾāz bāʾāreṣ (“The Canaanite was then in the land”): a short aside with a long history. Read plainly it tells the reader that the land Abram is walking through was already occupied — which sharpens the promise of verse 7 considerably, since God gives to Abram&#x27;s seed a country that belongs to someone else and that Abram himself will never own more than a grave in. But ʾāz, “then,” also implies a vantage point from which the Canaanite is no longer in the land, which is later than any moment in Abram&#x27;s life. Ibn Ezra noticed this in the twelfth century, and his comment is a conditional that quotation usually strips down to its second half. He offers first that the Canaanite may then have been seizing the land from whoever held it before — and if that is not so, there is a secret here, and one who understands should keep silent. The remark is generally taken as the first clear medieval acknowledgement of post-Mosaic material in the Torah. The observation is old, Jewish, and made by a thoroughly traditional commentator, which is worth knowing before it is treated as a modern scepticism.</p></div>
+<div class="note">
+<span class="ref">12:7</span>
+<p>lᵉzarʿăḵā ʾettēn ʾeṯ-hāʾāreṣ hazzōʾṯ (“To your seed I will give this land”): zeraʿ is held to the glossary&#x27;s “seed,” and this is the verse the glossary exists for. It is the same word as the contested seed of 3:15 and the seed appointed in place of Abel at 4:25, and it is about to become the through-line of the rest of the book — the land promise is restated to the seed at 13:15, 15:18, 17:8, 24:7, 26:3 and 28:13, and Galatians 3:16 will make an argument out of its grammatical number. Keeping one English word across all of those is the only way an English reader can see that they are one thread. This is also the first recorded appearance of God to Abram — verse 1 was speech only — and the first altar built in the land.</p></div>
+<div class="note">
+<span class="ref">12:8</span>
+<p>wayyiqrāʾ bᵉšēm YHWH (“and called on the name of the Lord”): the phrase that closed chapter 4 — “at that time people began to call on the name of the Lord” (4:26) — returns here as the thing Abram does at each place he stops. The altars are the record of a route: Shechem, then the ridge between Bethel and Ai, then south. Note what he does not do. He builds no city and lays no brick; a chapter after Babel, the man through whom all families of the ground will be blessed lives in a tent and leaves nothing behind but altars.</p></div>
+<div class="note">
+<span class="ref">12:10</span>
+<p>wayᵉhî rāʿāḇ bāʾāreṣ (“There was a famine in the land”): the promise is three verses old and the land it names cannot feed him. The narrator offers no comment and no rebuke, and the reader is left to notice the timing. The verbs are the standard vocabulary of the Egypt cycle to come — one goes down (yāraḏ) to Egypt and comes up from it — and this is the first of the famine-driven descents to Egypt in Genesis; the last of them puts Israel there for four hundred years. lāḡûr, “to stay a while,” names Abram a resident alien, which is what he will be everywhere in this book including in the land he has just been promised.</p></div>
+<div class="note">
+<span class="ref">12:11–13</span>
+<p>ʾimrî-nāʾ ʾăḥōṯî ʾātt (“Say you are my sister”): the first of three wife-sister episodes in Genesis — this one, Abraham and Abimelech in chapter 20, and Isaac and Abimelech in chapter 26. Whether these are three events, two, or one story told three ways is a standing question; the differences between them are substantial enough that the doublet reading is not automatic. What the narrator does not do is the point here. There is no evaluation. Abram&#x27;s reasoning is given in full and in his own voice — they will kill me and let you live — and it is entirely about his own survival: lᵉmaʿan yîṭaḇ-lî ḇaʿăḇûrēḵ, “so that it may go well with me because of you.” Sarai is given no words in the episode at all. 20:12 will later have Abraham claim the sister story was technically true; nothing here says so, and reading that back into this chapter is importing a defence the text has not yet offered.</p></div>
+<div class="note">
+<span class="ref">12:16</span>
+<p>ûlᵉʾaḇrām hêṭîḇ baʿăḇûrāh (“He treated Abram well on her account”): the plan works exactly as designed. Abram asked that it might go well with him because of her, and it does — the inventory in this verse is the price. The list has a famous problem in it: camels. Domesticated camels are not securely attested in this region until the end of the second millennium BCE, well after any conventional date for Abraham, so most scholars read the camels here and at 24:10–64 as an anachronism, a familiar animal supplied by a later hand telling an older story. Others argue for limited earlier domestication. The word is in the Hebrew and is translated as it stands. Note also šᵉp̄āḥōṯ, female slaves, acquired in this transaction: Hagar enters the household somewhere in this verse, and chapter 16 is the bill.</p></div>
+<div class="note">
+<span class="ref">12:17</span>
+<p>wayᵉnaggaʿ YHWH ʾeṯ-parʿōh nᵉḡāʿîm gᵉḏōlîm (“the Lord struck Pharaoh … with great afflictions”): verb and noun from the same root, nāḡaʿ, struck them with strikings. The vocabulary, the actor, and the outcome are the Exodus in miniature — a Pharaoh who has taken what is not his, plagues on his household, and the family leaving Egypt enriched (verse 20; compare Exodus 12:35–36). Genesis tells the shape of the story once, in small, four hundred years early. Note where the affliction lands: not on the man whose lie caused it.</p></div>
+<div class="note">
+<span class="ref">12:18–20</span>
+<p>mah-zōʾṯ ʿāśîṯā llî (“What is this you have done to me?”): Pharaoh&#x27;s three questions are the moral centre of the chapter, and they are asked by the pagan king. He has done nothing wrong on the information given him, he is the one being punished, and he is the one who speaks about truth. Abram answers not a word — the text gives him no reply, here or anywhere in the episode after verse 13 — and is escorted out under guard with everything he has gained by the lie. The narrator passes no verdict of his own. That silence is characteristic and it is not approval; the same technique reports Noah&#x27;s drunkenness at 9:21 and Lot&#x27;s daughters at 19:33 without comment, and leaves the reader holding it.</p></div>
+</div>
+<nav class="chapnav"><a href="../11/">&larr; Genesis 11</a><a href="../">All chapters</a><a href="../13/">Genesis 13 &rarr;</a></nav>
+</body>
+</html>

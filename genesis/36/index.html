@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 36 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 36 -- The Generations of Esau">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 36 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 36 -- The Generations of Esau">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 36</h1></header>
+<p class="lede">The Generations of Esau</p>
+<div class="notes">
+<div class="note">
+<span class="ref">36:2–3</span>
+<p>ʿāḏâ … ʾohŏlîḇāmâ … bāśᵉmaṯ (“Adah … Oholibamah … Basemath”): the names of Esau&#x27;s wives here do not agree with the earlier notices, and the disagreement is not reconcilable by any obvious route. At 26:34 he marries Judith daughter of Beeri the Hittite and Basemath daughter of Elon the Hittite; at 28:9 he adds Mahalath daughter of Ishmael, sister of Nebaioth. Here the three are Adah daughter of Elon the Hittite, Oholibamah daughter of Anah, and Basemath daughter of Ishmael, sister of Nebaioth. So Elon&#x27;s daughter is Basemath in one place and Adah in the other, and Ishmael&#x27;s daughter is Mahalath in one and Basemath in the other. Attempts to harmonise by supposing double names are ancient and are possible in principle, but there is no evidence for them here. Note also that Anah is called the daughter of Zibeon the Hivite in verse 2 and Zibeon appears among the Horites at verse 20, and that the Samaritan Pentateuch is reported to read “Horite” in verse 2, with some Greek witnesses — a reading to check against a printed critical edition rather than to treat as settled. The same seam shows from the other side at verse 16, which lists chief Korah among the chiefs of Eliphaz and closes the list “These are the sons of Adah” — but Korah is Oholibamah&#x27;s son at verses 5, 14 and 18, and he is not among Eliphaz&#x27;s sons at verses 11–12. The likeliest account is that the chapter draws on separate lists of Edomite genealogy compiled independently of chapters 26 and 28. I translate the Masoretic text as it stands and record the difficulty rather than smoothing it.</p></div>
+<div class="note">
+<span class="ref">36:6–8</span>
+<p>wayyēleḵ ʾel-ʾereṣ mippᵉnê yaʿăqōḇ ʾāḥîw (“and went to a land away from Jacob his brother”): the separation is described in exactly the terms of Abram and Lot at 13:6 — the land could not support them both because their possessions were too great — and, as there, the one who moves is the one outside the promise. It is worth noticing that the parting is peaceful and prosperous, with no hint of the old quarrel. śēʿîr is the mountainous country south-east of the Dead Sea, and it is built on the same root as śēʿār, the hair that covers Esau at birth in 25:25 — a link the Hebrew sets up and never states, there or here.</p></div>
+<div class="note">
+<span class="ref">36:12</span>
+<p>ʿămālēq (“Amalek”): the most consequential name in the chapter. Amalek is the son of Esau&#x27;s firstborn by a concubine, which places Israel&#x27;s most implacable enemy at a marginal position within the family — a grandson by a secondary union. Amalek attacks Israel at Rephidim (Exodus 17:8–16), where the Lord says he will blot out his remembrance and Moses, over a half-verse the Hebrew leaves broken, speaks of war for the Lord against Amalek from generation to generation; Saul loses the kingdom over Amalek (1 Samuel 15); and Haman the Agagite in Esther is traditionally read as of that line. Genesis records the descent without a word of any of this. Timna is generally identified with the sister of Lotan the Horite named at verse 22 — the chapter sets the two side by side without saying they are one woman, and the name turns up a third time at verse 40 as an Edomite chief — which would make the mother of Amalek one of the earlier population of the land.</p></div>
+<div class="note">
+<span class="ref">36:20–30</span>
+<p>bᵉnê-śēʿîr haḥōrî yōšᵉḇê hāʾāreṣ (“the sons of Seir the Horite, who were living in the land”): the chapter pauses to record the genealogy of the people Edom displaced. Deuteronomy 2:12 and 2:22 state that plainly — the Horites lived in Seir before the sons of Esau dispossessed them. The identification of the ḥōrî is disputed: an older view connected them with the Hurrians known from Mesopotamian and Anatolian records, and a competing derivation takes the name from ḥōr, a hole, hence “cave-dwellers.” The names in this list look Semitic rather than Hurrian, which is the main argument against the identification, though it is not decisive on its own: several of them have no transparent etymology in any language, and a settled population can carry the names of the language spoken around it. One textual difficulty inside this stretch is worth recording. At verse 26 the Masoretic text writes dîšān, Dishan — the same form it uses at verses 21, 28 and 30 — where the list requires Dishon, whose sons have not yet been given. 1 Chronicles 1:41 reads Dishon in the parallel, and the English versions follow it, as I have; this is the one place in the chapter where I have not held to the Masoretic text. What is notable structurally is that the two lines have merged: Oholibamah, Esau&#x27;s wife, is a Horite (verse 25), so the displacing and the displaced are one family by the end of the chapter.</p></div>
+<div class="note">
+<span class="ref">36:24</span>
+<p>hûʾ ʿănâ ʾăšer māṣāʾ ʾeṯ-hayyēmim (“This is the Anah who found the hot springs”): yēmim occurs only here in this form and nobody knows what it means. The Vulgate&#x27;s aquae calidae gives the traditional “hot springs,” connecting it to an Aramaic word, and I have followed it as the least speculative option. The Septuagint reads it as a personal name, Iamin; a rabbinic tradition read yēmim as mules and took Anah to have bred them, which is why the King James has “mules”; others emend to mayim, water. The verse is a fragment of a story that has otherwise vanished — a man out with his father&#x27;s donkeys who found something worth remembering him for. I have translated the likeliest sense and flagged that it is a guess.</p></div>
+<div class="note">
+<span class="ref">36:31</span>
+<p>lip̄nê mᵉloḵ-meleḵ liḇnê yiśrāʾēl (“before any king reigned over the children of Israel”): one of the clearest chronological markers in the Pentateuch. The sentence is written by someone for whom Israelite kingship is an established fact that can be used to date an earlier period, which places the writer, or at least this notice, no earlier than the monarchy. It stands alongside the anachronisms already noted at 11:28, 21:32, 26:5 and 34:7. Traditional readings take it as prophetic anticipation of the kingship promised at 17:6 and 35:11; that is available but it is not the natural sense of the clause. The list itself is instructive: eight kings, none of whom is the son of his predecessor, and no two of them given the same place — three are given a city outright, three a home town, one only a region, and Baal-hanan son of Achbor none at all. A kingship that passes without descent, then, rather than a dynasty; that is closer to the pattern of leadership Israel is described as having before its own monarchy than to anything dynastic, though Judges is emphatic that Israel in that period had no king at all.</p></div>
+<div class="note">
+<span class="ref">36:1, 9, 43</span>
+<p>ʾēlleh tōlᵉḏôṯ ʿēśāw (“These are the generations of Esau”): the formula opens the chapter twice, at verses 1 and 9, which is one of the reasons the material is generally read as two or more lists set side by side. What matters structurally is that this is the same treatment given to Ishmael at 25:12–18 — the line that will not be followed gets its full record first, complete with names, chiefs, territory and standing, and only then does the book narrow. Genesis does this at every fork: the nations before Shem, Ishmael before Isaac, and here a whole chapter of Edom before 37:2 opens the generations of Jacob and the book turns to Joseph. The rejected line is never dismissed as unimportant; it is documented and then left.</p></div>
+</div>
+<nav class="chapnav"><a href="../35/">&larr; Genesis 35</a><a href="../">All chapters</a><span></span></nav>
+</body>
+</html>

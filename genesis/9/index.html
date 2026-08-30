@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 9 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 9 -- A Covenant with All Flesh">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 9 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 9 -- A Covenant with All Flesh">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 9</h1></header>
+<p class="lede">A Covenant with All Flesh</p>
+<div class="notes">
+<div class="note">
+<span class="ref">9:1, 7</span>
+<p>pᵉrû ûrᵉḇû ûmilʾû ʾeṯ-hāʾāreṣ (“Be fruitful and multiply and fill the earth”): the blessing of 1:28 reissued word for word, and the whole point is what has been left out of it. In 1:28 the blessing continues wᵉḵiḇšuhā ûrᵉḏû — “subdue it, and rule over” the fish, the birds and every living thing. Here that clause is gone. What replaces it is verse 2, and verse 2 is not a promotion. Verse 7 then repeats the blessing a second time to close the paragraph, and repeats rᵉḇû twice within itself — “be fruitful and multiply, swarm over the earth and multiply in it” — which is unusual enough that part of the textual tradition reads the last verb as rᵉḏû, “rule over it,” restoring the missing word from 1:28. Per this project’s stated limits, treat that as a claim to check against a printed critical edition. I translated the Masoretic text as it stands, with the doubled “multiply,” because a scribe assimilating this verse toward the more familiar 1:28 is easier to account for than the reverse. širṣû (“swarm”) is the verb used of the animals at 8:17 and of the sea creatures at 1:20 — humankind is told to multiply the way the fish do.</p></div>
+<div class="note">
+<span class="ref">9:2</span>
+<p>môraʾăḵem wᵉḥittᵉḵem (“the fear of you and the dread of you”): two nouns of terror, and this is the new footing between humankind and everything else alive. In chapter 1 the relationship was rule; here it is fright. ḥaṯ is the word used of an army losing its nerve. Read alongside the missing “subdue and rule” of verse 1, the paragraph describes a dominion that has changed character — no longer a commission to govern a good world but a concession of power over a world that is now afraid of you. bᵉyeḏḵem nittānû (“into your hand they are given”) is the formula used elsewhere for a defeated enemy handed over. Nothing here is presented as an improvement; it is presented as the arrangement that will hold.</p></div>
+<div class="note">
+<span class="ref">9:3–4</span>
+<p>kol-remeś ʾăšer hûʾ-ḥay lāḵem yihyeh lᵉʾoḵlâ (“Every moving thing that is alive will be food for you”): the first permission to eat meat in the Bible, and it reverses 1:29–30, where God assigned seed-bearing plants to humankind and green plants to the animals and gave no one flesh. The wording makes the reversal explicit — “as I gave you the green plants, I now give you everything” — so the vegetarian diet of Eden is not quietly forgotten but formally superseded. The single restriction is verse 4, and it is the seed of the whole later blood law (Leviticus 3:17; 7:26–27; 17:10–14; Deuteronomy 12:16, 23; and Acts 15:20, 29, where it is one of the few requirements laid on gentile believers). bᵉnap̄šô ḏāmô is literally “with its nep̄eš, its blood” — the blood is not a symbol of the life, it is identified with it, which is why Leviticus 17:11 can say the nep̄eš of the flesh is in the blood. You may take the flesh; the life belongs to God and goes back to him.</p></div>
+<div class="note">
+<span class="ref">9:4, 5, 10</span>
+<p>nep̄eš: a flagged departure, and an unavoidable one, because the chapter uses the word in two senses within seven verses. This volume’s glossary holds nep̄eš to “being, creature,” which is right at verse 10 (kol-nep̄eš haḥayyâ, “every living creature”) and at verse 12 and 15 and 16. But at verses 4 and 5 the same noun means the animating life itself — the thing that is in the blood, the thing required back from a killer — and “you must not eat flesh with its creature in it” is not English. So it is “life” in verses 4 and 5, and “creature” everywhere else, and the join is invisible in translation. Recording it rather than making it silently, per the standing rule. The loss is real: in Hebrew the life that must not be eaten (v. 4), the life that will be required (v. 5), and the living creatures taken into the covenant (v. 10) are all one word, and the paragraph is holding them together on purpose.</p></div>
+<div class="note">
+<span class="ref">9:5–6</span>
+<p>šōp̄ēḵ dam hāʾāḏām bāʾāḏām dāmô yiššāp̄ēḵ: the most tightly built sentence in the chapter. In Hebrew it is a perfect mirror — shedder / blood / of the human // by the human / his blood / shall be shed — six terms folding back on themselves so that the punishment is the crime read backwards. English cannot reproduce it and I have not tried; the em dash and the word order are as close as the sentence gets. bāʾāḏām is the interpretive crux and it is genuinely open. It can mean “by a human,” making this the warrant for human judicial authority — the reading behind most English versions and behind the whole later tradition of capital law. It can mean “in exchange for that human,” a life for the life taken, which is how some read the preposition. It can mean “among humans,” describing where the reckoning falls rather than who administers it. I chose “by a human” because verse 5’s ʾeḏrōš, “I will require,” has already made God the one demanding the accounting, so verse 6 most naturally names the instrument rather than repeating the claimant. It is a choice, not a certainty. The clause that grounds it matters more than the mechanism: kî bᵉṣelem ʾĕlōhîm ʿāśâ ʾeṯ-hāʾāḏām, “for in the image of God he made humankind” — 1:26–27 quoted back, after the flood, about the same species just described in 8:21 as evil from youth on. The image is not said to have been damaged or withdrawn. It is the reason a human life cannot be taken cheaply, and it is asserted of murderers and victims alike.</p></div>
+<div class="note">
+<span class="ref">9:9, 11</span>
+<p>mēqîm ʾeṯ-bᵉrîṯî (“establishing my covenant”): the promise of 6:18 now delivered, using the same verb hēqîm rather than the usual kāraṯ bᵉrîṯ, “to cut a covenant” — see the note at 6:18. zarʿăḵem (“your seed”) is held to the glossary’s “seed,” in its proper generational sense here, unlike the flagged case at 7:3. Three features of this covenant are worth naming because they are unusual. It is unilateral: God states what he will do and asks nothing in return, and Noah is not required to agree, or even to answer — he says nothing in the entire scene. It is unconditional: no clause makes it depend on human behaviour, which is the direct consequence of 8:21. And its parties include the animals, named twice over in verse 10 and again in 12, 15 and 16 — this is a covenant with all flesh, not with a people, and no other covenant in the Bible is stated to have all flesh as its party — the nearest analogue, Hosea 2:18, is made for Israel, with the beasts, the birds and the creeping things as its instruments.</p></div>
+<div class="note">
+<span class="ref">9:11, 15</span>
+<p>lᵉšaḥēṯ (“to ruin”): the same root that ran four times through 6:11–13, where the earth was corrupt, all flesh had corrupted its way, and God said “I am going to destroy them.” The word that carried the verdict now carries its cancellation, and I have used “ruin” in both verses here to keep the two occurrences visibly joined, as they are in the Hebrew. Note the exact scope of the promise, which is narrower than it is usually quoted: never again by water, never again a flood. The text does not say never again.</p></div>
+<div class="note">
+<span class="ref">9:13</span>
+<p>qaštî (“my bow”): the single most under-translated word in the chapter. Hebrew has no separate noun for a rainbow. qešeṯ is the weapon — it is the word for a war bow in something like seventy other places in the Hebrew Bible, and nothing in this passage marks it as a different word that merely happens to look the same. What God says is that he has put his bow in the cloud. The image belongs to a widespread ancient Near Eastern picture of the storm deity as an archer, firing lightning from the clouds, and the flood account has just spent two chapters describing exactly that arsenal in use. Hung in the cloud, unstrung and pointing away from the earth, the bow is a weapon set down. English “rainbow” loses the whole gesture, and “my bow” with a note is the honest way to keep it. Two things follow. The sign is not a decoration added to the sky but a retirement of the instrument that caused the disaster. And it is not primarily a comfort issued to humans — see the next note.</p></div>
+<div class="note">
+<span class="ref">9:12–17</span>
+<p>ûrᵉʾîṯîhā lizkōr (“I will look at it and remember”): the direction of the sign is the point, and it is almost always reversed in retelling. The bow is not put in the sky so that people will see it and be reassured; God says he will see it, and that he will remember. Every verb of remembering in the paragraph has God as its subject (the bow only appears, v. 14). zāḵar is the verb of 8:1 — remembering as acting on a commitment, not recovering a lost thought — so this is a self-binding: God installing a reminder to himself, in public, where the party who needs the guarantee can also watch him being reminded. bᵉrîṯ ʿôlām (“everlasting covenant”) is its first occurrence in the Bible; ʿôlām means duration stretching out of sight rather than philosophical eternity, but here it is glossed by the text itself as lᵉḏōrōṯ ʿôlām, for all generations to come. The paragraph says “covenant” seven times and “sign” three, and God speaks three times (vv. 8, 12, 17) with no reply at any point.</p></div>
+<div class="note">
+<span class="ref">9:18–19</span>
+<p>“and Ham was the father of Canaan”: the narrator drops this in before anything has happened that would require it, then repeats it at verse 22, and it is the hinge on which the following story turns. Canaan is not a character here — he does not appear, act or speak — but the reader is told twice who he is before the curse lands on him, which is the narrator signalling that the episode is being told for the sake of its outcome. nāp̄ᵉṣâ (“was scattered abroad”) has a shattering, dispersing force, and it sets up both the table of nations in chapter 10 and the scattering at Babel in 11:8–9. The three names are also the frame for that table; this verse is the seam between the flood and the world of nations.</p></div>
+<div class="note">
+<span class="ref">9:20</span>
+<p>wayyāḥel nōaḥ ʾîš hāʾăḏāmâ wayyiṭṭaʿ kārem: three difficulties in six words. wayyāḥel is most naturally “he began,” which leaves “began” without an obvious object — hence the two standard renderings, “Noah began to be a man of the soil” and “Noah, the man of the soil, was the first to plant a vineyard.” I have kept it deliberately open with “made a beginning,” because what he is beginning is exactly what the story is about. (A second root, ḥālal, “to profane,” has been heard here since antiquity, giving “Noah profaned himself”; it is a possible pointing and it is almost certainly a later reading back from what follows, but it is old enough to record.) ʾîš hāʾăḏāmâ, “a man of the ground,” uses the ʾăḏāmâ cursed in 3:17 and the trade Cain worked in 4:2 — and it answers 5:29, where Lamech named this son and said “this one will bring us relief from our work, from the painful toil of our hands, out of the ground the Lord cursed.” The relief Lamech predicted turns out to be wine. Note finally what the text does not say: neither the vineyard nor the wine is condemned anywhere in the passage, and no verdict of any kind is pronounced on Noah.</p></div>
+<div class="note">
+<span class="ref">9:21</span>
+<p>wayyiṯgāl (“he uncovered himself”): reflexive in form — the hiṯpaʿēl — so the exposure is Noah’s own act, done alone, inside his own tent, and not something anyone did to him. That matters for reading verse 22, because it means whatever Ham’s offence was, it was not causing this. The narrator reports the drinking, the drunkenness and the uncovering in three bare consecutive verbs and passes no judgment on any of them, which is characteristic: this narrator shows and declines to comment, and readers have been supplying the comment ever since.</p></div>
+<div class="note">
+<span class="ref">9:22</span>
+<p>ʾēṯ ʿerwaṯ ʾāḇîw (“his father’s nakedness”): the chapter’s genuine crux, and it cannot be settled. Read plainly, Ham saw his father naked and told his brothers instead of covering him — a serious breach of honour in this culture, but hard to square with the severity of what follows. Against the plain reading stands the idiom: in Leviticus 18 and 20, “to uncover the nakedness of” someone is a standing euphemism for sexual intercourse, and Leviticus 18:8 specifies that “the nakedness of your father” means his wife. That yields two further readings — a sexual assault on Noah, or on Noah’s wife, the second of which would explain why a son results and why the curse falls on Canaan. A rabbinic tradition adds castration, which would explain why there is no fourth son. Three things are worth weighing. Verse 24 says Noah learned what Ham “had done to him,” which is a strange way to describe looking. But verse 23 has the brothers fix the situation entirely by covering him and not looking, which fits seeing and fits nothing else. And the Hebrew of verse 22 says saw, not uncovered — the idiom’s usual verb is absent. I have translated the words as they stand and left the act undefined, because that is what the text does. The one thing not open to us is to make it mild; the punishment in verse 25 tells us the narrator thought it was not.</p></div>
+<div class="note">
+<span class="ref">9:23</span>
+<p>wayyiqqaḥ šēm wāyep̄eṯ (“So Shem and Japheth took”): the verb is singular although the subject is a pair, which in Hebrew narrative usually marks the first-named as the one acting, with the second joining him. Shem leads, and it is Shem&#x27;s God who is blessed in verse 26. haśśimlâ is definite — the garment — with no antecedent, either the cloak Noah had shed or simply the one that was to hand. The staging is careful to the point of comedy and entirely serious: the cloak across both their shoulders, the walk in backwards, and then the narrator says twice, before and after, that they did not see. It is the mirror image of verse 22 — the same nakedness, and the opposite response — and the contrast is the whole moral content of the scene, supplied by action rather than by comment.</p></div>
+<div class="note">
+<span class="ref">9:24</span>
+<p>bᵉnô haqqāṭān (“his youngest son”): a problem the text does not solve. qāṭān means small or young, and Ham is consistently listed second of three (5:32; 6:10; 9:18; 10:1), so on the face of it Japheth is the youngest and this verse names the wrong man. Options: the standard order is not birth order, and Ham really is youngest; haqqāṭān means “the younger” loosely, i.e. a junior son; or — the reading that would tidy everything — it refers to Noah’s youngest descendant, Canaan, who would then be the actual offender and the deserving object of verse 25. That last is attractive precisely because it is convenient, which is a reason to hold it lightly. ʾăšer ʿāśâ lô, “what he had done to him,” is the phrase that pushes hardest against reading verse 22 as merely looking; see the note there.</p></div>
+<div class="note">
+<span class="ref">9:25</span>
+<p>ʾārûr kᵉnāʿan (“Cursed be Canaan”): held to the glossary’s “cursed.” Three observations, and then one that has to be made. First, these are the first words Noah speaks in the Bible. He has been silent through the building of the ark, the flood, the year on the water, the disembarking and the sacrifice — obedient and wordless for four chapters — and when he finally speaks it is to curse a grandchild. Second, Ham committed the offence and Canaan receives the sentence, and the text offers no explanation for the substitution; the readings that make Canaan the actual offender (see 9:24) exist mainly to remove this difficulty. Third, ʿeḇeḏ ʿăḇāḏîm, “a slave of slaves,” is a Hebrew superlative — the lowest of slaves — and the oracle is functioning within the book as an origin story for the later subjugation of the Canaanite city-states by Israel. That is what it is for, and it is the kind of aetiology that serves the group telling it. Which requires saying plainly: this verse was used for centuries in Europe and the Americas to justify the enslavement of Africans, under the name “the curse of Ham.” The text will not support it. The curse is pronounced on Canaan and not on Ham; Canaan’s descendants in chapter 10 are the peoples of the Levant, not of Africa; nothing in the passage mentions skin, race or lineage beyond that one named son; and the sons of Ham in 10:6 are treated as distinct nations rather than as a category. The misuse is a fact about the history of interpretation, not a possible reading of the Hebrew, and a teacher working through this chapter should expect to have to say so.</p></div>
+<div class="note">
+<span class="ref">9:26–27</span>
+<p>bārûḵ YHWH ʾĕlōhê šēm (“Blessed be the Lord, the God of Shem”): not “blessed be Shem.” The blessing is deflected — what is praised is Shem’s God, and Shem is identified by whose he is, which quietly sets up the line the rest of Genesis will follow. yap̄t ʾĕlōhîm lᵉyep̄eṯ is a pun that survives translation badly: the verb is from pāṯâ, to be wide or open, and it sounds like the name yep̄eṯ, Japheth — “may God make Japheth wide,” hence “make room for.” Then an ambiguity worth flagging: “and let him dwell in the tents of Shem” has no stated subject. Grammatically it can be Japheth, sharing in Shem’s blessing, which is how most read it and how I have arranged the English; it can equally be God, dwelling among Shem’s people, which some ancient and rabbinic readers preferred and which fits the deflected blessing of verse 26 rather well. I left the pronoun as unmarked in English as it is in Hebrew. lāmô (“to them”) in both refrains is an archaic poetic form; its plural is one of the small signs that these three verses are older verse embedded in prose.</p></div>
+<div class="note">
+<span class="ref">9:28–29</span>
+<p>wayyihyû kol-yᵉmê-nōaḥ … wayyāmōṯ (“All the days of Noah were … and he died”): the formula of chapter 5 returns exactly, and it closes Noah’s section of the book the way each pre-flood name was closed. Its effect here is deflating on purpose — after the covenant, the bow and the oracles, the account of the man ends with the same four words that ended everyone before him. Note the arithmetic against 6:3, where God set humankind’s days at a hundred and twenty years: Noah lives nine hundred and fifty. Whichever way that verse is read, it has not taken effect here, and this volume leaves the tension standing rather than resolving it; see the note at 6:3.</p></div>
+</div>
+<nav class="chapnav"><a href="../8/">&larr; Genesis 8</a><a href="../">All chapters</a><a href="../10/">Genesis 10 &rarr;</a></nav>
+</body>
+</html>

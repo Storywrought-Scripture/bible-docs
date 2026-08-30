@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 8 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 8 -- God Remembered Noah">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 8 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 8 -- God Remembered Noah">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 8</h1></header>
+<p class="lede">God Remembered Noah</p>
+<div class="notes">
+<div class="note">
+<span class="ref">8:1</span>
+<p>wayyizkōr ʾĕlōhîm ʾeṯ-nōaḥ (“But God remembered Noah”): the hinge of the whole flood account, and the point on which its literary structure turns — the narrative is commonly analysed as a mirror, rising through the seven days, the forty days and the hundred and fifty days to this verse, then descending back through the same figures in reverse order. Everything before it is water coming; everything after it is water going. zāḵar does not mean that God had forgotten. In covenant contexts it is a verb of action rather than of recollection: to remember is to act on a commitment already made, which is why God “remembers” his covenant in Exodus 2:24 and 6:5 immediately before doing something about it. What God remembers here is 6:18, the covenant established before the ark was built. Note also who is remembered — Noah and every wild animal and every livestock animal. The list is not decoration; the animals are not named in that covenant — 6:18 names only the household, and they are brought aboard by a separate command at 6:19–20 — but they are inside the remembering here, and they become covenant parties at 9:9–10.</p></div>
+<div class="note">
+<span class="ref">8:1, 1:2</span>
+<p>rûaḥ (“a wind”): a flagged departure from the way this volume has rendered the word so far. rûaḥ was “my spirit” at 6:3 and part of “the breath of life” at 6:17 and 7:15, 22; here it is meteorological — moving air over standing water — and “God caused a spirit to pass over the earth” would import an agent the Hebrew does not supply. Recording the departure rather than making it silently, per the standing rule. The cost is that English readers lose the quotation. In 1:2 rûaḥ ʾĕlōhîm hovers over the face of the waters; here rûaḥ passes over the earth and the waters subside, and the next thing to appear is dry land — which is 1:9 happening a second time. Whether 1:2 means “the Spirit of God,” “a wind from God,” or “a mighty wind” is itself contested, and this verse is one of the arguments, since it uses the same noun for something that is plainly weather. The same wind blows again at Exodus 14:21, driving back a sea so that people can walk out on dry ground.</p></div>
+<div class="note">
+<span class="ref">8:2–3</span>
+<p>wayyissāḵᵉrû … wayyikkālēʾ (“were stopped up” … “was shut off”): the two breaches of 7:11 are closed in the order they were opened, and both verbs are passive with no agent named — the text does not say God stopped them, only that they were stopped. The undoing of creation described there is now itself undone: the boundary between the waters below and the waters above, set in 1:6–7, is back in place.</p></div>
+<div class="note">
+<span class="ref">8:3, 5, 7</span>
+<p>hālôḵ wāšôḇ, hālôḵ wᵉḥāsôr, yāṣôʾ wāšôḇ: the same construction three times — a pair of infinitives absolute expressing continuous or repeated action — and I have deliberately rendered it two different ways. For the waters in verses 3 and 5 it describes a steady movement in one direction, so “receding steadily” and “went on dropping”; for the raven in verse 7 it describes literal shuttling, so “back and forth.” The Hebrew idiom is neutral between the two and takes its sense from what is moving. Flagging the inconsistency because it is mine and not the text’s: a reader comparing the English will not see that the waters and the bird are doing the same grammatical thing.</p></div>
+<div class="note">
+<span class="ref">8:4</span>
+<p>hārê ʾărārāṭ (“the mountains of Ararat”): plural, and a region rather than a peak. ʾărārāṭ is the Hebrew form of Urartu, the kingdom in the highlands of eastern Anatolia and Armenia known from Assyrian records and named again at 2 Kings 19:37, Isaiah 37:38 and Jeremiah 51:27. The text says the ark grounded somewhere in that mountainous country; identifying it with the single peak now called Mount Ararat is later tradition, and “Mount Ararat” is a rendering the Hebrew does not support. The date is exact and the arithmetic works: the waters came on the seventeenth day of the second month (7:11) and the ark grounds on the seventeenth day of the seventh month — five months to the day, and 7:24’s hundred and fifty days, which requires months of thirty days. Some Greek witnesses read “the twenty-seventh day” here, which breaks that correspondence; the Masoretic reading is the internally coherent one and the one I translated. Per this project’s stated limits, treat the Greek variant as a claim to check against a printed critical edition rather than as settled.</p></div>
+<div class="note">
+<span class="ref">8:4, 9, 21</span>
+<p>The chapter is built on Noah’s name. nōaḥ belongs to the root nûaḥ, “to rest, to settle,” and the root surfaces at each of the chapter’s turns: the ark comes to rest (wattānaḥ) on the mountains in verse 4; the dove finds no resting place (mānôaḥ) in verse 9; and the offering in verse 21 is a rêaḥ hannîḥōaḥ, an aroma of settling or soothing, from the same root again. Rest is what the chapter is about and it is what the man is called. English can carry none of it — “rested,” “resting place” and “soothing” share nothing — so it is recorded here rather than faked in the translation, as with the nōaḥ / ḥēn mirror at 6:8. Compare 5:29, where Lamech names him and says “this one will bring us relief,” making the same pun on a different root (nāḥam).</p></div>
+<div class="note">
+<span class="ref">8:7</span>
+<p>hāʿōrēḇ (“the raven”): the Hebrew is genuinely ambiguous about whether the bird came back. wayyēṣēʾ yāṣôʾ wāšôḇ says it went out, going and returning, which most naturally means it shuttled between the ark and the water until the ground dried, and that is how I have taken it. The Septuagint and the Vulgate read it the other way, as the raven going out and not returning, and the difference is not trivial: on that reading Noah’s first messenger simply fails him and the dove has to do the work. Two further observations for teaching. The raven is unclean under the later law (Leviticus 11:15; Deuteronomy 14:14) and it is a carrion bird, which is a grim thing to send out over a drowned world — it has no particular reason to come back. And the closest ancient parallel runs the birds in the opposite order: in the eleventh tablet of the Gilgamesh epic the flood survivor sends a dove, then a swallow, then a raven, the first two returning and the raven staying away because it has found food. Genesis knows the same scene and puts the raven first.</p></div>
+<div class="note">
+<span class="ref">8:8–12</span>
+<p>hayyônâ (“the dove”) and ṭārāp̄ (“freshly plucked”): the dove is the counter-image to the raven — clean, homing, and useless for surviving out of doors, which is exactly what makes her a working instrument. qallû hammayim in verses 8 and 11 is literally “the waters were light,” an odd expression for a flood going down; “eased off” keeps the lightening rather than substituting a flat “receded.” ṭārāp̄ in verse 11 comes from the root used of a predator tearing prey, and as a description of a leaf it means torn off, hence freshly picked — the point being that the leaf is new, so something is growing again below the water line. The ancient versions are not agreed on this, and part of the Greek tradition pulls toward a dry twig instead, which reverses the sense; the fresh-leaf reading is what the narrative logic requires, since it is the only thing here that tells Noah something he did not already know. The olive is well chosen: it tolerates submersion and resprouts. Verse 12 is the quietest verse in the chapter — she does not come back, and no reason is given, because none is needed. Everything the dove was sent to discover has now been reported by her absence. The dove and the olive branch became an emblem of peace in later Western use; that is reception of this passage rather than its own claim, and the sign here is about habitable ground, not about reconciliation.</p></div>
+<div class="note">
+<span class="ref">8:13–14</span>
+<p>Two different verbs for drying, and the distinction is not stylistic. ḥārᵉḇû (verse 13, twice) means the standing water is gone — drained, no longer covering. yāḇᵉšâ (verse 14) means the ground itself is dry, firm enough to walk on and plant in. Fifty-seven days separate them, and Noah does not leave the ark in that gap even though he can see bare ground through the opened covering: he waits for God to speak in verse 15. That silence is characterisation, and it is of a piece with 6:22 and 7:5. The date in verse 13 is the first day of the first month of Noah’s six hundred and first year — new year’s day, a new world, and a deliberate choice by the narrator. The chapter’s own figures give the whole flood one year and ten days, from 7:11 to 8:14. Ten days is close to, though not the same as, the gap between a lunar year and a solar one, which is why this passage sits at the centre of ancient calendar disputes; a Qumran commentary on Genesis (4Q252) works through the flood dates in exactly those terms. Per this project’s stated limits, that citation is a claim to verify before teaching from it.</p></div>
+<div class="note">
+<span class="ref">8:16, 18</span>
+<p>The family is listed in one order when God commands and in another when Noah obeys. Verse 16 has “you, your wife, your sons, and your sons’ wives”; verse 18 has “Noah, and his sons, his wife, and his sons’ wives” — which is the order used going in, at 6:18, 7:7 and 7:13. Both orders are in the Hebrew and I have kept both rather than smoothing them to match. The common reading is that the entering order groups the household as a working crew while the exiting order pairs husbands with wives for what verse 17 has just commanded, and it is a reasonable reading. It is worth noticing that Noah’s obedience does not in fact follow the order he was given, and worth not building much on that, since Hebrew narrative varies such lists freely.</p></div>
+<div class="note">
+<span class="ref">8:17</span>
+<p>šārᵉṣû … pᵉrû ûrᵉḇû (“let them swarm” … “be fruitful and multiply”): the vocabulary of the fifth and sixth days returns word for word. šāraṣ is the verb of 1:20–21, where the waters swarm with living things, and pᵉrû ûrᵉḇû is the blessing of 1:22 and 1:28. The animals are not merely released; they are re-commissioned in the exact words of their creation, and the blessing turns out to have survived the judgment intact. Noah’s own household will be addressed the same way at 9:1 and 9:7. One small Masoretic matter: the imperative “bring out” is written one way in the consonantal text and pointed to be read another way — a difference of verbal form, not of meaning, and it changes no translation.</p></div>
+<div class="note">
+<span class="ref">8:19</span>
+<p>lᵉmišpᵉḥōṯêhem (“by their families”): a quiet change of vocabulary that is easy to miss. Every previous inventory of the animals — 1:11–25, 6:20, 7:14 — sorts them lᵉmînēhû, “according to their kinds,” a taxonomic word. Here, going out, they are sorted by mišpāḥâ, the ordinary word for a clan or extended family, used almost everywhere else in the Bible of human households and tribes (Jeremiah 15:3, where four mišpāḥôṯ are the sword, the dogs, the birds and the beasts, is the clear exception). The creatures leave the ark not as a catalogue of species but as households, which is what everything else on that boat has been for a year.</p></div>
+<div class="note">
+<span class="ref">8:20</span>
+<p>mizbēaḥ (“altar”): the first altar in the Bible, and the first offering explicitly called an ʿōlâ, a whole burnt offering — Cain and Abel bring offerings in chapter 4, but no altar is mentioned and nothing is burned. This is also where 7:2 pays off: the extra clean animals, seven pairs rather than one, are what make it possible to burn some without ending a kind, and the instruction that looked like an unexplained detail there is explained here. Nothing in the narrative commanded this. God tells Noah to leave the ark and to bring the animals out; the altar is Noah’s own, the first thing he does with his freedom and the first thing in the entire flood account that he was not told to do. He still has not spoken a word — he will not until 9:25 — and this is his answer.</p></div>
+<div class="note">
+<span class="ref">8:21</span>
+<p>wayyāraḥ … ʾel-libbô … kî yēṣer lēḇ hāʾāḏām raʿ: the theological centre of the chapter, and the hardest sentence in it. Three things. First, the anthropomorphism is blunt and I have not softened it: the Lord smells. The same scene in the Mesopotamian flood tradition is more explicit still — in the eleventh tablet of the Gilgamesh epic the gods smell the offering and crowd around the sacrificer like flies; the older Atrahasis, which that tablet reworks, is the text that says explicitly they have gone unfed since the flood began — and Genesis keeps the sensory verb while giving God neither hunger nor need. What is answered here is not appetite. Second, wayyōʾmer YHWH ʾel-libbô, “the Lord said to his heart,” closes a frame opened at 6:6, where the evil of humankind grieved him to his heart — the identical phrase. The flood begins and ends inside God, in the same organ, and it is a soliloquy both times: nobody is told. Third, the reason clause. kî yēṣer lēḇ hāʾāḏām raʿ minnᵉʿurāyw is the diagnosis of 6:5 restated — yēṣer, lēḇ and raʿ all return, with 6:5&#x27;s maḥšᵉḇōṯ dropped and its “all the day” replaced by “from youth on” — that brought the flood, and it is now given as the ground for never sending another. Read kî as causal — “for,” as I have — and the verse is deliberately shocking: the same fact about humanity that once justified the destruction now forbids its repetition, because judgment on those terms could never end. Read it concessively, “even though,” and the tension eases and something real is lost. The causal sense is the plain sense of kî and it is the harder claim, and I translated it that way. Note also what does not change. God does not say that humanity has improved, or that the flood worked. Nothing has been fixed; what has changed is what God will do about it. And “I will never again curse the ground” reaches back past the flood to 3:17, where the ground was cursed because of the man — it is the older sentence being lifted, not only the recent one.</p></div>
+<div class="note">
+<span class="ref">8:22</span>
+<p>zeraʿ wᵉqāṣîr (“seedtime and harvest”) and lōʾ yišbōṯû (“will never cease”): zeraʿ is a standing glossary term in this volume, rendered “seed,” and it is held here — in its agricultural sense of sowing, paired with reaping, so that “seedtime and harvest” keeps the word rather than replacing it with “planting.” Compare the flag at 7:3, where the same term carried the ordinary sense of offspring and the glossary rendering had to give way; here it does not, and the departure is not needed. The closing verb is šāḇaṯ, the root behind šabbāṯ and behind God’s own ceasing from work in 2:2–3 — the one thing that will now not stop is the ordinary turning of the world. Four pairs of opposites, eight words, covering the agricultural year, the thermal year, the seasonal year and the day: a promise of nothing more remarkable than that tomorrow will be normal. That is the entire content of the guarantee, and after chapter 7 it is not a small one. The covenant that formalises it, with its sign, comes in chapter 9; here it is still only something God says to himself.</p></div>
+</div>
+<nav class="chapnav"><a href="../7/">&larr; Genesis 7</a><a href="../">All chapters</a><a href="../9/">Genesis 9 &rarr;</a></nav>
+</body>
+</html>

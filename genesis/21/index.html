@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 21 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 21 -- The Birth of Isaac, and Hagar Sent Away">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 21 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 21 -- The Birth of Isaac, and Hagar Sent Away">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 21</h1></header>
+<p class="lede">The Birth of Isaac, and Hagar Sent Away</p>
+<div class="notes">
+<div class="note">
+<span class="ref">21:1</span>
+<p>pāqaḏ (“attended to”): the verb is not “visited” in the modern sense of paying a call. pāqaḏ is to turn attention toward someone with the power to act — it is used of mustering troops, of appointing officers, of an overseer taking stock, and of God taking note of a people in trouble (Exodus 3:16; 4:31). What it always carries is that the noticing has consequences. English “visited,” the traditional rendering, has drifted so far that it now suggests either a social call or a punishment, and neither is right here. “Attended to” keeps the sense of a superior turning his attention on someone and doing something about it. The verse then says the same thing twice — as he had said, as he had spoken — which is the narrator closing a promise made at 15:4, at 17:16, 19 and 21, and at 18:10 and 14.</p></div>
+<div class="note">
+<span class="ref">21:6</span>
+<p>ṣᵉḥōq ʿāśâ lî ʾĕlōhîm … kol-haššōmēaʿ yiṣḥaq-lî (“God has made laughter for me; everyone who hears will laugh for me”): the second half is genuinely ambiguous and the ambiguity is the point. yiṣḥaq-lî is the verb behind Isaac’s name with the preposition lᵉ-, and it can be read as laughing WITH her — sharing her joy, which is how most English versions take it — or laughing AT her, the laughter of the incredulous, which is what Sarah herself did at 18:12 and then denied doing. The preposition does not settle it. The narrative has now used this root of Abraham’s laughter (17:17), Sarah’s laughter (18:12), the child’s name, and the public reaction, and it is about to use it again in verse 9 of Ishmael. I have kept “laugh for me,” which is as open in English as the Hebrew is, rather than choosing “with me” and closing it.</p></div>
+<div class="note">
+<span class="ref">21:9</span>
+<p>mᵉṣaḥēq (“laughing”): the hardest word in the chapter, and everything that follows depends on it. It is the intensive (piel) participle of the same root as Isaac’s name, and the Hebrew gives it no object at all — Sarah simply sees Ishmael mᵉṣaḥēq. The range is wide: playing, laughing, joking, making sport. Elsewhere in Genesis the piel carries a sexual sense at 26:8, where Isaac is seen mᵉṣaḥēq with Rebekah and is thereby exposed as her husband, and an accusatory sense at 39:14, 17, where Potiphar’s wife says the Hebrew came in to mᵉṣaḥēq with her. The Septuagint and the Vulgate supply an object the Hebrew does not have — “playing with Isaac her son” — and the Septuagint’s reading stands behind Galatians 4:29, which turns it into persecution. Rabbinic tradition read idolatry, immorality or violence into it. All of these are attempts to supply a motive for a demand the narrator reports without one. I have translated the bare participle, because supplying an object is where every version that does so stops translating and starts explaining — and note what the plain word actually does: Ishmael is doing the thing Isaac is named for.</p></div>
+<div class="note">
+<span class="ref">21:10</span>
+<p>hāʾāmâ hazzōʾṯ (“this slave woman”): Sarah does not use Hagar’s name, and she does not use Ishmael’s. Twice she says “this slave woman,” and “her son,” and “the son of this slave woman,” and then names her own son twice over. The narrator has used Hagar’s name in the verse immediately before. This is not a translator’s effect; it is in the Hebrew and it is doing characterisation, so it is kept exactly.</p></div>
+<div class="note">
+<span class="ref">21:12</span>
+<p>kî ḇᵉyiṣḥāq yiqqārēʾ lᵉḵā zāraʿ (“it is through Isaac that seed will be named for you”): the sentence is compressed and the standard versions expand it differently — the ESV’s “through Isaac shall your offspring be named,” the KJV’s “in Isaac shall thy seed be called.” The verb is passive: seed will be CALLED or NAMED for you in Isaac. It is a statement about which line will carry the name, not a statement that Ishmael is not Abraham’s child — verse 13 says the opposite in the same breath, because he is your seed. So the line is narrowed without the other son being disowned, which is exactly the funnel Genesis runs everywhere. zeraʿ is held to “seed” per the glossary rather than turned into “offspring,” because the singular-collective ambiguity is load-bearing across the book.</p></div>
+<div class="note">
+<span class="ref">21:14</span>
+<p>wᵉʾeṯ-hayyeleḏ (“and the child”): a real grammatical problem, and it is about Ishmael’s age. The clause runs: Abraham took bread and a skin of water and gave them to Hagar, placing them on her shoulder, and the child, and sent her away. Read straight, the child is a second object of the placing — the boy is put on her shoulder with the supplies. But Ishmael is thirteen at his circumcision in 17:25, Isaac is born a year later, and Isaac is now weaned, which in this culture is two to three years. Ishmael is therefore about sixteen, and nobody carries a sixteen-year-old on a shoulder. Verse 15 makes it worse: she throws him under a bush. Source-critical readers take the scene as belonging to a tradition in which Ishmael is an infant, set beside the chronology of chapter 17 without being harmonised. I have translated the Hebrew word order as it stands and left the difficulty visible, because smoothing it is emendation and the seam is evidence.</p></div>
+<div class="note">
+<span class="ref">21:16–17</span>
+<p>wattiśśāʾ ʾeṯ-qōlāh wattēḇk … wayyišmaʿ ʾĕlōhîm ʾeṯ-qôl hannaʿar (“she raised her voice and wept” … “God heard the voice of the boy”): the Masoretic Text has Hagar weeping and God hearing the BOY, who has not been said to make a sound. The Septuagint has the child crying out, which removes the difficulty and is probably why it reads that way. The Masoretic reading is the harder one and is more likely original; it is also doing something, since Ishmael’s name means “God hears,” and the verse is the name being cashed. God hears the one who is not the one crying.</p></div>
+<div class="note">
+<span class="ref">21:17</span>
+<p>malʾaḵ ʾĕlōhîm (“the messenger of God”): rendered as the glossary requires and described no further than the text describes it. The messenger calls from the heavens and is not said to appear, and nothing in the verse licenses wings, light or a visible form. Note also that this is the second time Hagar is met in a wilderness by a messenger at a water source — the first is 16:7–14, where she is the only person in the Hebrew Bible to give God a name.</p></div>
+<div class="note">
+<span class="ref">21:20</span>
+<p>rōḇeh qaššāṯ (“a bowman”): the Hebrew is awkward — literally something like “one who shoots, an archer,” two words for the same trade side by side, and some read the first as rāḇâ, “grew up,” which the verse has already said. I have taken it as the compound description of a trade and rendered it with one English word rather than reproducing a redundancy that reads as a stumble in English. The detail matters for what follows in the book: Ishmael is a desert archer, and 25:18 puts his descendants along a frontier.</p></div>
+<div class="note">
+<span class="ref">21:23</span>
+<p>ḥeseḏ (“faithful kindness”): held to the rendering fixed at 19:19. In a treaty context like this one the word is at its most contractual — it is what allies owe one another once a bond exists — and “faithful kindness” is chosen precisely because it holds the obligation and the warmth together, where “love” would lose the duty and “loyalty” would lose the warmth. Abimelech is asking for a treaty, and he is asking for it in the vocabulary of relationship.</p></div>
+<div class="note">
+<span class="ref">21:31</span>
+<p>bᵉʾēr šāḇaʿ (“Beersheba”): a double pun and the verse means both halves of it. šeḇaʿ is “seven” and šāḇaʿ is “to swear,” and the name can be heard as the Well of Seven or the Well of the Oath. The narrative has just supplied both — seven ewe lambs set apart, and two men swearing — and the explanation given in the verse is the oath, while the seven lambs sit there unexplained unless the other half is also heard. English cannot carry both in the name, so the name is transliterated and the pun is noted rather than flattened into one meaning.</p></div>
+<div class="note">
+<span class="ref">21:32, 34</span>
+<p>ʾereṣ pᵉlištîm (“the land of the Philistines”): an anachronism, and a well known one. The Philistines are one of the Sea Peoples and arrive on that coast around 1200 BC, centuries after any date proposed for Abraham; Abimelech’s Gerar is not a Philistine city in the archaeological record of the patriarchal period. The usual explanation is that the narrator is using the current name of a region for his readers’ benefit, which is ordinary practice in the book — compare “Dan” at 14:14, a city not named Dan until Judges 18. I have translated what the Hebrew says and recorded the problem here rather than substituting a neutral term, which would hide a piece of evidence about when the text reached its present form.</p></div>
+<div class="note">
+<span class="ref">21:33</span>
+<p>ʾēl ʿôlām (“the Everlasting God”): an old divine title, and one of a set of ʾēl compounds attached to particular places in Genesis — ʾēl ʿelyôn at Salem in 14:18, ʾēl rŏʾî in Hagar’s wilderness at 16:13, ʾēl šadday at 17:1. ʿôlām is duration stretching out of sight rather than philosophical eternity, as at 9:16. The verse is also the first planting of a tree in the book by a human being, at a well he has just had to defend by treaty, in a land he does not own — which is the whole situation of the promise up to this point.</p></div>
+</div>
+<nav class="chapnav"><a href="../20/">&larr; Genesis 20</a><a href="../">All chapters</a><a href="../22/">Genesis 22 &rarr;</a></nav>
+</body>
+</html>

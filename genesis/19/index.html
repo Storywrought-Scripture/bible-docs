@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 19 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 19 -- Sodom, and What Came After">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 19 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 19 -- Sodom, and What Came After">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 19</h1></header>
+<p class="lede">Sodom, and What Came After</p>
+<div class="notes">
+<div class="note">
+<span class="ref">19:1</span>
+<p>wᵉlôṭ yōšēḇ bᵉšaʿar-sᵉḏōm (“and Lot was sitting in the gate of Sodom”): the gate is where a city&#x27;s legal and commercial business is done and where its elders sit (Ruth 4:1–2; Deuteronomy 21:19), so this is not a man loitering at a doorway. Trace the three-verse arc across the book: at 13:12 Lot pitched his tents as far as Sodom, outside it; at 14:12 he was living in it; here he sits in its gate. The narrator never says he was wrong to choose the well-watered plain, and never has to. malʾāḵîm, rendered “messengers,” is the same word translated “angel” at 16:7 — two of the three visitors of chapter 18 have come on, and the third stayed behind with Abraham.</p></div>
+<div class="note">
+<span class="ref">19:2–3</span>
+<p>wayyip̄ṣar-bām mᵉʾōḏ (“He pressed them hard”): the hospitality of chapter 18 replayed at reduced scale, and the reduction is deliberate. Abraham ran, killed a calf, and had three measures of fine flour baked; Lot presses, and makes maṣṣôṯ, flatbread — the quickest bread there is, the unleavened bread of haste. The messengers&#x27; first answer is that they will sleep in the square, and Lot&#x27;s insistence is not politeness: he knows what a night in that square would mean. Everything in the scene is compressed and urgent where Abraham&#x27;s was expansive.</p></div>
+<div class="note">
+<span class="ref">19:4–5</span>
+<p>wᵉnēḏᵉʿâ ʾōṯām (“so we can know them”): yāḏaʿ is the sexual euphemism established at 4:1, and the chapter itself settles the sense three verses later, when Lot offers daughters who “have not known a man.” So what is demanded is sexual, and what is demanded is rape: the whole male population of the city, from young to old, all the people to the last man, at the door of a house, against strangers under its protection. What the passage is evidence of, and what it is not, is worth stating carefully, because the chapter has carried a great deal of freight. The text depicts a mob threatening gang rape of guests — an act of violence and of the total collapse of hospitality, which in this culture is a covenantal obligation with the force of law. It says nothing about consensual relationships of any kind, and it is not framed as a general statement about desire. The Bible&#x27;s own later summaries divide: Ezekiel 16:49–50 names Sodom&#x27;s sin as pride, surfeit of bread, prosperous ease, and refusal to strengthen the poor and needy, adding that they did tôʿēḇâ, abomination; Jude 7 speaks of sexual immorality and going after “other flesh,” which may refer to the human-and-messenger crossing rather than to anything else. Judges 19:22–25 tells a near-identical story in Gibeah, in almost the same words, and it ends with a woman dead — that narrator&#x27;s verdict is that Israel had become Sodom. A reader is entitled to weigh those; a translator&#x27;s job is to render what verse 5 says, which is what is done here.</p></div>
+<div class="note">
+<span class="ref">19:8</span>
+<p>ʾôṣîʾâ-nnāʾ ʾeṯhen ʾălêḵem (“Let me bring them out to you”): Lot offers his two virgin daughters to a rape mob to protect two guests, and the narrator does not say one word about it. This is the technique used of Noah&#x27;s drunkenness at 9:21 and of Abram in Egypt at 12:13 — report, and refuse to comment — and it is the hardest instance of it in the book. The offer is made in the language of a host&#x27;s duty: they have come bᵉṣēl qōrāṯî, under the shadow of my roofbeam, and hospitality obliges him absolutely. That explains the logic and excuses nothing, and the text does not present it as excusing anything. Two things should be held together without being reconciled. Judges 19 tells the same scene and there the substitution is accepted and the woman dies of it, so the narrator of Judges at least knows exactly what is being offered here. And 2 Peter 2:7 calls Lot righteous and tormented by the conduct around him — a judgment about him that Genesis nowhere makes, and one that has to be set against this verse rather than used to erase it. Note finally what the mob&#x27;s reply in verse 9 shows: they were never interested in the daughters. The offer is refused and Lot himself is threatened.</p></div>
+<div class="note">
+<span class="ref">19:9</span>
+<p>hāʾeḥāḏ bāʾ-lāḡûr wayyišpōṭ šāp̄ôṭ (“This one came here as a stranger, and now he plays the judge”): the mob&#x27;s grievance in a sentence, and it names Lot&#x27;s actual position exactly. He is a gēr, a resident alien — the same status Abraham holds everywhere in the book and the status the Torah will repeatedly command Israel to protect, on the grounds that they were gērîm in Egypt. He sits in the gate but he does not belong, and the moment he asserts a moral claim the city reminds him of it. That a community&#x27;s treatment of the outsider is the measure being applied here is not a modern reading imposed on the chapter; it is what the mob itself says the quarrel is about.</p></div>
+<div class="note">
+<span class="ref">19:11</span>
+<p>sanwērîm (“blinding light”): a rare word, used elsewhere only at 2 Kings 6:18 where Elisha&#x27;s besiegers are struck with it, and probably not ordinary blindness — the etymology points toward dazzling or a blinding flash rather than darkness, and it may denote a confusion of sight rather than its loss. The detail that follows is grimly exact: struck from the least to the greatest, they nonetheless keep at it, wearing themselves out feeling for the door. The assault does not stop when it becomes impossible.</p></div>
+<div class="note">
+<span class="ref">19:14, 16</span>
+<p>kimᵉṣaḥēq … wayyiṯmahmāh (“he seemed to be joking” … “But he lingered”): two small verbs carrying the whole portrait of Lot. mᵉṣaḥēq is the ṣāḥaq root that runs through the Isaac story — Abraham laughs at 17:17, Sarah at 18:12, and here Lot&#x27;s warning of the end of the world registers with his own sons-in-law as a joke. He has no standing even in his household. And then, told to run, he lingers, and has to be taken by the hand and carried out, along with his wife and daughters. The narrator supplies the reason for the rescue in the same breath and it is not Lot&#x27;s merit: bᵉḥemlaṯ YHWH ʿālāyw, the Lord being merciful to him.</p></div>
+<div class="note">
+<span class="ref">19:19</span>
+<p>ḥasdᵉḵā (“faithful kindness”): the first occurrence of ḥeseḏ in Genesis and therefore the verse that fixes this volume&#x27;s rendering of it. The word has no single English equivalent: it is loyal action inside a relationship, the kindness owed by one bound party to another, and it covers what English splits between love, mercy, faithfulness and steadfastness. “Faithful kindness” is chosen to hold the two halves — the warmth and the obligation — and it is the rendering used through the volume, per the glossary rule. Note that it is spoken here by Lot about his own rescue, in the middle of an argument in which he is refusing the terms of that rescue, and that the argument works.</p></div>
+<div class="note">
+<span class="ref">19:22</span>
+<p>ʿal-kēn qārāʾ šēm-hāʿîr ṣôʿar (“That is why the name of the town is called Zoar”): another naming by pun. ṣôʿar sounds like miṣʿār, “a small thing,” which is the word Lot uses twice in verse 20 to argue his case — is it not a little one? The town&#x27;s name is his own excuse, fossilised. Note verse 22&#x27;s remarkable clause: lōʾ ʾûḵal laʿăśôṯ dāḇār ʿaḏ-bōʾăḵā šāmmâ, “I can do nothing until you arrive there.” The judgment is held up for one frightened man&#x27;s convenience.</p></div>
+<div class="note">
+<span class="ref">19:24</span>
+<p>wayYHWH himṭîr … mēʾēṯ YHWH min-haššāmāyim (“Then the Lord rained down … from the Lord, out of the sky”): the divine name appears twice in one clause, subject and source, which is unusual enough that it has been read theologically since antiquity — as two persons in Jewish anti-Christian and Christian trinitarian polemic alike. The likelier explanation is idiomatic: Hebrew does sometimes repeat a name where English would use a pronoun, and the phrase may simply be emphatic (“the Lord himself”). It is recorded because the doubling is genuinely there and readers will meet the argument. gop̄rîṯ wāʾēš, sulphur and fire, describes a real feature of the region — the Dead Sea basin is rich in bitumen and sulphur deposits, and burning bitumen is the standard naturalistic account offered for the tradition. hāp̄aḵ, “overthrew,” becomes the fixed verb for this event throughout the Bible.</p></div>
+<div class="note">
+<span class="ref">19:26</span>
+<p>nᵉṣîḇ melaḥ (“a pillar of salt”): six Hebrew words — wattabbēṯ ʾištô mēʾaḥărāyw wattᵉhî nᵉṣîḇ melaḥ — and the narrator adds nothing — no name for her, no motive, no verdict. The instruction she broke was given in verse 17: do not look behind you. Salt pillars are an ordinary feature of the Dead Sea&#x27;s southern end, where a mountain of rock salt stands and erosion leaves standing columns; the tradition is anchored in a landscape a reader could visit. Whether the looking back is disobedience, longing for the city, or simple grief is not stated, and the sentence is deliberately abrupt. Luke 17:32 gets three words out of it.</p></div>
+<div class="note">
+<span class="ref">19:29</span>
+<p>wayyizkōr ʾĕlōhîm ʾeṯ-ʾaḇrāhām (“God remembered Abraham”): the summary verse, and it answers chapter 18 in a way that does not match what Abraham asked for. zāḵar is the verb of 8:1, acting on a commitment rather than recalling a fact — and what is remembered is Abraham, not Lot. Lot is not said to be righteous, is not said to be the ten, and is not the reason the city was spared, because the city was not spared. Abraham argued that a righteous minority should save a guilty place; what happened instead is that a guilty place was destroyed and one compromised household was pulled out of it for the sake of a man who was not in it. The text lets the mismatch stand.</p></div>
+<div class="note">
+<span class="ref">19:30–38</span>
+<p>ûnᵉḥayyeh mēʾāḇînû zāraʿ (“so that we may keep seed alive from our father”): the chapter ends with a father made drunk and his two daughters conceiving by him, and it is told in the same flat, uncommenting register as verse 8 — no rebuke, no verdict, and the daughters given the only reasoning in the scene. The Noah pattern is unmistakable and deliberate: a survivor of a world-ending catastrophe, wine, drunkenness, a father dishonoured in his drunkenness by his own child — however 9:22 is read; see the note there — and a nation named out of the aftermath (9:20–27). Genesis tells that story twice, once after the flood and once after the fire. The daughters&#x27; stated motive is zeraʿ — seed, the book&#x27;s governing word, held to the glossary — and they believe, wrongly, that there is no man left in the land; they have just watched the world end and have no reason to think otherwise. The two names are polemical folk etymologies: môʾāḇ is heard as mē-ʾāḇ, “from father,” and ben-ʿammî as “son of my kin.” Both are Israel&#x27;s hostile neighbours, and this is a story about where they came from told by the people who fought them. It should be read as such, and it should also be read alongside the Book of Ruth, in which a Moabite woman&#x27;s ḥeseḏ is the pivot of the story and she becomes the great-grandmother of David — a rejoinder the canon makes to this chapter without deleting it.</p></div>
+</div>
+<nav class="chapnav"><a href="../18/">&larr; Genesis 18</a><a href="../">All chapters</a><a href="../20/">Genesis 20 &rarr;</a></nav>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 31 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 31 -- Jacob Leaves Laban">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 31 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 31 -- Jacob Leaves Laban">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 31</h1></header>
+<p class="lede">Jacob Leaves Laban</p>
+<div class="notes">
+<div class="note">
+<span class="ref">31:7, 41</span>
+<p>wᵉheḥĕlip̄ ʾeṯ-maśkurtî ʿăśereṯ mōnîm (“changed my wages ten times over”): “ten times” is an idiom for repeatedly rather than an exact count, as at Numbers 14:22. Jacob&#x27;s account of the twenty years — stated twice, at verses 7 and 41 — is an unusually detailed picture of what a hired herdsman&#x27;s working life and exposure looked like — heat, frost, sleeplessness, and liability for losses. Verse 39 is the key legal detail: an animal killed by a predator was normally the owner&#x27;s loss if the shepherd produced the carcass as evidence, a rule set out at Exodus 22:10–13, and Jacob says Laban made him absorb it instead. So his complaint is not general grievance but a specific charge of contract abuse, and he makes it in front of witnesses at verse 37, which is the correct procedure.</p></div>
+<div class="note">
+<span class="ref">31:14–16</span>
+<p>hallānû ʿôḏ ḥēleq wᵉnaḥălâ (“Do we still have a share or an inheritance”): the two sisters answer as one — wattaʿan rāḥēl wᵉlēʾâ wattōʾmarnâ — and it is the only place in Genesis where a verb takes the two of them jointly. Their charge is precise: their father treated them as nāḵriyyôṯ, foreigners, sold them, and consumed the bride-price paid for them. The sisters speak of the bride-price as theirs — kaspēnû, “our silver” — so they are asserting a claim on what Laban received for them; he took fourteen years of labour instead and kept the value. Whether a mōhar was normally held for a daughter&#x27;s benefit is inferred largely from this verse and is not securely known. It is worth noticing that the women make the legal argument for the departure and Jacob merely acts on it.</p></div>
+<div class="note">
+<p>31:19, 30, 34–35  tᵉrāp̄îm (“household gods”): small images kept in a household, appearing again at Judges 17–18 and 1 Samuel 19:13, where Michal puts one in a bed to fake David&#x27;s body — so at least some were of a size and shape to be mistaken for a person. Why Rachel takes them is not stated. A once-standard explanation appealed to the Nuzi tablets, on which possession of household gods was said to support a claim on the estate; that reading has been substantially undermined by later work on the texts and should not be repeated as fact. Other proposals: she wants their protection on the journey, she is striking at her father, or she is claiming what she believes is owed her. The narrator says only that she took them and lied well. Note the layered irony: Laban calls them ʾĕlōhay, “my gods,” and searches for them while their thief sits on them and pleads menstruation — a state that would make everything she sits on unclean under the later law (Leviticus 15:20). The narrator passes no comment on any of it.</p></div>
+<div class="note">
+<span class="ref">31:20, 26</span>
+<p>wayyiḡnōḇ … ʾeṯ-lēḇ lāḇān (“stole the heart of Laban”): an idiom for deceiving, but the verb is deliberately the same one used of Rachel stealing the gods in the verse before. The chapter is built on gānaḇ, to steal, and the root runs through the whole quarrel: Rachel steals the household gods (19), Jacob steals Laban&#x27;s heart (20), and Laban throws the verb back at him twice — “you stole my heart” (26), “you stole me” (27) — before using it of a real theft, “why did you steal my gods?” (30). The narrator confirms that theft (32), and Jacob&#x27;s defence turns on what was stolen from the flocks by day and by night (39). The English cannot use one word for all of it, and the pattern is noted here instead.</p></div>
+<div class="note">
+<span class="ref">31:24, 29</span>
+<p>miṭṭôḇ ʿaḏ-rāʿ (“anything, good or bad”): a merism — by naming the two poles the phrase covers everything between them, so the sense is “do not say a word to Jacob one way or the other.” The same merism appears at 24:50, in the reverse order and with ʾô rather than the min…ʿaḏ range: raʿ ʾô-ṭôḇ. Note that God appears to Laban, an Aramean who practises divination (30:27) and keeps household images, and Laban reports the dream accurately and obeys it. Genesis repeatedly has God dealing directly with outsiders — Abimelech at 20:3, Hagar at 16:7 — without any suggestion that this requires explanation.</p></div>
+<div class="note">
+<span class="ref">31:25</span>
+<p>wᵉlāḇān tāqaʿ ʾeṯ-ʾeḥāyw (“and Laban pitched with his kinsmen”): the Hebrew gives the verb no object it can take. The first half of the verse has Jacob tāqaʿ ʾeṯ-ʾohŏlô, “pitched his tent”; the second has Laban tāqaʿ ʾeṯ-ʾeḥāyw, “pitched his kinsmen,” with no tent supplied. I have supplied “with,” as the versions do, but the difficulty is real: either a word for “tent” has dropped out, or the verb is being used of stationing men rather than of pitching a tent.</p></div>
+<div class="note">
+<span class="ref">31:42, 53</span>
+<p>paḥaḏ yiṣḥāq (“the Fear of Isaac”): a divine title that occurs only in this chapter and is not fully understood. Read as an objective genitive it is “the one whom Isaac fears,” a title of awe. An older proposal took paḥaḏ as a rare word for thigh or kinsman, giving “the Kinsman of Isaac,” which would parallel “the God of Abraham”; the evidence for that sense is thin. I have kept the traditional rendering, capitalised as a title, with the uncertainty recorded. It stands beside “the God of my father” and “the Mighty One of Jacob” (49:24) as one of the archaic patriarchal designations the book preserves without explaining.</p></div>
+<div class="note">
+<span class="ref">31:47</span>
+<p>yᵉḡar śāhăḏûṯāʾ … galʿēḏ (“Jegar-sahadutha … Galeed”): the only Aramaic in Genesis, and it is here for characterisation. The two men name the same cairn in their two languages — Laban in Aramaic, Jacob in Hebrew — and both names mean exactly the same thing, “heap of witness.” The narrator glosses only the Hebrew name, at verse 48, and leaves the Aramaic untranslated, which suggests an audience who would catch it. It is also the moment the two branches of the family are formally shown to have become two peoples who no longer speak the same language, immediately before they agree never to cross the line again.</p></div>
+<div class="note">
+<span class="ref">31:49–50</span>
+<p>yiṣep̄ YHWH bênî ûḇêneḵā (“May the Lord keep watch between me and you”): the Mizpah benediction, widely used as a parting blessing, and in its own context it is nothing of the kind. It is a clause in a non-aggression pact between two men who do not trust each other, and its sense is that God will be the enforcing witness when they are out of each other&#x27;s sight — when we are hidden from one another, with no human witness available (verse 50). miṣpâ is from ṣāp̄â, to watch or keep lookout. The verses that follow make the meaning explicit: neither party is to cross the boundary to do harm. Reading it as an expression of affectionate longing reverses it.</p></div>
+<div class="note">
+<span class="ref">31:53</span>
+<p>ʾĕlōhê ʾaḇrāhām wēʾlōhê nāḥôr yišpᵉṭû (“May the God of Abraham and the God of Nahor … judge between us”): the verb is plural, which strongly suggests Laban is invoking two distinct deities — his own family&#x27;s god alongside Jacob&#x27;s — rather than one god of a shared ancestor. The Masoretic Text has a further clause, ʾĕlōhê ʾăḇîhem, “the God of their father,” which pulls back toward a single God of the common ancestor Terah. The Septuagint lacks that clause — but it also renders the verb as a singular, so it is not a witness for the two-deity reading. And Jacob conspicuously does not swear by the pair: he swears by the Fear of his father Isaac alone. That refusal is the point of the verse, and translations that smooth the plural verb into a singular remove it.</p></div>
+</div>
+<nav class="chapnav"><a href="../30/">&larr; Genesis 30</a><a href="../">All chapters</a><a href="../32/">Genesis 32 &rarr;</a></nav>
+</body>
+</html>

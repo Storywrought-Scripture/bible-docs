@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 22 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 22 -- The Binding of Isaac">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 22 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 22 -- The Binding of Isaac">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 22</h1></header>
+<p class="lede">The Binding of Isaac</p>
+<div class="notes">
+<div class="note">
+<span class="ref">22:1</span>
+<p>nissâ (“tested”): the narrator tells the reader in the first sentence what the characters are never told, and the whole chapter depends on that gap. nissâ is to put to the proof — the word used of testing Israel in the wilderness (Exodus 16:4; Deuteronomy 8:2) — and it is not the same as enticing to sin, which is a different verb and a different idea. It is worth being plain about what the note cannot do: telling the reader it is a test explains the narrative structure, not the ethics. Abraham does not know it is a test, Isaac never learns it was one, and the text does not offer the reader any reassurance that it was going to stop. hinnēnî, “here I am,” is the chapter&#x27;s refrain — Abraham says it three times, to God, to Isaac and to the messenger, and it is a word of availability rather than of location.</p></div>
+<div class="note">
+<span class="ref">22:2</span>
+<p>qaḥ-nāʾ ʾeṯ-binḵā ʾeṯ-yᵉḥîḏᵉḵā ʾăšer-ʾāhaḇtā ʾeṯ-yiṣḥāq (“take your son, your only one, the one you love, Isaac”): four terms, each narrowing on the last, and the effect is of a hand closing. The rabbis read it as a dialogue in which Abraham deflects each term until the name leaves no escape. yᵉḥîḏᵉḵā is “your only one” and it is a difficulty, because Ishmael is alive and was called Abraham&#x27;s seed by God himself at 21:13 — the term appears to speak from within the promise, where only one son counts, rather than as a statement of fact about Abraham&#x27;s household. The Septuagint renders it ἀγαπητός, “beloved,” which is the word the Gospels use at the baptism and transfiguration; that is a reception-history link and no part of what the Hebrew says here. Note also leḵ-lᵉḵā, “go for yourself,” a construction that occurs in this form only twice in the Hebrew Bible — at 12:1, where Abram is told to leave his father&#x27;s house, and here, where he is told to give up the son that leaving produced. The book brackets his whole story with one phrase.</p></div>
+<div class="note">
+<p>22:2 (Moriah)  ʾereṣ hammōriyyâ (“the land of Moriah”): the name occurs only here and at 2 Chronicles 3:1, which identifies Mount Moriah as the site of Solomon&#x27;s temple in Jerusalem — an identification made centuries later and clearly making a claim. The Samaritan Pentateuch is reported to read hammôreh, the Moreh of 12:6 near Shechem, which would locate the scene at Gerizim instead and make the rival claim — a reading to check against a printed critical edition rather than to treat as settled. The Septuagint declines both and renders it as “the high land.” The Hebrew name is probably heard as connected to rāʾâ, to see, which is the verb the chapter turns on at verses 8 and 14. I have transliterated the Masoretic name and recorded the variants; the site is contested ground in the most literal sense and the translation should not settle it.</p></div>
+<div class="note">
+<p>22:2 (the burnt offering)  wᵉhaʿălēhû šām lᵉʿōlâ (“offer him up there as a burnt offering”): the ʿōlâ is the whole burnt offering, the sacrifice consumed entirely, and there is no softer reading available — the command is not for a symbolic dedication. This has to be set against the fact that the Hebrew Bible elsewhere condemns child sacrifice in the strongest terms it possesses, and does so in language that speaks directly to this passage: Jeremiah says of burning sons and daughters in the fire that it is something “I did not command, and it did not come into my mind” (Jeremiah 7:31; 19:5). The practice was evidently known in Israel&#x27;s world and evidently practised at times, or the prohibition would be pointless. What the chapter does with that is left entirely to the reader: it neither commends the demand nor explains it, and the substitution at verse 13 is the narrative&#x27;s only comment on the demand itself. Readers who find this passage unbearable are not misreading it.</p></div>
+<div class="note">
+<span class="ref">22:3</span>
+<p>wayyašḵēm ʾaḇrāhām babbōqer (“Abraham rose early in the morning”): what is remarkable in this verse is the silence. Abraham argued God down from fifty to ten over Sodom in chapter 18, at length and to God&#x27;s face; here he says nothing at all, and the narrator gives him no interior life for the whole journey. He is given only verbs — rose, saddled, took, split, got up, went — and the wood is split before he leaves, three days early, which is a detail no summary of the story ever keeps. The narrator&#x27;s refusal to say what Abraham thought is not a gap to be filled in; it is the technique of the passage.</p></div>
+<div class="note">
+<span class="ref">22:5</span>
+<p>wᵉnāšûḇâ ʾălêḵem (“and we will come back to you”): the verb is first person plural, and it is one of the most argued-over words in Genesis. Abraham says that he and the boy will go, and bow down, and both return. The readings are: a lie told to prevent interference; a concealment of what is coming, which is a kindness; a statement of faith that God will somehow give him back, which is how Hebrews 11:19 takes it, supposing Abraham reasoned that God could raise the dead; or an unwitting truth on the narrator&#x27;s part. Nothing in the Hebrew decides it, and the narrator, who has told us this is a test, declines to tell us this. I have translated the plural exactly and left it where the Hebrew leaves it.</p></div>
+<div class="note">
+<span class="ref">22:6, 8</span>
+<p>wayyēlᵉḵû šᵉnêhem yaḥdāw (“and the two of them walked on together”): the same three words close verse 6 and verse 8, framing the only conversation the father and son ever have in the Bible. Between the two occurrences Isaac asks his question and Abraham gives his answer, and the sentence that was simply a statement of travel the first time has acquired everything by the second. This is the narrator&#x27;s whole commentary on the scene, and it is made by repetition rather than by comment — so the English is identical in both verses, deliberately, where a smoother translation would vary it.</p></div>
+<div class="note">
+<span class="ref">22:8</span>
+<p>ʾĕlōhîm yirʾeh-lô haśśeh lᵉʿōlâ bᵉnî (“God will see to the lamb for the burnt offering for himself, my son”): two things. yirʾeh is simply “will see,” and Hebrew uses seeing-to for providing much as English does; the choice of that verb here is deliberate, because the place is named from it at verse 14 and the whole chapter is about what is seen and by whom. And the Hebrew has no punctuation, so bᵉnî, “my son,” can be read as a vocative — Abraham addressing Isaac, which is how nearly every version takes it and how I have taken it — or as apposition: God will see to the lamb for the burnt offering: my son. The second reading is grammatically available and unbearable, and a translator who is not aware of it has not read the verse.</p></div>
+<div class="note">
+<span class="ref">22:9</span>
+<p>wayyaʿăqōḏ (“and he bound”): the verb ʿāqaḏ occurs only here in the entire Hebrew Bible, which is why Jewish tradition names the episode the Akedah, the Binding, rather than the sacrifice or the near-sacrifice. The word is used later in Hebrew of binding an animal&#x27;s legs together for slaughter. A verb that exists once, at this moment, is the text marking the act as having no parallel. Note too that Isaac says nothing here and is not said to resist; his age is not given, and the traditions that make him a grown man consenting are filling a silence the Hebrew leaves open.</p></div>
+<div class="note">
+<span class="ref">22:12</span>
+<p>kî ʿattâ yāḏaʿtî (“for now I know”): a hard verse for any theology of exhaustive divine foreknowledge, and it should not be smoothed in translation. The plain sense is that the test produced knowledge that was not there before. Readings that preserve foreknowledge take it as knowledge demonstrated rather than acquired — God now knows it as shown, or Abraham now knows it — but the Hebrew says I have known, and the same idiom appears at Deuteronomy 8:2, where the wilderness testing is said to be “to know what was in your heart.” I have rendered it flatly. yᵉrēʾ ʾĕlōhîm, “you fear God,” is the standing phrase for a person who can be trusted to act rightly when nobody is watching — it is what the midwives are said to have at Exodus 1:17 — rather than a description of an emotion.</p></div>
+<div class="note">
+<span class="ref">22:13</span>
+<p>ʾaḥar (“behind him”): a textual crux, and the difference is one letter. The Masoretic Text reads ʾaḥar, “behind,” which is what I have translated. Many Hebrew manuscripts, together with the Samaritan Pentateuch, the Septuagint, the Syriac and the Targums, read ʾeḥāḏ, “one” — “and there was a ram, caught in a thicket by its horns.” In the square script r and d differ by a stroke and are confused constantly, the same confusion recorded at 10:4. Either is easy to explain as a slip from the other and the sense is barely affected. taḥaṯ bᵉnô, “in place of his son,” is the chapter&#x27;s one comment on the substitution: the substitution is stated as a fact and left without explanation.</p></div>
+<div class="note">
+<span class="ref">22:14</span>
+<p>YHWH yirʾeh … bᵉhar YHWH yērāʾeh (“The Lord Will See” … “On the mountain of the Lord it will be seen”): the name Abraham gives uses the active verb, and the proverb quoted after it uses the passive or reflexive yērāʾeh, which can mean “it will be seen,” “it will be provided,” or “he will appear” — the same form used of God appearing to Abram at 12:7. The saying is quoted as already current in the narrator&#x27;s day, which is a rare moment of the narrator standing in his own present. English cannot carry seeing and providing in one word, so the name is rendered with the verb the Hebrew uses rather than with “will provide,” which is the traditional English and which quietly resolves the pun in one direction.</p></div>
+<div class="note">
+<span class="ref">22:16–18</span>
+<p>bî nišbaʿtî (“by myself I have sworn”): the only time in Genesis that God swears an oath, and the point of swearing by oneself is that there is nothing higher to swear by. The content is not new — stars, sand, blessing for the nations — it is chapters 12, 15 and 17 restated, but this is the first time it is sworn rather than promised, and the first time it is given a reason in Abraham&#x27;s conduct. wᵉhiṯbārăḵû in verse 18 is the reflexive stem, so it can be “will bless themselves by your seed” (using Abraham&#x27;s house as the model in a blessing formula) or a passive, “will be blessed.” The same ambiguity stands at 12:3 and 18:18, and the ancient versions and the New Testament read it passively. I have used “will find blessing,” which stays as open in English as the Hebrew is.</p></div>
+<div class="note">
+<span class="ref">22:19</span>
+<p>wayyāšāḇ ʾaḇrāhām ʾel-nᵉʿārāyw (“And Abraham returned to his young men”): Isaac is not mentioned. Abraham returns, they go to Beersheba together, and Abraham settles there; the boy who went up the mountain is not said to come down it. Isaac does not appear again in the narrative until 24:62, and he and Abraham never speak to each other again in the book. Whether the silence is an artefact of the sources, a narrative economy, or a deliberate closing note is not something the text says — but it is in the text, and a translation that supplied “they returned” where the Hebrew has a singular verb would remove a piece of evidence.</p></div>
+<div class="note">
+<span class="ref">22:20–24</span>
+<p>The genealogy is not an appendix. It is placed here because it ends at Rebekah, and it is doing what the book does everywhere: naming the wider family, listing the sons who will not be followed, and stopping on the one person who matters for what comes next — Bethuel&#x27;s daughter, granddaughter of Abraham&#x27;s brother, who is about to be fetched in chapter 24. Note the same funnel as chapters 10 and 11. ʾărām appearing here as a personal name, son of Kemuel, sits alongside Aram as a people at 10:22 and as a region later; the concubine Reumah&#x27;s four sons are named and dropped. Placing this immediately after the mountain is also the narrative&#x27;s way of getting the reader from a son nearly lost to the woman who will continue the line, without a word of transition.</p></div>
+</div>
+<nav class="chapnav"><a href="../21/">&larr; Genesis 21</a><a href="../">All chapters</a><a href="../23/">Genesis 23 &rarr;</a></nav>
+</body>
+</html>

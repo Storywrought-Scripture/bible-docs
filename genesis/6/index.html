@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 6 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 6 -- The Sons of God and the Daughters of Humankind">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 6 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 6 -- The Sons of God and the Daughters of Humankind">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 6</h1></header>
+<p class="lede">The Sons of God and the Daughters of Humankind</p>
+<div class="notes">
+<div class="note">
+<span class="ref">6:1–4</span>
+<p>bᵉnê hāʾĕlōhîm (“the sons of God”): the chapter’s hardest decision, and I have deliberately left it open in the wording. Three readings compete. (1) Divine beings. Everywhere else the phrase occurs in the Hebrew Bible it means members of the divine council — Job 1:6; 2:1; 38:7, and bᵉnê ʾēlîm in Psalms 29:1 and 89:7 — and this is how Second Temple Judaism read it (1 Enoch 6–11; Jubilees 5) and how Josephus read it. A strand of the Greek tradition makes it explicit: where most Septuagint witnesses have huioi tou theou, Codex Alexandrinus reads angeloi tou theou, “angels of God.” (2) The line of Seth intermarrying with the line of Cain — the reading of Augustine and Chrysostom, dominant in later Christian tradition, and attractive because it makes 4:17–26 and 6:1–4 one continuous story. Nothing in the text says it, and the phrase never means it elsewhere. (3) Dynastic rulers, kings styled “sons of god” in the ordinary idiom of the ancient Near East, taking women at will — which fits “any they chose” and the tyranny the passage describes. Rendering it plainly as “sons of God” keeps all three live, exactly as the Hebrew does; “angels” or “Sethites” would settle in the wording what the text declines to settle. 2 Peter 2:4 and Jude 6 take up reading (1), but that is reception of the passage rather than exegesis of it, and it belongs in a note rather than in the verse.</p></div>
+<div class="note">
+<span class="ref">6:2</span>
+<p>ṭōḇōṯ (“were beautiful”): a flagged departure from the project glossary. ṭôḇ is held to “good” throughout this volume — it is the refrain of chapter 1 — but here the sense is aesthetic and appetitive rather than moral, and “the daughters of humankind were good” would be read as approval of them. Same call as zeraʿ at 7:3: where a glossary term is being used in its ordinary sense, the ordinary sense wins and the departure is recorded rather than made silently. The cost is real, because the Hebrew is quoting itself. “The sons of God saw … that they were good … and took” runs the same three verbs, in the same order, as 3:6, where the woman saw that the tree was good and took; and behind both stands God’s own “and God saw that it was good” in chapter 1. An act of judgment that belonged to God, then was seized by the woman, is here exercised by the sons of God over women who are given no say. If you are teaching this passage, that echo is the point, and this note is the only place it survives.</p></div>
+<div class="note">
+<span class="ref">6:3</span>
+<p>lōʾ yāḏôn rûḥî (“my spirit will not remain”): yāḏôn occurs nowhere else in the Hebrew Bible and its root is undetermined. Derived from dîn (“to judge, contend”) it yields “my spirit will not contend with humankind forever” — KJV’s “strive,” NIV’s “contend.” Derived from a root meaning “remain, abide” it yields the Septuagint’s ou mē katameinē and the Vulgate’s non permanebit. I followed the second: the clause that immediately follows is about length of life, and rûaḥ here is most naturally the life-breath God gives and withdraws (2:7; 7:22; compare Psalm 104:29), so the verse reads as God setting a term on that breath rather than as God quarrelling with anyone. bᵉšaggam (“for he is flesh”) is a second obscurity in the same short verse — either bᵉ + ša + gam, “inasmuch as he also is,” or a form of šāḡaḡ, “to err,” giving “in their erring they are flesh.” The hundred and twenty years is genuinely undecided. It is either a new ceiling on human lifespan, or a countdown — a reprieve of 120 years before the flood arrives. The countdown reading is ancient; a Qumran commentary on Genesis (4Q252) takes it that way, and per this project’s stated limits that citation is a claim to verify before teaching from it. The ceiling reading has a hard problem in this volume’s own pages: Noah lives 950 years (9:29) and Shem 600 (11:10–11), both long after the sentence is passed. I have translated the clause as it stands and left the arithmetic unresolved, as the text does.</p></div>
+<div class="note">
+<span class="ref">6:4</span>
+<p>nᵉp̄îlîm: transliterated rather than translated, because every translation of it is a guess. The obvious derivation is from nāp̄al, “to fall” — “the fallen ones” — which might describe their origin, their character, or simply their falling upon others. The Septuagint chose gigantes, “giants,” and the only other occurrence in the Hebrew Bible, Numbers 13:33, is a report by frightened scouts who say they looked like grasshoppers beside them — evidence for the reputation the word carried, not for the height of anyone. Note what the Hebrew does not say: it never states that the Nephilim were the offspring of these unions. They were on the earth “in those days — and also afterward — when the sons of God went in to the daughters of humankind”; the syntax places them on the scene and only then says “these were the mighty men.” Whether hēmmâ (“these”) points back to the Nephilim or forward to the children born is left open, and I have kept the English equally open. ʾanšê haššēm, literally “men of the name,” means the famous — and it sets up 11:4, where humankind sets out to make a name for itself.</p></div>
+<div class="note">
+<span class="ref">6:5</span>
+<p>yēṣer maḥšᵉḇōṯ libbô (“every inclination of the thoughts of his heart”): yēṣer is a potter’s word, a noun from yāṣar — the verb used in 2:7, where God shaped the human from the dust of the ground. What God shaped now does its own shaping, and what it shapes is raq raʿ kol-hayyôm, “only evil, all the day.” I have not softened the line: raq (“only”) admits no exception, and the totality runs in both directions, every inclination and every day. Later Judaism built the doctrine of the yēṣer hāraʿ, the evil inclination, on this word; that is a development from the verse, not a statement of it.</p></div>
+<div class="note">
+<span class="ref">6:6</span>
+<p>wayyinnāḥem … wayyiṯʿaṣṣēḇ ʾel-libbô (“regretted” … “it grieved him to his heart”): nāḥam covers a wide field — to be sorry, to relent, to change course, to be comforted — and rendering it “regretted” raises exactly the question the text raises. Numbers 23:19 and 1 Samuel 15:29 insist that God is not a man that he should nāḥam, while this verse, and 1 Samuel 15:11 and 35, say plainly that he did. The tension is in the Hebrew, and the ancient translators felt it: the Septuagint shifts to enethymēthē, “he considered, took thought,” and Targum Onqelos has God “turn back by his word,” both easing an anthropomorphism they found difficult. I have kept it hard, because softening it is a theological decision dressed as a translation. The second verb is the sharper of the two. ʿāṣaḇ is the root of ʿiṣṣāḇôn, the “painful toil” laid on the woman and the man in 3:16–17. The pain God assigned in the garden has come back onto God, in the same vocabulary.</p></div>
+<div class="note">
+<span class="ref">6:8</span>
+<p>ḥēn (“favour”): held to the glossary’s “grace/favour.” Two things a reader in English cannot see. First, this is the first occurrence of ḥēn in the Bible, and it lands on Noah before a word is said about his character — verse 9’s ṣaddîq comes after this, not before it, and the order is not accidental. Second, the Hebrew is a mirror: Nōaḥ (n-ḥ) found ḥēn (ḥ-n), the same two consonants reversed. It is the kind of pun this narrator uses to mark a hinge in the story, English cannot carry it, and so it is recorded here rather than lost in silence.</p></div>
+<div class="note">
+<span class="ref">6:9</span>
+<p>ʾēlleh tôlᵉḏōṯ nōaḥ (“these are the generations of Noah”): the structural formula that segments the whole book, marking the start of a new section rather than merely introducing a genealogy. ṣaddîq tāmîm (“a righteous man, blameless”) is the pairing that 7:1 refers back to; see the note there, which reads both verses as assessing Noah relative to his own generation — bᵉḏōrōṯāyw, “in his generations” — rather than by an absolute standard. tāmîm is not primarily a moral word: it is the term for a sacrificial animal without blemish, “whole, sound, complete.” hiṯhallēḵ is the reflexive-iterative of “to walk” — to walk back and forth, habitually — used of Enoch in 5:22 and 24. The three descriptions escalate: right in his dealings, unblemished among his contemporaries, and in continuous company with God.</p></div>
+<div class="note">
+<span class="ref">6:11–13</span>
+<p>šāḥaṯ and ḥāmās: the paragraph turns on a single verb used four times. The earth was corrupt (v. 11); it was corrupt because all flesh had corrupted its way (v. 12); and therefore God says “I am going to destroy them” (v. 13) — mašḥîṯām, the same root once more. The crime and the sentence are the same word: they ruined it, so it is ruined. No single English verb does both jobs, and I judged “corrupt” and “destroy” clearer than forcing one word through all four occurrences, so the wordplay is flagged here instead of faked there. ḥāmās is not warfare but violent wrong done to persons — bloodshed, plunder, the strong taking from the weak; it is the word the prophets use for a society whose ordinary dealings have turned predatory, and it names what the earth is filled with. Two inversions of chapter 1 run underneath the paragraph. Humankind was told to fill the earth (1:28), and has filled it with ḥāmās. And “God saw the earth, and look — it was corrupt” (v. 12) is 1:31 turned over: “God saw all that he had made, and look — it was very good.” Same verb, same particle, same construction, opposite verdict.</p></div>
+<div class="note">
+<span class="ref">6:14</span>
+<p>tēḇâ (“ark”), gōp̄er, and kōp̄er (“pitch”). tēḇâ is not the ordinary word for a ship or a boat; it means something closer to a chest or a box, and the account gives it no rudder, no sail, and no oar — it is a container that floats, not a vessel anyone steers. Its only other appearance in the Hebrew Bible is the basket of reeds that carries the infant Moses through water in Exodus 2:3–5, and the lexical link is deliberate. gōp̄er is a hapax legomenon: it occurs here and nowhere else, and no one knows what tree it names. “Cypress” is a conventional guess resting on shipbuilding practice rather than on the word itself, so “gopher wood” is the honest rendering and the one I kept. kāp̄artā … bakkōp̄er (“cover it … with pitch”) is the plain, concrete sense of a root that elsewhere carries considerable freight — kipper, “to cover, to make atonement,” and kōp̄er, “ransom.” Here it is bitumen on a hull, and translating it as anything else would import a later theology into a construction instruction. Recorded per the glossary rule, since the term is loaded elsewhere in the canon and the ordinary sense wins here.</p></div>
+<div class="note">
+<span class="ref">6:16</span>
+<p>ṣōhar (“an opening for light”): genuinely uncertain, and the uncertainty runs through the whole first clause. The noun appears nowhere else in this sense. It is connected to ṣohŏrayim, “noon, midday light,” which supports an opening that admits light — the reading of the Targums, of Rashi, and of KJV’s “window.” Modern lexica lean on cognate evidence toward “roof,” which is what most recent versions print, and the Septuagint’s episynagōn (“gathering it together”) appears to describe a roof narrowing to a ridge. The clause that follows, wᵉʾel-ʾammâ tᵉḵalennâ milmaʿlâ (“and to a cubit you shall finish it from above”), is equally obscure: finish what, and a cubit from what? I chose the light-opening because it is the only option anchored in the word’s own associations within Hebrew rather than in cognate languages, but this is a place where the text does not give enough to be certain, and I would not build anything on it.</p></div>
+<div class="note">
+<span class="ref">6:17</span>
+<p>mabbûl (“flood”): a word reserved almost entirely for this event. Outside the Noah narrative it occurs once, in Psalm 29:10, where the Lord “sits enthroned over the mabbûl” — so it functions less as a common noun for a flood than as a name for the Flood, the cosmic waters breaking back in. Hebrew has other, ordinary words for a river in spate and does not use them here. rûaḥ ḥayyîm (“the breath of life”) is rendered as at 7:22, and it is the breath of 2:7 and of 7:15: what the water takes away is precisely what creation gave.</p></div>
+<div class="note">
+<span class="ref">6:18</span>
+<p>wahăqimōṯî ʾeṯ-bᵉrîṯî (“I will establish my covenant”): the first occurrence of bᵉrîṯ in the Bible, and it arrives before the flood rather than after it — spoken to Noah while the ark is still unbuilt, not offered as a reward once he survives. Held to the glossary’s “covenant.” The verb deserves attention. Covenants in the Hebrew Bible are normally cut (kāraṯ bᵉrîṯ), an idiom taken from the animals slaughtered at the ratifying ceremony; here God raises up, establishes (hēqîm) his covenant, the verb used again at 9:9, 11, and 17. Some read hēqîm as confirming something already in place rather than inaugurating something new; others take it as simply another idiom for making one. The distinction is worth flagging and not worth pressing hard.</p></div>
+<div class="note">
+<span class="ref">6:19–20</span>
+<p>“Two of each”: translated as written, and it stands in tension with 7:2–3, where Noah is told to take seven pairs of every clean animal and a single pair of the unclean. The tension is native to the Hebrew and is not produced by translating it; see the note at 7:2–3, 8–9, which sets out the summary-then-detail reading alongside the source-critical account of two interwoven flood traditions. I have harmonized the numbers in neither chapter. lᵉmînēhû (“according to their kinds”) is the refrain of chapter 1 (1:11–12, 21, 24–25) returning here: what the ark preserves is the created order, kind by kind, and not merely a quantity of animals.</p></div>
+<div class="note">
+<span class="ref">6:22</span>
+<p>wayyaʿaś nōaḥ kᵉḵōl ʾăšer ṣiwwâ ʾōṯô ʾĕlōhîm kēn ʿāśâ (“And Noah did everything just as God had commanded him; so he did”): the doubling at the end is in the Hebrew, and it is emphasis rather than redundancy — his obedience is recorded twice within a single clause, and he has still not spoken a word anywhere in the narrative. Note also the divine name: God commands here as ʾĕlōhîm, while the nearly identical sentence at 7:5 has YHWH. That alternation runs right through the flood account, and it is the observation the source-critical reading is built on; see the note at 7:2–3, 8–9.</p></div>
+</div>
+<nav class="chapnav"><a href="../5/">&larr; Genesis 5</a><a href="../">All chapters</a><a href="../7/">Genesis 7 &rarr;</a></nav>
+</body>
+</html>

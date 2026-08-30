@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 28 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 28 -- The Stairway at Bethel">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 28 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 28 -- The Stairway at Bethel">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 28</h1></header>
+<p class="lede">The Stairway at Bethel</p>
+<div class="notes">
+<div class="note">
+<span class="ref">28:3</span>
+<p>ʾēl šadday (“God Almighty”): the patriarchal divine title, used at 17:1 when the covenant of circumcision is given, and again at 35:11, 43:14 and 48:3. Its meaning is not settled — proposals connect it to šadû, mountain, hence “God of the mountain”; to šaḏ, breast, hence a God who provides; or to a root for destruction. “Almighty” comes to English through the Vulgate&#x27;s omnipotens, and is a translation of a guess rather than of the Hebrew. I have kept the familiar rendering, with the uncertainty recorded, rather than substituting a conjecture of my own. qᵉhal ʿammîm, “an assembly of peoples,” uses the word that later denotes the congregation of Israel.</p></div>
+<div class="note">
+<span class="ref">28:6–9</span>
+<p>Esau&#x27;s response is given without a word of comment and is one of the quietly sad passages in the book. He observes that Canaanite wives displease his father, and tries to fix it — by marrying a granddaughter of Abraham through Ishmael, which is to say from the other line that was sent away. The narrator lets the reader notice both that he is attempting to please a father who has already given everything to his brother, and that he chooses, of all available families, the one that was also passed over. Nothing is said about whether it worked.</p></div>
+<div class="note">
+<span class="ref">28:11</span>
+<p>wayyip̄gaʿ bammāqôm (“And he came upon a certain place”): pāḡaʿ is to meet or light upon by chance, and the indefiniteness is deliberate — an unnamed place, arrived at because the sun set, a stone taken from among the stones. The Hebrew uses hammāqôm, “the place,” six times in all — three times in this verse alone, then at 16, 17 and 19 — and māqôm is a standard word for a sanctuary site. So a nowhere becomes the place across nine verses. mᵉraʾăšōṯāyw is “the place at his head”; KJV&#x27;s “put them for his pillows” softens the stone, and this translation does not.</p></div>
+<div class="note">
+<span class="ref">28:12</span>
+<p>sullām (“a stairway”): the word occurs only here in the Hebrew Bible and its meaning has to be inferred. The traditional English “ladder” comes through the Vulgate&#x27;s scala; the likeliest derivation is from sālal, to heap up or cast up a road, which suggests a ramp or a flight of steps rather than a portable ladder. What settles the picture for most scholars is the setting: a monumental stairway rising in stages from the ground to a temple at the top is exactly the form of a Mesopotamian ziggurat, and Jacob is asleep on the road between Canaan and Mesopotamia. I have rendered it “stairway.” Note that the messengers are going up first and coming down second, which implies they were already here rather than descending from elsewhere — the traffic starts from the earth.</p></div>
+<div class="note">
+<span class="ref">28:13</span>
+<p>niṣṣāḇ ʿālāyw (“standing over it”): ambiguous, and the ambiguity is real. The suffix can refer to the stairway — God standing at the top of it — or to Jacob, giving “standing beside him,” which the standard English versions divide over, and which puts God at the sleeper&#x27;s side rather than at the summit. The Hebrew supports both and the two produce quite different pictures. I have taken it of the stairway, since the stairway is the nearer antecedent and the vision is built around it, and record that the other is available. Note that God&#x27;s speech contains no condition and no demand: it is promise only — land, seed, spreading out, blessing for the families of the ground, and presence — given to a man who has just deceived his father and is running for his life.</p></div>
+<div class="note">
+<span class="ref">28:17</span>
+<p>šaʿar haššāmāyim (“the gate of the heavens”): almost certainly a deliberate answer to Babel. The Akkadian name of Babylon is bāb-ili, “gate of the god,” which the narrator at 11:9 refused, hearing bālal, confusion, in it instead. Here a man asleep on the bare ground, with no city and no tower and nothing built by anybody, wakes and says this is the gate of heaven. What people tried to construct at Shinar turns out to be something they stumble into in the open country. bêṯ ʾĕlōhîm, “house of God,” is the ordinary term for a temple, and gives the place its name in verse 19. mah-nôrāʾ, “how fearful,” is awe rather than terror, but the word is not mild.</p></div>
+<div class="note">
+<span class="ref">28:18</span>
+<p>maṣṣēḇâ (“a standing stone”): an upright stone set up as a marker of a sacred encounter. Jacob does this here and again at 31:45, 35:14 and 35:20. It is worth stating plainly that the practice is later prohibited — Deuteronomy 16:22 forbids setting up a maṣṣēḇâ, “which the Lord your God hates,” and Leviticus 26:1 the same — because it became associated with Canaanite worship. Genesis records the patriarchs doing without embarrassment a number of things the law later forbids, including this and marrying two sisters (29:23–30). The book does not harmonise itself with the legislation, and this translation does not harmonise it either.</p></div>
+<div class="note">
+<span class="ref">28:20–22</span>
+<p>ʾim-yihyeh ʾĕlōhîm ʿimmāḏî (“If God will be with me”): Jacob&#x27;s vow is conditional, and it is worth reading exactly. God has just promised, unconditionally and unprompted, to be with him, keep him, and bring him back. Jacob&#x27;s reply repeats those terms back as a set of conditions, adds bread and clothing, and only then undertakes that “the Lord will be my God.” It is a bargain struck with someone who has already given more than is being asked. The narrator offers no evaluation, and God does in fact do all of it. Note the grammar is genuinely ambiguous as to where the condition ends and the undertaking begins — the clause “then the Lord will be my God” can be read as the last of the conditions rather than the first of the promises. The tithe here is the second in Genesis, after Abram&#x27;s to Melchizedek at 14:20, and again precedes any law requiring one.</p></div>
+</div>
+<nav class="chapnav"><a href="../27/">&larr; Genesis 27</a><a href="../">All chapters</a><a href="../29/">Genesis 29 &rarr;</a></nav>
+</body>
+</html>

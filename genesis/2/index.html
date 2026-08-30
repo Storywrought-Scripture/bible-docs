@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 2 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 2 -- The Sabbath and the Garden of Eden">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 2 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 2 -- The Sabbath and the Garden of Eden">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 2</h1></header>
+<p class="lede">The Sabbath and the Garden of Eden</p>
+<div class="notes">
+<div class="note">
+<span class="ref">2:2</span>
+<p>“By the seventh day God had finished”: MT reads “on the seventh day” (bayyôm haššᵉḇîʿî), which can sound as if God worked on the seventh. The verb kālâ (“finish”) permits a pluperfect — “had finished by then” — which I followed. But the Samaritan Pentateuch, LXX, and Peshitta read “the sixth day” (haššiššî), smoothing the difficulty so all work ends on day six and day seven is pure rest. The MT is the harder and likely original reading; the versions harmonize. wayyišbōṯ (“he rested, ceased”) sounds the root šāḇaṯ behind šabbāṯ — the Sabbath named here only by its verb (cf. Exod 20:11).</p></div>
+<div class="note">
+<span class="ref">2:3</span>
+<p>wayᵉqaddēš (“made holy, sanctified,” piel of qāḏaš): the first thing in Scripture declared holy (qāḏôš) is not a place or object but a span of time — worth weighting.</p></div>
+<div class="note">
+<span class="ref">2:4</span>
+<p>tôlᵉḏôṯ (“generations, account, origins”): the formula that structures Genesis (5:1; 6:9; 10:1…), here heading what follows — the story of what the heavens and earth gave rise to. This verse also introduces the compound name YHWH ʾĕlōhîm, which I render “the Lord God” (small-caps Lord = the tetragrammaton YHWH, by English convention). Chapter 1 used only ʾĕlōhîm (“God”); chapters 2–3 pair the personal covenant name with it. Note too the reversed order — “earth and heaven” (1:1 had “heaven and earth”) — pulling the focus down to the ground, where the action now happens.</p></div>
+<div class="note">
+<span class="ref">2:5–6</span>
+<p>śîaḥ / ʿēśeḇ haśśāḏeh (“shrub / plant of the field”): not the broad vegetation of 1:11–12 but the cultivated and wild growth tied to human labour — nothing grew yet, the text says, because there was no rain and “no human to work the ground,” establishing the human–soil bond. ʾēḏ (2:6) I render “flow / stream” welling up from below, following the likely Akkadian cognate edû (subterranean water); the traditional “mist” (KJV) is a guess. The word is genuinely uncertain.</p></div>
+<div class="note">
+<span class="ref">2:7</span>
+<p>A double wordplay English can only gesture at: the Lord God forms hā-ʾāḏām (“the human”) from the ʾăḏāmâ (“ground, soil”) — earthling from earth, the creature named for the dust it is drawn from. nep̄eš ḥayyâ (“living being”) is the same phrase used of the animals in 1:20–24: the human is not given a special “soul” distinct from the animals but becomes a living nep̄eš by the same breath. KJV’s “living soul” over-reads it. (Standardized: nep̄eš = “being / life / creature,” not “soul.”)</p></div>
+<div class="note">
+<span class="ref">2:9, 17</span>
+<p>daʿaṯ ṭôḇ wā-rāʿ (“the knowledge of good and evil”): “good and evil” is likely a merism — the two poles standing for everything between — so the phrase means comprehensive or self-determined knowing, the prerogative to decide good and evil for oneself, rather than mere information or lost innocence.</p></div>
+<div class="note">
+<span class="ref">2:15</span>
+<p>lᵉʿoḇdāh ûlᵉšomrāh (“to work it and watch over it”): the verbs ʿāḇaḏ (“serve, till”) and šāmar (“keep, guard”) are the same pair later used for the priests’ and Levites’ service and guarding of the sanctuary (Num 3:7–8; 8:26). The garden reads as a proto-temple and the human’s labour as a priestly vocation, not mere agriculture.</p></div>
+<div class="note">
+<span class="ref">2:17</span>
+<p>môṯ tāmûṯ: infinitive absolute plus finite verb, an emphatic construction — “you will most certainly die” (literally “dying you shall die”). Not a softened “you might die”; the inevitability is built into the grammar.</p></div>
+<div class="note">
+<span class="ref">2:18, 20</span>
+<p>ʿēzer kᵉneḡdô: badly served by KJV’s “help meet” (whence “helpmeet / helpmate”). ʿēzer means “help, helper” and carries no hint of inferiority — it is most often used of God as Israel’s helper (e.g., Ps 121:2). kᵉneḡdô means “corresponding to him, matching him, his counterpart,” one who stands opposite him as an equal. The sense is a fitting partner, his match — not an assistant.</p></div>
+<div class="note">
+<span class="ref">2:19</span>
+<p>“formed every animal”: the Hebrew wayyiqtol normally carries the action forward, which here would place the animals’ formation after the human’s — seemingly at odds with chapter 1, where animals come first. The verb can also be read as a pluperfect, “had formed” (so NIV), harmonizing the accounts. I left it sequential, as the plain Hebrew runs: chapters 1 and 2 tell the story with different orders and aims, and the harmonization is a choice the grammar permits but does not require.</p></div>
+<div class="note">
+<span class="ref">2:21–22</span>
+<p>ṣēlāʿ (“rib”): the traditional rendering, but the word elsewhere almost always means “side” — of the tabernacle, an altar, a hill (Exod 26:20; 2 Sam 16:13). “Rib” is possible and ancient (so LXX pleura), but “side” may be truer: the woman built from the human’s very side, not a minor bone. bānâ (“built”) — not “made” or “formed” but built, as one builds a structure; the only creature in the chapter so described.</p></div>
+<div class="note">
+<span class="ref">2:23</span>
+<p>ʾiššâ … ʾîš (“Woman … Man”): a sound-play — she is ʾiššâ because taken from ʾîš. (Linguistically the two may not share a root, but the text forges the link.) zōʾṯ happaʿam (“this one, at last / now at last”) is a cry of recognition after the failed search among the animals — the first human speech in Scripture is a line of poetry.</p></div>
+<div class="note">
+<span class="ref">2:24</span>
+<p>Manuscript variant. MT reads simply “and they become one flesh.” The Samaritan Pentateuch, LXX, Peshitta, Vulgate — and the New Testament citations (Matt 19:5; Mark 10:8; 1 Cor 6:16) — all add “the two”: “and the two become one flesh,” making the monogamous sense explicit. I translated the shorter MT; the longer reading is well attested and may be original or an early clarifying expansion.</p></div>
+<div class="note">
+<span class="ref">2:25</span>
+<p>ʿărûmmîm (“naked”): a deliberate bridge to the next scene. The pair are ʿărûmmîm (naked, unashamed); the serpent of 3:1 is ʿārûm (crafty, shrewd) — the same sound. The narrator sets innocence and cunning side by side on a pun, and the chapter break hides it.</p></div>
+</div>
+<nav class="chapnav"><a href="../1/">&larr; Genesis 1</a><a href="../">All chapters</a><a href="../3/">Genesis 3 &rarr;</a></nav>
+</body>
+</html>

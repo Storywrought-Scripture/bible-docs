@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 7 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 7 -- The Flood Comes">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 7 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 7 -- The Flood Comes">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 7</h1></header>
+<p class="lede">The Flood Comes</p>
+<div class="notes">
+<div class="note">
+<span class="ref">7:1</span>
+<p>ṣaddîq (“righteous”): the same term anchoring 6:9’s “Noah was a righteous man, blameless in his generations.” Both verses assess him relative to his own corrupt age (baddôr hazzeh, “in this generation”) rather than by an absolute or timeless standard — the text says he passed the bar set by his contemporaries, not that he was sinless. lᵉp̄ānay (“before me”) makes it a relational verdict, righteous in God’s own sight, not merely a reputation among people.</p></div>
+<div class="note">
+<p>7:2–3, 8–9  Two accounts of the animals boarding sit side by side. Verses 2–3 (using YHWH) give Noah a specific, graded instruction — šiḇʿâ šiḇʿâ (“seven, seven”), a distributive idiom meaning seven pairs (fourteen animals) of every clean kind, one pair of every unclean kind, and seven pairs of birds, so enough clean stock survives for both breeding and later sacrifice (8:20); KJV’s “by sevens” preserves the same ambiguity the Hebrew carries, but “seven pairs” is the better-supported reading. Verses 8–9 (using ʾĕlōhîm) then narrate the boarding itself with no clean/unclean distinction — simply “two by two.” The ark is even entered twice: once in v. 7, again in v. 13. Read as one continuous account, this can be taken as summary following detail. Critical scholarship generally sees two originally separate flood traditions — conventionally labelled J (YHWH, graded pairs) and P (ʾĕlōhîm, plain pairs, precise dates) — interwoven by an editor rather than composed as one. Either way the tension is native to the Hebrew text itself, not a translation choice; I’ve rendered each verse as it stands rather than harmonizing the counts.</p></div>
+<div class="note">
+<span class="ref">7:3</span>
+<p>lᵉḥayyôṯ zeraʿ (“to keep seed alive”): zeraʿ is the project’s standing gloss for “seed” elsewhere in Genesis — seed-bearing plants in 1:11–12, famously the woman’s seed in 3:15 — but here it’s used in its ordinary, non-theological sense of offspring or lineage. I’ve rendered it “to keep their kind alive” for readability rather than the more literal, now-archaic “to keep seed alive”; flagging the departure per the glossary rule rather than silently varying the term.</p></div>
+<div class="note">
+<span class="ref">7:4, 12, 17</span>
+<p>ʾarbāʿîm yôm wᵉʾarbāʿîm lāylâ (“forty days and forty nights”) is a stock biblical formula for a bounded, consequential span — it recurs for Moses on Sinai and Elijah’s journey — a round number for a decisive period more than a meteorologically precise rainfall total. It marks only the raining phase; the chapter separately tracks how long the water stayed high (v. 24).</p></div>
+<div class="note">
+<span class="ref">7:11</span>
+<p>maʿyᵉnōṯ tᵉhôm rabbâ (“fountains of the great deep”) and ʾărubbōṯ haššāmayim (“the floodgates of the sky”): the flood undoes 1:6–7’s act of creation, where God separated the waters above the dome from the waters below. Here both boundaries fail at once — the subterranean deep (tᵉhôm, the same word for the primordial waters of 1:2) erupts upward, and the sky’s own floodgates open downward. The precise date formula (600th year, 2nd month, 17th day) is typical of the priestly source’s meticulous record-keeping — the same voice responsible for the dome/rāqîaʿ cosmology in chapter 1.</p></div>
+<div class="note">
+<span class="ref">7:16</span>
+<p>wayyisgōr YHWH baʿăḏô (“then the Lord shut him in”): the verse shifts from ʾĕlōhîm, who commands the animals in, to YHWH, who personally closes the door — the chapter’s most intimate image, God himself sealing Noah in rather than leaving it to Noah or an angel. The LXX makes explicit what the compact Hebrew leaves implicit, adding “from outside him” (ἔξωθεν αὐτοῦ) — clarifying that God shut it from without, with Noah safely inside.</p></div>
+<div class="note">
+<span class="ref">7:21–23</span>
+<p>The Hebrew piles up kol (“all, every”) across three verses — every creature, every human, everything with the breath of life — and closes with wayyimaḥ (“he wiped out, blotted out”), the same verb YHWH used for his intent in 6:7 (“I will wipe”). Verse 22’s nišmaṯ-rûaḥ ḥayyîm (“the breath of the spirit of life”) echoes 2:7’s nišmaṯ ḥayyîm, breathed into the first human — what death undoes here is exactly what creation gave there. I haven’t softened the repetition or the verb; the text’s own rhetorical strategy is cumulative and total, and rendering it that way is part of translating it accurately.</p></div>
+<div class="note">
+<span class="ref">7:24</span>
+<p>ḥămiššîm ûmᵉʾaṯ yôm (“a hundred and fifty days”): a second duration figure alongside the forty days of rain (vv. 4, 12, 17), and it doesn’t obviously nest inside the first. One reading takes the 150 days as inclusive — the waters stayed high for a total of 150 days, of which the first 40 were the raining phase. Source critics instead see this as evidence of the two interwoven accounts noted at 7:2–3, 8–9, each with its own chronology, only loosely harmonized by the final editor (compare 8:3–4’s own arithmetic, which doesn’t cleanly resolve either way). I’ve translated the number as given without adjudicating between these; both are defensible, and the text doesn’t settle it for us.</p></div>
+</div>
+<nav class="chapnav"><a href="../6/">&larr; Genesis 6</a><a href="../">All chapters</a><a href="../8/">Genesis 8 &rarr;</a></nav>
+</body>
+</html>

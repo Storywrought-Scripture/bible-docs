@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 15 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 15 -- The Covenant Between the Pieces">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 15 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 15 -- The Covenant Between the Pieces">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 15</h1></header>
+<p class="lede">The Covenant Between the Pieces</p>
+<div class="notes">
+<div class="note">
+<span class="ref">15:1</span>
+<p>hāyâ ḏᵉḇar-YHWH ʾel-ʾaḇrām bammaḥăzeh (“the word of the Lord came to Abram in a vision”): the first appearance in the Bible of the standard prophetic formula, and it lands on Abram — who is called a prophet outright at 20:7. maḥăzeh is a vision-term at home in later prophecy. ʾal-tîrāʾ, “do not be afraid,” is likewise the opening of a recognisable oracle form. māḡēn, “shield,” puns quietly on the māḡēn root of blessing-giving used at 14:20, where Melchizedek says God delivered (miggēn) Abram&#x27;s enemies into his hand — a link the chapter&#x27;s opening is making back to the one before it. The last clause is genuinely ambiguous: śᵉḵārᵉḵā harbēh mᵉʾōḏ can be “your reward will be very great” or, reading the two nouns in apposition to the first clause, “I am your shield, your very great reward.” The second is grammatically available and theologically weightier; the first is the plainer reading of the word order and is what I translated.</p></div>
+<div class="note">
+<span class="ref">15:2</span>
+<p>ʾăḏōnāy YHWH … ben-mešeq bêṯî (“Lord God” … “the one who will inherit my house”): two difficulties in one verse. ʾăḏōnāy YHWH is the first occurrence of that pairing in the Bible; it is rendered “Lord God” following the standard English convention, in which the second element is the Tetragrammaton in small capitals and the first is the ordinary word for lord. And ben-mešeq bêṯî is close to untranslatable. mešeq occurs nowhere else in the Hebrew Bible and its meaning is unknown; the guesses run from “possession” to “acquisition” to a term for a steward, and the phrase is then heard as “the son of the possession of my house,” hence an heir. It is followed immediately by dammeśeq ʾĕlîʿezer, “Damascus Eliezer,” which shares consonants with mešeq and may be wordplay, a place of origin, or a corruption. I have rendered the sense the context requires — a household servant standing to inherit — and record that the Hebrew here is as obscure as anything in the chapter.</p></div>
+<div class="note">
+<span class="ref">15:5</span>
+<p>sᵉp̄ōr hakkôḵāḇîm (“count the stars”): the second of the three uncountable images, after the dust of 13:16 and before the sand of 22:17. There is a small piece of staging in it that the English can carry: God brings him outside, which means the vision of verse 1 has been happening indoors and it is night — and yet verse 12 has the sun going down. The chapter&#x27;s time does not run straight, which is one of the arguments for reading it as two accounts joined. Note that the promise is again to the zeraʿ, the seed, held to the glossary rendering throughout this volume; the thread runs from 3:15 through 12:7 and 13:15 to here, and Abram&#x27;s complaint in verse 3 is precisely that he has none.</p></div>
+<div class="note">
+<span class="ref">15:6</span>
+<p>wᵉheʾĕmin baYHWH wayyaḥšᵉḇehā llô ṣᵉḏāqâ (“And he trusted the Lord, and he counted it to him as righteousness”): the verse in Genesis with the longest and most contested history of theological use, and the translation has to be made before the arguments start. First, the verb. heʾĕmin is the causative of ʾāman, the root behind ʾāmēn: to hold firm, to rely on, to treat as trustworthy. It is directed at a person — baYHWH, in the Lord — not at a proposition, so “trusted” is closer than “believed,” which in modern English suggests assenting to a claim. Second, the subject. wayyaḥšᵉḇehā is “and he counted it,” and Hebrew supplies no name; the natural reading, and the one the ancient versions and the whole later tradition take, is that the Lord counted Abram&#x27;s trust as righteousness. The reverse — that Abram counted it to God — is grammatically possible and has been proposed, and it is not what I have translated. Third, ṣᵉḏāqâ. Held to the glossary&#x27;s “righteousness.” The word is relational rather than abstract: being in the right within a relationship, meeting what the bond requires. ḥāšaḇ is a reckoning verb, at home in accounting and in the priestly declarations of Leviticus 7:18 and 17:4. What the verse says is that Abram&#x27;s reliance was entered on the books as covenant-rightness. What it does not say is anything about the mechanism by which that happens, or about works, or about faith as an alternative to law — Romans 4, Galatians 3:6 and James 2:23 all quote this verse and argue in three different directions from it, and none of those arguments is available in the Hebrew of 15:6 by itself. This volume translates the sentence in its own context and leaves the reception where it belongs.</p></div>
+<div class="note">
+<span class="ref">15:8</span>
+<p>bammâ ʾēḏaʿ kî ʾîrāšennâ (“how am I to know that I will possess it?”): two verses after the sentence that has been read for two millennia as the definition of faith, the same man asks for proof. The narrator records the question without a hint of rebuke, and God answers it with a ceremony rather than a reproach — which is worth setting beside Zechariah&#x27;s nearly identical question at Luke 1:18, where the answer is nine months of silence. Whatever heʾĕmin means in verse 6, it evidently does not exclude asking.</p></div>
+<div class="note">
+<span class="ref">15:9–10</span>
+<p>wayᵉḇattēr ʾōṯām battāweḵ (“cut them in two down the middle”): the covenant ritual, and it is the reason Hebrew says one cuts a covenant, kāraṯ bᵉrîṯ — the idiom appears in verse 18 and it is literal here. Animals are halved and the halves set facing each other with a path between, and the parties walk that path. Jeremiah 34:18–20 preserves the meaning exactly: those who pass between the pieces of the calf invoke the calf&#x27;s fate on themselves if they break the terms. It is a self-curse enacted rather than spoken. Note that this differs from the covenant language of 6:18 and 9:9, where God raises up (hēqîm) a covenant rather than cutting one; see the note at 6:18. The birds are not divided, which follows the same rule as the later sacrificial law (Leviticus 1:17) without explanation here.</p></div>
+<div class="note">
+<span class="ref">15:12</span>
+<p>tardēmâ nāp̄ᵉlâ ʿal-ʾaḇrām (“a deep sleep fell on Abram”): tardēmâ is the same word used of the sleep God causes to fall on the man in 2:21 while the woman is made — a divinely imposed unconsciousness, not ordinary sleep, and in both places it removes the human from participation in what is about to happen. What accompanies it is described in three words heaped without connectives: ʾêmâ ḥăšēḵâ ḡᵉḏōlâ. The asyndeton lets ḡᵉḏōlâ stand as a third item — a dread, a darkness, a great one — though I have taken it attributively, “a great darkness.” This is the setting for the most frightening thing God has yet said to Abram, and the narrator supplies the atmosphere before the content.</p></div>
+<div class="note">
+<span class="ref">15:13–16</span>
+<p>gēr yihyeh zarʿăḵā … ʾarbaʿ mēʾôṯ šānâ (“your seed will be strangers … four hundred years”): the promise arrives with the cost attached, and the cost is four centuries of slavery. Two numerical difficulties sit in these four verses and neither is resolved here. The four hundred years of verse 13 is given as four hundred and thirty at Exodus 12:40, where the Septuagint and the Samaritan Pentateuch read “in the land of Egypt and in the land of Canaan,” splitting the total and leaving roughly two hundred and fifteen years in Egypt; see the note at Exodus 12:40. And “the fourth generation” of verse 16 is hard to reconcile with four hundred years by any ordinary reckoning of a generation, unless dôr here means something closer to a lifetime. Verse 14&#x27;s promise that they will come out birḵuš gāḏôl, with great possessions, is fulfilled at Exodus 12:35–36.</p></div>
+<div class="note">
+<span class="ref">15:16</span>
+<p>kî lōʾ-šālēm ʿăwōn hāʾĕmōrî ʿaḏ-hēnnâ (“for the guilt of the Amorite is not yet full”): one of the most consequential sentences in the book and one of the least comfortable. ʿāwōn is guilt or iniquity together with its consequence; šālēm is complete, filled up. The delay of four hundred years is explained not by anything about Israel but by the moral state of the people already in the land: they are not yet guilty enough to be dispossessed, so the dispossession waits. Two things follow, and both are in the text rather than imposed on it. The conquest is framed as judgment on the Canaanites rather than as favouritism toward Israel — a framing Leviticus 18:24–28 makes explicit, warning that the land will vomit Israel out on the same terms. And the verse assumes God is willing to let generations of Abram&#x27;s descendants be enslaved rather than dispossess a people before their guilt is complete, which is a hard kind of patience and is not softened here.</p></div>
+<div class="note">
+<span class="ref">15:17</span>
+<p>tannûr ʿāšān wᵉlappîḏ ʾēš ʾăšer ʿāḇar bên haggᵉzārîm hāʾēlleh (“a smoking firepot and a flaming torch passed between those pieces”): God walks the path alone. Abram is asleep — the tardēmâ of verse 12 has seen to that — and only the fire moves between the halves. In every other covenant of this form both parties pass through and both take the self-curse on themselves; here one party is unconscious and the other swears alone. The covenant is therefore unilateral and unconditional in its very staging: nothing is asked of Abram, and nothing he does or fails to do is written into the terms. Smoke and fire are the standard vehicles of God&#x27;s presence in the Torah — the pillar of Exodus 13:21, Sinai smoking like a kiln at Exodus 19:18 — and a tannûr is an ordinary domestic oven, which keeps the image concrete rather than celestial.</p></div>
+<div class="note">
+<span class="ref">15:18–21</span>
+<p>minnᵉhar miṣrayim ʿaḏ-hannāhār haggāḏōl nᵉhar-pᵉrāṯ (“from the river of Egypt to the great river, the river Euphrates”): one of the widest boundary descriptions in the Torah — Exodus 23:31 and Deuteronomy 11:24 reach the same northern limit — and it was never the actual extent of Israelite control except arguably at its briefest maximum under David and Solomon. The southern limit is disputed: nᵉhar miṣrayim here says river, which would be the Nile or one of its branches, whereas the parallel boundary lists at Numbers 34:5 and Joshua 15:4 use naḥal miṣrayim, the wadi of Egypt, generally identified with the Wadi el-Arish in Sinai. The two are hundreds of miles apart. Ten nations are listed, where the standard formulas elsewhere name seven (Deuteronomy 7:1) or six; the Kenite, Kenizzite and Kadmonite of verse 19 appear in no other such list. And note the tense in verse 18: lᵉzarʿăḵā nāṯattî, “to your seed I have given” — a perfect, spoken over a land Abram does not hold and a seed he does not have.</p></div>
+</div>
+<nav class="chapnav"><a href="../14/">&larr; Genesis 14</a><a href="../">All chapters</a><a href="../16/">Genesis 16 &rarr;</a></nav>
+</body>
+</html>

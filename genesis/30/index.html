@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 30 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 30 -- The Children, and the Flocks">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 30 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 30 -- The Children, and the Flocks">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 30</h1></header>
+<p class="lede">The Children, and the Flocks</p>
+<div class="notes">
+<div class="note">
+<span class="ref">30:1–2</span>
+<p>hāḇâ-lî ḇānîm wᵉʾim-ʾayin mēṯâ ʾānōḵî (“Give me children — and if not, I am a dead woman”): Rachel&#x27;s demand is addressed to her husband, and his reply is blunt: hăṯaḥaṯ ʾĕlōhîm ʾānōḵî, “am I in the place of God?” The narrator marks Jacob&#x27;s anger before quoting him, which he does for Jacob in only one other place in Genesis — 31:36, against Laban. The narrator&#x27;s own view is given at 29:31 and 30:22 — it is God who opens and closes wombs — so Jacob is correct and also, plainly, unkind, and the text lets both stand. Note the echo of Sarah&#x27;s situation and of Hannah&#x27;s later; and note that Rachel says mēṯâ ʾānōḵî, which at 35:16–19 turns out to be what happens, in childbirth.</p></div>
+<div class="note">
+<span class="ref">30:3</span>
+<p>wᵉṯēlēḏ ʿal-birkay (“let her give birth on my knees”): a legal and ritual gesture of adoption — the child is delivered onto the knees of the woman who will claim it, and thereby counts as hers. The same gesture appears at 50:23, where Joseph&#x27;s great-grandchildren are born on his knees. wᵉʾibbāneh gam-ʾānōḵî mimmennâ, “so that I too may be built up from her,” puns on bēn, son, and bānâ, to build, which is the same play Sarai makes at 16:2. The arrangement itself repeats Sarai&#x27;s with Hagar, and the reader has already seen how that ended; here the narrator gives no sign that anyone has learned anything.</p></div>
+<div class="note">
+<p>30:6–24 (the names)  Seven naming speeches — at verses 6, 8, 11, 13, 18, 20 and 24 — all of them sound-plays rather than derivations, and together they are a record of a war conducted through children. Dan — dānannî, “he has judged me.” Naphtali — nap̄tûlê, from pāṯal, twisting or wrestling; nap̄tûlê ʾĕlōhîm is probably a superlative, “mighty wrestlings,” though it can be read as wrestling with God. Gad — a ketiv/qere. The consonantal text is written as one word, bᵉḡāḏ, “with fortune”; the reading tradition splits it into two, bāʾ gāḏ, “Fortune has come.” I have followed the qere; the ketiv would give “With fortune!” gāḏ is also the name of a deity of fortune. Asher — bᵉʾošrî, “in my happiness,” and ʾiššᵉrûnî, “they will call me happy.” Issachar — śᵉḵārî, “my wages,” tying back to the hiring in verse 16. Zebulun — zᵉḇāḏanî, “has given me a gift,” and yizbᵉlēnî, “will honour me,” two plays on one name. Joseph — a double etymology across two verses: ʾāsap̄, “has taken away” (v. 23), and yōsēp̄, “may he add” (v. 24). The women are naming; Jacob names none of them. And every name is an argument in the contest between the two sisters, which the narrator reports without approving.</p></div>
+<div class="note">
+<span class="ref">30:14–16</span>
+<p>dûḏāʾîm (“mandrakes”): the mandrake, whose forked root was widely held to promote conception and desire, and whose Hebrew name puns on dôḏ, love or beloved. The scene is worth reading for what it says about the household: Rachel has Jacob&#x27;s love and wants a child; Leah has children and wants Jacob; they trade, and the currency is a night with their shared husband, negotiated between the two of them without him. Leah&#x27;s line to him — śāḵōr śᵉḵartîḵā, “I have hired you, hired you” — uses the vocabulary of wage labour, which is the vocabulary the second half of the chapter runs on. Note that the mandrakes do not work: Rachel takes them and remains barren until verse 22, where God, not the root, opens her womb.</p></div>
+<div class="note">
+<span class="ref">30:21</span>
+<p>dînâ (“Dinah”): the only child in the chapter given no naming speech and no etymology. Every one of the eleven sons gets a sentence explaining what his mother meant by the name; the daughter gets wattiqrāʾ ʾeṯ-šᵉmāh dînâ, and nothing else. The name would naturally connect to dîn, judgement — the same root as Dan — but the text declines to say so. Whether the silence is the narrator&#x27;s economy or a comment on how a daughter is counted in this household, the reader is left to judge; chapter 34 will be her chapter.</p></div>
+<div class="note">
+<span class="ref">30:22</span>
+<p>wayyizkōr ʾĕlōhîm ʾeṯ-rāḥēl (“And God remembered Rachel”): zāḵar is the verb of 8:1, where God remembers Noah, and of 19:29, where he remembers Abraham — remembering as acting on a commitment, not as recalling something forgotten. It is the standing marker in Genesis that a situation is about to turn. After a whole chapter of bargaining, mandrakes, slave women and rivalry, the thing that actually produces Joseph is stated in three words with none of it involved.</p></div>
+<div class="note">
+<span class="ref">30:27</span>
+<p>niḥaštî (“I have learned by divination”): from nāḥaš, to practise divination or read omens — the same root as the noun for the serpent at 3:1, though the connection is disputed. Laban states plainly that he has used divination, a practice Deuteronomy 18:10 later forbids outright, and the narrator neither remarks on it nor corrects him. The traditional English versions soften it to a phrase about learning by experience, which removes the point. Laban&#x27;s household keeps tᵉrāp̄îm, household gods, as well (31:19), and Genesis reports the religion of Jacob&#x27;s in-laws without editorial comment.</p></div>
+<div class="note">
+<span class="ref">30:32–43</span>
+<p>ʿăquddîm nᵉquddîm ûṭᵉluʾîm (“striped, speckled and spotted”): the wage agreement gives Jacob only the unusually marked animals, which in a normal flock is a small minority, and Laban immediately improves his own odds by removing every already-marked animal and putting three days between the flocks (verses 35–36), so that Jacob begins with nothing to breed from. What follows is folk animal husbandry — peeled rods set at the watering troughs so that the ewes conceive in sight of striped patterns and bear striped young — resting on a belief in maternal impression that has no basis in heredity. The narrator reports the technique in detail and reports that it worked, without either endorsing or ridiculing it. What is worth setting beside it is Jacob&#x27;s own account at 31:9–12, where he tells his wives that a messenger of God showed him the marked animals in a dream and that God took the livestock from Laban and gave it to him — the same events, with the rods absent and God in their place. The volume translates both as they stand and does not harmonise them. Note that in both tellings Jacob is doing to Laban what Laban has done to him, and that verse 43 uses of Jacob the same verb, pāraṣ, “burst out,” that Jacob used of Laban&#x27;s own increase at verse 30. Two words in the passage are less settled than the English suggests. ṣiḏqāṯî at verse 33, rendered “my honesty,” is literally “my righteousness” — the noun rendered “righteousness” where it is paired with justice at 18:19 and 18:25. Here it stands alone in a wage dispute, doing commercial rather than forensic work: Jacob is offering an audit of the flock, not a moral standing, and “my righteousness will answer for me” would carry a weight the sentence does not. Note that the volume also renders a different and unrelated word, kēnîm, “honest” of Joseph&#x27;s brothers at 42:11 and after. And hamquššārôṯ and hāʿăṭup̄îm at verses 41–42, “the sturdy” and “the feeble,” are contested: literally they are “the bound” and “the covered,” and a serious alternative reads them as the early-bearing and the late-bearing, a distinction of season rather than of strength. On that reading part of what Jacob does is ordinary husbandry, and the judgement above should be read with that qualification.</p></div>
+<div class="note">
+<p>30:35, 37, 40 (Laban&#x27;s name)  kōl ʾăšer-lāḇān bô (“every one with white on it”): lāḇān, white, is Laban&#x27;s own name, and the flock section plays on it throughout. Laban takes out of the flock everything that is lāḇān; Jacob answers by peeling the white out of rods of liḇneh, the white-tree, at verse 37. At verse 40 ṣōʾn lāḇān can be heard either as “Laban&#x27;s flock” or as “the white flock”; I have taken the first, but the Hebrew hears both, and the contest between the two men is being fought in his name.</p></div>
+</div>
+<nav class="chapnav"><a href="../29/">&larr; Genesis 29</a><a href="../">All chapters</a><a href="../31/">Genesis 31 &rarr;</a></nav>
+</body>
+</html>

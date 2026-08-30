@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 25 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 25 -- The Death of Abraham, and the Birth of Esau and Jacob">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 25 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 25 -- The Death of Abraham, and the Birth of Esau and Jacob">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 25</h1></header>
+<p class="lede">The Death of Abraham, and the Birth of Esau and Jacob</p>
+<div class="notes">
+<div class="note">
+<span class="ref">25:1–6</span>
+<p>qᵉṭûrâ (“Keturah”): called a wife here and a concubine at 1 Chronicles 1:32, and verse 6 of this chapter speaks of “the sons of the concubines” in the plural, which folds her in with Hagar. The list is doing the same work as the tables in chapters 10, 22 and 25:12–18 — accounting for the peoples of the surrounding region as kin, and then setting them aside. Midian is the significant name: Moses will marry a Midianite priest&#x27;s daughter and Israel will fight Midian repeatedly, and the text here makes them Abraham&#x27;s own sons. Sheba and Dedan also appeared under Ham at 10:7, which is the same doubling the Table of Nations produces elsewhere and for the same reason — the lists sort by relationship, not by descent. Verses 5 and 6 are the funnel stated as a legal act: everything to Isaac, gifts to the others, and the others sent east while the father is still alive to make it stick.</p></div>
+<div class="note">
+<span class="ref">25:8</span>
+<p>wayyēʾāsep̄ ʾel-ʿammāyw (“and he was gathered to his people”): a standing idiom for death, and it should not be read as a doctrine of the afterlife. It is used of Ishmael here at verse 17, of Isaac at 35:29, of Jacob at 49:33, and of Aaron and Moses, including of Moses, who is buried alone in Moab with no ancestors anywhere near him — so it cannot simply mean joining the family grave either. The Hebrew Bible&#x27;s picture of the dead is šᵉʾôl, a shadowy gathering-place without reward or punishment, and this phrase belongs to it. śāḇēaʿ, “satisfied,” is literally “full” — he has had enough of life, which is said of very few people in scripture.</p></div>
+<div class="note">
+<span class="ref">25:9</span>
+<p>wayyiqbᵉrû ʾōṯô yiṣḥāq wᵉyišmāʿēʾl bānāyw (“And Isaac and Ishmael his sons buried him”): the two are named together, as sons, and Ishmael is named second though he is the elder. They have not appeared in the same verse since chapter 21, where one was driven into the wilderness on the other&#x27;s account, and the narrator reports their meeting without a word of comment on it. The same restraint appears at 35:29, where Esau and Jacob bury Isaac together after chapters of enmity. Genesis buries its patriarchs with the estranged brothers standing side by side and never explains how they got there.</p></div>
+<div class="note">
+<span class="ref">25:16</span>
+<p>šᵉnêm-ʿāśār nᵉśîʾim (“twelve chieftains”): Ishmael gets twelve sons who become twelve tribal chieftains, which is the promise of 17:20 fulfilled, and in the same numbers that Israel will later have. The narrator gives Ishmael a full genealogy, a lifespan, a death formula and a territory — the whole apparatus of a people that matters — and then does not follow him. Note that these names are largely identifiable as North Arabian groups: Kedar, Nebaioth, Tema and Dumah all appear in Assyrian records and in the prophets.</p></div>
+<div class="note">
+<span class="ref">25:18</span>
+<p>ʿal-pᵉnê ḵol-ʾeḥāyw nāp̄āl (“He settled over against all his brothers”): the verb is nāp̄al, “to fall,” and it is genuinely difficult here. It can carry the sense of falling upon, hence settling or encamping over against, and that is how I have taken it. The standard English versions differ here, several taking it in the hostile sense. It can also mean falling in the hostile sense. The phrase deliberately echoes the oracle given to Hagar at 16:12, ʿal-pᵉnê ḵol-ʾeḥāyw yiškōn, where the verb is the ordinary “dwell” — so the narrator has changed the verb while keeping the phrase, and the change is probably meaningful. Whether it hardens the sense or is a stylistic variation cannot be settled from the Hebrew.</p></div>
+<div class="note">
+<span class="ref">25:21–22</span>
+<p>kî ʿăqārâ hîʾ (“because she was barren”): the second barren matriarch, and the pattern is now established — the promise proceeds only through wombs that do not work. Isaac prays — as Abraham did at 20:17, and on the same subject. wayyiṯrōṣăṣû habbānîm bᵉqirbāh, “the children crushed each other inside her,” uses a violent verb, from the root for crushing or smashing, and it is the first thing the reader learns about these two. Rebekah&#x27;s response, ʾim-kēn lāmmâ zeh ʾānōḵî, is four words and is famously incomplete: “if so, why am I?” Proposals fill the gap differently — why am I alive, why am I like this, why did I want this, why am I the one this is happening to. I have left it unfinished in English exactly as it is unfinished in Hebrew. She is also the only matriarch who goes to enquire of the Lord on her own initiative, and the text does not say where or through whom.</p></div>
+<div class="note">
+<span class="ref">25:23</span>
+<p>wᵉraḇ yaʿăḇōḏ ṣāʿîr (“and the greater will serve the lesser”): the syntax is genuinely ambiguous and the ambiguity is not resolvable from the Hebrew. The clause is three words with no object marker and no definite articles, and Hebrew word order is not rigid enough here to settle which noun is the subject: it can equally be read “the greater will serve the lesser” or “the lesser will serve the greater.” The traditional rendering — the elder shall serve the younger — is supported by the story that follows and by the ancient versions, and I have followed it. But the poetic line is built to be heard both ways, and a reader should know that. Note also raḇ and ṣāʿîr are “greater” and “lesser,” not literally “older” and “younger”; the age relation is inferred from the narrative. Romans 9:12 quotes the verse in the Septuagint&#x27;s unambiguous Greek to make an argument about election that the Hebrew&#x27;s ambiguity does not itself supply.</p></div>
+<div class="note">
+<span class="ref">25:25–26</span>
+<p>ʿēśāw … yaʿăqōḇ (“Esau” … “Jacob”): a knot of wordplay that carries into the rest of the book. The first is ʾaḏmônî, ruddy or reddish, which anticipates ʾĕḏôm, Edom, in verse 30; and śēʿār, hairy, which anticipates śēʿîr, Seir, the territory of Edom. The name Esau itself is not actually explained by either. Jacob&#x27;s name is tied to ʿāqēḇ, heel — he comes out gripping one — and the same consonants give ʿāqaḇ, to supplant or to deceive, which is exactly what Esau says at 27:36. So one twin is named for the land his descendants will hold and the other for what he will do to his brother, and both names are working before either child has acted.</p></div>
+<div class="note">
+<span class="ref">25:27</span>
+<p>ʾîš tām yōšēḇ ʾōhālîm (“a quiet man, staying among the tents”): a departure from the standing glossary, flagged per the project&#x27;s rule. The glossary fixes tāmîm as “blameless,” in the unblemished-sacrifice sense, from 6:9 and 17:1. tām is the same root, and rendering it “blameless” here would be defensible lexically and would produce a strange sentence: the man who is about to buy his brother&#x27;s birthright off him while he is faint with hunger, and then deceive his blind father, introduced as morally unblemished. The word&#x27;s range also covers whole, sound, simple, and by extension quiet or retiring, which suits the contrast the verse is actually drawing — the hunter in the open country against the one who stays home. I have rendered it “quiet.” It is worth saying plainly that a real reading takes it the other way and hears the narrator as being ironic, or as recording a genuine tradition of Jacob&#x27;s integrity that sits uneasily against his conduct. ʾîš yōḏēaʿ ṣayiḏ, of Esau, is “a man who knew hunting” — knowledge as skill.</p></div>
+<div class="note">
+<span class="ref">25:28</span>
+<p>kî-ṣayiḏ bᵉp̄îw (“because game was in his mouth”): the Hebrew is blunt to the point of comedy — Isaac loved Esau because of the taste of the meat. The suffix is ambiguous as to whose mouth, Isaac&#x27;s or Esau&#x27;s, and the sense is the same either way. The verse then states Rebekah&#x27;s preference with no reason at all. Two parents, two sons, two loves, and one of them explained by dinner: this is the household that produces chapter 27, and the narrator sets it up in a single verse without comment.</p></div>
+<div class="note">
+<span class="ref">25:30</span>
+<p>hālʿîṭēnî nāʾ min-hāʾāḏōm hāʾāḏōm hazzeh (“Let me gulp down some of that red stuff — that red stuff”): Esau cannot name the food. hālʿîṭ occurs only here in the Hebrew Bible; the sense comes from Mishnaic Hebrew, where the verb is used of cramming food into an animal&#x27;s mouth. It is a coarse word either way, and the doubled hāʾāḏōm hāʾāḏōm is a man pointing at a pot. The narrator&#x27;s aside — “that is why his name was called Edom” — attaches the name of a nation to this moment. The characterisation is entirely in the diction and it survives only if the English keeps the repetition and the crudeness rather than tidying it into “that red stew.”</p></div>
+<div class="note">
+<span class="ref">25:31–34</span>
+<p>bᵉḵōrâ (“birthright”): the rights of the firstborn — a double share of the inheritance, and headship of the family. Jacob&#x27;s demand is opportunistic and his brother is exhausted; the narrator does not defend him and never says the transaction was just. But the verdict that closes the chapter falls on Esau alone: wayyiḇez ʿēśāw ʾeṯ-habbᵉḵōrâ, “so Esau despised his birthright,” the one evaluative sentence in the whole passage. Verse 34 is a chain of five quick verbs — ate, drank, got up, went, despised — that reads as contempt by pace alone. Esau&#x27;s own reasoning, “I am going to die,” is either a starving man&#x27;s exaggeration or a genuine estimate of his situation, and the Hebrew does not say which; either way he prices a permanent thing at the value of one meal.</p></div>
+</div>
+<nav class="chapnav"><a href="../24/">&larr; Genesis 24</a><a href="../">All chapters</a><a href="../26/">Genesis 26 &rarr;</a></nav>
+</body>
+</html>

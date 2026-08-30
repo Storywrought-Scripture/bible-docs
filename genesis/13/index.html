@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 13 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 13 -- Abram and Lot Divide the Land">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 13 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 13 -- Abram and Lot Divide the Land">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 13</h1></header>
+<p class="lede">Abram and Lot Divide the Land</p>
+<div class="notes">
+<div class="note">
+<span class="ref">13:1–4</span>
+<p>wayyaʿal ʾaḇrām mimmiṣrayim (“So Abram went up from Egypt”): the verb pair of the Egypt cycle closes — he went down at 12:10 and goes up here — and the chapter opens by walking him backwards along his own route, from the Negev to Bethel, to “the place where his tent had been at the first,” to “the place of the altar he had made there at the beginning.” The Hebrew says at the first and at the beginning in consecutive clauses. He is returning to the last point before the detour, and the first thing he does there is what he had done there before: wayyiqrāʾ … bᵉšēm YHWH, call on the name of the Lord. The narrator still passes no verdict on Egypt; the itinerary does the work instead.</p></div>
+<div class="note">
+<span class="ref">13:2</span>
+<p>wᵉʾaḇrām kāḇēḏ mᵉʾōḏ (“Abram was very heavy”): kāḇēḏ is literally weight — the ordinary Hebrew way of saying rich, but the physical sense is not dead in it, and the same root gives kāḇôḏ, glory, and the heavy famine of 12:10 that sent him to Egypt in the first place. Much of this weight was acquired in chapter 12 on the strength of the sister story (12:16). The narrator sets the wealth down in one clause without comment and then spends the chapter on what wealth does: it is the reason the land cannot hold the two households (verse 6), which is the reason for the separation, which is what puts Lot in Sodom.</p></div>
+<div class="note">
+<span class="ref">13:6–7</span>
+<p>wᵉlōʾ-nāśāʾ ʾōṯām hāʾāreṣ (“the land could not support the two of them”): literally the land could not carry them, which is what a herdsman&#x27;s land does. The trouble is prosperity rather than scarcity, and the quarrel is between the rōʿîm, the hired herdsmen, not between the two men — a distinction Abram is careful to keep in verse 8. The closing clause of verse 7 is the same aside as 12:6 with a second people added: wᵉhakkᵉnaʿănî wᵉhappᵉrizzî ʾāz yōšēḇ bāʾāreṣ. Its function here is sharper than the promise-tension it carried there. Two clans of foreigners are conducting a public dispute over grazing in country that belongs to neither of them, in full view of the people it does belong to.</p></div>
+<div class="note">
+<span class="ref">13:8–9</span>
+<p>ʾănāšîm ʾaḥîm ʾănaḥnû (“we are brothers”): they are not — Lot is his nephew (11:27; 12:5) — and ʾāḥ covers kin generally, so this is “we are family” rather than a slip. What matters is who yields. Abram holds the promise, is the elder, and has just been told the whole land is for his seed; and he hands the choice to the younger man, and hands it away completely: if you go left, I will go right. It is divide-and-choose with the cut given away too. Abram marks out no shares: he says only hălōʾ ḵol-hāʾāreṣ lᵉp̄āneḵā, “is not the whole land before you,” and lets Lot&#x27;s choice draw its own line. It is the first cost he takes on with no promise attached to it, and in another man&#x27;s favour, and the reader has watched him spend a chapter protecting himself in Egypt.</p></div>
+<div class="note">
+<span class="ref">13:10</span>
+<p>wayyiśśāʾ-lôṭ ʾeṯ-ʿênāyw wayyarʾ (“Lot looked up and saw”): lifted his eyes and saw, an idiom for deliberate looking — and it is the same phrase God will use to Abram at verse 14 with the outcome reversed. Lot sees, chooses, and takes; Abram is told to look at what he has already been given. The narrator loads the description with everything that makes it a good decision and one thing that makes it a catastrophe: the plain is kᵉḡan-YHWH, like the garden of the Lord, and kᵉʾereṣ miṣrayim, like the land of Egypt — Eden and Egypt in one breath, the place of the first loss and the place he has just come out of. And in the middle of the sentence the narrator steps outside the story: lip̄nê šaḥēṯ YHWH ʾeṯ-sᵉḏōm wᵉʾeṯ-ʿămōrâ, “before the Lord destroyed Sodom and Gomorrah.” The reader is told the end of chapter 19 while watching Lot decide.</p></div>
+<div class="note">
+<span class="ref">13:11</span>
+<p>wayyissaʿ lôṭ miqqeḏem (“and Lot journeyed eastward”): east again — the fourth eastward move in the book, after the expulsion from the garden (3:24), Cain&#x27;s departure to Nod (4:16) and the migration to Shinar (11:2). miqqeḏem has the same ambiguity here as at 11:2 and can be read “from the east,” but the geography of the Jordan plain and the pattern both point the same way. Whatever else the narrator is doing with the direction, he has now used it four times at four separations from God, and this is the fourth.</p></div>
+<div class="note">
+<span class="ref">13:12–13</span>
+<p>wayyeʾĕhal ʿaḏ-sᵉḏōm (“and pitched his tents as far as Sodom”): a slow verse. Lot settles among the cities of the plain and pitches only as far as Sodom — outside it, at the edge — and by 14:12 he is living in it, and by 19:1 he is sitting in its gate, which is where a city&#x27;s business is done. The narrator does not say he was wrong to look at good land. He says what the land contained, and he says it flatly, in a verse of its own with no connection to what surrounds it: wᵉʾanšê sᵉḏōm rāʿîm wᵉḥaṭṭāʾîm laYHWH mᵉʾōḏ. Sodom&#x27;s character is stated before the reader meets a single Sodomite, and six chapters before it is demonstrated.</p></div>
+<div class="note">
+<span class="ref">13:14–15</span>
+<p>ʾaḥărê hippāreḏ-lôṭ mēʿimmô (“after Lot had separated from him”): the timing is stated because it is the point. God speaks the moment Abram has given away the choice, and speaks about the same thing Lot has just been looking at. The instruction inverts the chapter&#x27;s opening scene word for word: Lot lifted his eyes and saw and chose a portion; Abram is told śāʾ nāʾ ʿêneḵā ûrʾēh, lift up your eyes and look, and given the whole of it in four directions. And it is given ʿaḏ-ʿôlām, to the vanishing point — the first time the land promise carries that word.</p></div>
+<div class="note">
+<span class="ref">13:16</span>
+<p>kaʿăp̄ar hāʾāreṣ (“like the dust of the earth”): the first of the three great uncountable images given to Abram — dust here, stars at 15:5, sand on the shore at 22:17. The choice of dust is not merely a number. ʿāp̄ār is what the human was formed from in 2:7 and what he was told he would return to in 3:19; the substance of mortality is the measure of the promise. It is also, prosaically, what is under Abram&#x27;s feet as he is told to look up — the whole land he is being shown is made of the thing he is being compared to.</p></div>
+<div class="note">
+<span class="ref">13:17</span>
+<p>qûm hiṯhallēḵ bāʾāreṣ lᵉʾorkāh ûlᵉroḥbāh (“Get up, walk the length and breadth of the land”): hiṯhallēḵ is the reflexive-iterative of “to walk,” to walk back and forth — the same form used of Enoch and Noah walking with God (5:22, 24; 6:9) and of God moving about in the garden at 3:8. Here it is widely read as a legal act as much as a journey — walking a property&#x27;s length and breadth as the way possession is claimed. The same idea stands behind Joshua 1:3 and Deuteronomy 11:24, where every place the sole of the foot treads is given, and later Jewish law took this verse itself as the warrant for acquiring land by walking it. Abram is being told to take title to a country he will never own, in the only way available to a man who owns none of it. He will die holding one field with a cave in it, bought for silver (23:16–20).</p></div>
+<div class="note">
+<span class="ref">13:18</span>
+<p>ʾēlōnê mamrēʾ ʾăšer bᵉḥeḇrôn (“the oaks of Mamre, which are at Hebron”): Abram ends the chapter doing what he did at the start of it — moving the tent and building an altar. There is no house. He is at Mamre from here until 20:1, and Hebron is where the cave of Machpelah will be bought as a grave for Sarah, Abraham, Isaac, Rebekah, Leah and Jacob (23; 25:9; 49:31; 50:13), so this move is the last one that matters. Mamre is named as a person at 14:13, an Amorite and Abram&#x27;s ally — the trees are presumably his, and Abram is a guest at them.</p></div>
+</div>
+<nav class="chapnav"><a href="../12/">&larr; Genesis 12</a><a href="../">All chapters</a><a href="../14/">Genesis 14 &rarr;</a></nav>
+</body>
+</html>

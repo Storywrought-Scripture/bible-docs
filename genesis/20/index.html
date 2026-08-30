@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 20 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 20 -- Abraham and Abimelech">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 20 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 20 -- Abraham and Abimelech">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 20</h1></header>
+<p class="lede">Abraham and Abimelech</p>
+<div class="notes">
+<div class="note">
+<span class="ref">20:1–2</span>
+<p>ʾăḥōṯî hîʾ (“She is my sister”): the second of the three wife-sister episodes — this one, Abram and Pharaoh at 12:10–20, and Isaac and Abimelech at 26:1–11. Whether these are three events, a doublet plus a third, or one tradition told three times is a standing question; see the note at 12:11–13. What is beyond dispute is that this one is told very differently. Chapter 12 gave Abram&#x27;s reasoning in advance and God&#x27;s intervention in one verse, and Abram never spoke again. Here the ruse is reported in half a verse and the chapter spends its whole length on the consequences, most of it in dialogue, with God speaking to the foreign king and the foreign king cross-examining the patriarch. Note also what is at stake in the timing: God has just promised (17:21, 18:10) that Sarah will bear a son within the year, and Abraham hands her to another man&#x27;s household.</p></div>
+<div class="note">
+<span class="ref">20:3–7</span>
+<p>wayyāḇōʾ ʾĕlōhîm ʾel-ʾăḇîmeleḵ baḥălôm hallāylâ (“But God came to Abimelech in a dream by night”): God addresses a Canaanite king directly, and the king answers back, argues his case, and is vindicated. hinnᵉḵā mēṯ, “Look — you are a dead man,” is a legal declaration of a capital sentence rather than a prediction. Abimelech&#x27;s defence uses the vocabulary of the law court: bᵉṯom-lᵉḇāḇî ûḇᵉniqyōn kappay, with the integrity of my heart and the cleanness of my hands — the pairing of Psalm 24:4, and the washed hands of Psalm 26:6. And his opening question, hăḡôy gam-ṣaddîq tahărōḡ, “will you kill a nation even if it is righteous?”, is Abraham&#x27;s own argument from 18:23–25 put back to God by a pagan, two chapters later, on Abraham&#x27;s account. God concedes it immediately, but only in part: verse 6 repeats back the integrity of heart, says nothing about the clean hands, and adds that the innocence was his own doing.</p></div>
+<div class="note">
+<span class="ref">20:6</span>
+<p>wāʾeḥśōḵ gam-ʾānōḵî ʾôṯᵉḵā mēḥăṭô-lî (“it was I who kept you from sinning against me”): a striking admission in a chapter about human responsibility. Abimelech&#x27;s innocence is not simply his own achievement — God says he prevented the act. And note the object of the offence: sinning against me, God says, not against Abraham; the wrong contemplated is measured against God rather than against the injured husband. The verse gives no account of how the restraint operated, though verse 18 supplies one possibility.</p></div>
+<div class="note">
+<span class="ref">20:7</span>
+<p>kî-nāḇîʾ hûʾ (“because he is a prophet”): the first occurrence of nāḇîʾ in the Bible, and it is applied to Abraham by God, in a speech to a foreign king, at the exact moment Abraham is behaving worst in the chapter. The prophet&#x27;s function here is not prediction but intercession — wᵉyiṯpallēl baʿaḏᵉḵā, “he will pray for you” — which is what the word does in Genesis and what Abraham has already done for Sodom. The chapter thus defines a prophet as one who stands between, and immediately shows that the office says nothing about the holder&#x27;s conduct. Verse 17 has him doing it, successfully.</p></div>
+<div class="note">
+<span class="ref">20:9–10</span>
+<p>meh-ʿāśîṯā llānû (“What have you done to us?”): Pharaoh&#x27;s question from 12:18, almost word for word, asked again by a second foreign king — and Abimelech goes further than Pharaoh did. maʿăśîm ʾăšer lōʾ-yēʿāśû ʿāśîṯā ʿimmāḏî, “you have done things to me that are not done,” is the idiom for an act outside the bounds of any society&#x27;s practice; it is used of Shechem&#x27;s rape of Dinah at 34:7 and of Amnon and Tamar at 2 Samuel 13:12. The moral vocabulary of the chapter belongs entirely to the Canaanite. He is the one who invokes righteousness, integrity, clean hands, sin, and what is simply not done, and he is the one who asks the question that opens verse 10 and gets an answer.</p></div>
+<div class="note">
+<span class="ref">20:11</span>
+<p>ʾên-yirʾaṯ ʾĕlōhîm bammāqôm hazzeh (“There is surely no fear of God in this place”): Abraham&#x27;s explanation, and the chapter has spent ten verses demonstrating that it is false. The place he judged godless contains a king who takes a dream from God seriously, tells his whole court, argues from righteousness, and returns the woman with a fortune attached. yirʾaṯ ʾĕlōhîm is the standard biblical term for the basic moral restraint that makes a society safe for strangers — and the man who assumed its absence is the one who lied. The narrator does not editorialise; he simply lets Abraham say it in verse 11 after the reader has watched verses 3 to 8.</p></div>
+<div class="note">
+<span class="ref">20:12–13</span>
+<p>wᵉḡam-ʾomnâ ʾăḥōṯî ḇaṯ-ʾāḇî hîʾ (“And in fact she is my sister — the daughter of my father”): the defence offered nowhere else, and it raises as much as it settles. If true, the statement was technically accurate and materially deceptive, which is the classic shape of a half-truth. Marriage to a half-sister by the same father is explicitly prohibited at Leviticus 18:9 and 20:17 and cursed at Deuteronomy 27:22 — legislation later than these narratives, and the patriarchal stories regularly record practices the Torah goes on to forbid without flagging them. Verse 13 then reveals that the arrangement was standing policy: ʾel kol-hammāqôm ʾăšer nāḇôʾ šāmmâ, at every place we come to. It was not a panicked improvisation at Gerar or in Egypt; it was the operating procedure of the marriage. Note the word he uses for what he asked of Sarah: ḥasdēḵ, your ḥeseḏ — the loyal kindness owed within a bond, rendered “faithful kindness” per the note at 19:19. He describes the arrangement that twice put her in another man&#x27;s bed as an act of covenant loyalty owed to him.</p></div>
+<div class="note">
+<span class="ref">20:16</span>
+<p>kᵉsûṯ ʿênayim (“a covering of the eyes”): an obscure idiom, and the verse is the hardest in the chapter to construe. A thousand pieces of silver is an enormous sum. kᵉsûṯ ʿênayim is generally taken as a public vindication — something that covers the eyes of onlookers so that no one can look at her askance — and the closing clause, whose Hebrew is awkward, is usually rendered as her being cleared or set right before everyone. Note who is addressed and who is not: Abimelech speaks to Sarah, the only person who addresses her in the chapter&#x27;s action, and he refers to Abraham as “your brother,” which may be dry irony or may be the diplomatic use of the fiction Abraham insisted on. Sarah has no speaking part in this chapter; her only words reach us through Abimelech&#x27;s mouth in verse 5.</p></div>
+<div class="note">
+<span class="ref">20:17–18</span>
+<p>ʿāṣōr ʿāṣar YHWH bᵉʿaḏ kol-reḥem (“the Lord had closed up every womb … tight shut”): the infinitive absolute doubles the verb for emphasis — shut and shut again. The chapter&#x27;s final verse reveals what has been happening offstage the whole time, and the irony is exact: a household is struck with barrenness on account of a woman whose entire story is barrenness, and it is cured by the prayer of a man whose own wife is still childless. Abraham the prophet heals another man&#x27;s household of the affliction his own has suffered for as long as the book has known her — she is ninety in this chapter (17:17). The next verse in the book — 21:1 — is the Lord attending to Sarah.</p></div>
+</div>
+<nav class="chapnav"><a href="../19/">&larr; Genesis 19</a><a href="../">All chapters</a><a href="../21/">Genesis 21 &rarr;</a></nav>
+</body>
+</html>

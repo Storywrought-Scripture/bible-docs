@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 14 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 14 -- The War of the Kings, and Melchizedek">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 14 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 14 -- The War of the Kings, and Melchizedek">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 14</h1></header>
+<p class="lede">The War of the Kings, and Melchizedek</p>
+<div class="notes">
+<div class="note">
+<span class="ref">14:1–11</span>
+<p>This chapter does not read like the rest of Genesis. It is dense with regnal names, campaign itineraries, dates counted from a vassal treaty, and place-names glossed for a reader who no longer recognises them — the manner of an archival record rather than a patriarchal narrative, and it sits inside the Abram cycle like a document quoted whole. None of the four eastern kings has been securely identified. ʾamrāp̄el was once widely equated with Hammurabi of Babylon, an identification now generally abandoned on linguistic grounds; kᵉḏorlāʿōmer is a plausible Elamite formation (kudur- plus a divine name) but matches no known king; gôyim is simply the Hebrew word for “nations,” which may render a real toponym or may mean a coalition. The campaign route in verses 5–7 is geographically coherent — down the King&#x27;s Highway east of the Jordan, south to the wilderness, then back up through Kadesh — which is an argument that something real lies behind it, and not an argument that any particular name is recoverable.</p></div>
+<div class="note">
+<span class="ref">14:3, 10</span>
+<p>ʿēmeq haśśiddîm hûʾ yām hammelaḥ (“the Valley of Siddim, that is, the Salt Sea”): the narrator glosses a name he expects to be unfamiliar by giving the reader the Dead Sea, which implies that the valley was no longer a valley when this was written. Verse 10 then explains why the ground mattered to the battle: beʾĕrōṯ beʾĕrōṯ ḥēmār, literally “pits pits of tar,” the doubling meaning pit after pit. Bitumen seeps are a real and well-attested feature of that basin, and this is the third time the substance has appeared in the book — sealing the ark at 6:14, mortaring Babel at 11:3, and here swallowing the kings of Sodom. The verse says the kings of Sodom and Gomorrah fell into them; whether that means they died there or were merely unhorsed is left open, and the king of Sodom is alive again in verse 17.</p></div>
+<div class="note">
+<span class="ref">14:5–6</span>
+<p>rᵉp̄āʾîm … zûzîm … ʾêmîm … ḥōrî: four pre-Israelite populations, listed as the eastern kings&#x27; first victims. Deuteronomy 2:10–12 and 2:20–21 pick up three of these names — the Emim, the Rephaim and the Horites — and add that the Emim and the Zamzummim (Deuteronomy&#x27;s name for a people Genesis may be calling the Zuzim) were reckoned Rephaim, “a people great and many and tall as the Anakim,” and that the Horites had lived in Seir before Esau&#x27;s descendants dispossessed them. rᵉp̄āʾîm elsewhere means the shades of the dead (Isaiah 14:9; Psalm 88:10), and whether the two senses are one word or two is unsettled. What the passage is doing is clear enough regardless: it establishes that the land had older inhabitants who were displaced before Israel ever arrived, which is a claim the later conquest narratives lean on.</p></div>
+<div class="note">
+<span class="ref">14:13</span>
+<p>ʾaḇrām hāʿiḇrî (“Abram the Hebrew”): the first occurrence of ʿiḇrî in the Bible, and it is worth noticing where it falls. Genesis uses it almost exclusively when a foreigner is speaking or when the perspective is an outsider&#x27;s — Potiphar&#x27;s wife, the cupbearer, the Egyptians at 43:32 — and here in a verse where an escaped stranger arrives to report to him. It is what other people call him. On the derivation, see the note at 10:21: the likely link is to ʿēḇer, Eber, Shem&#x27;s descendant and the ancestor named there; alternatives connect it to ʿāḇar, to cross over, or to the ʿapiru of second-millennium texts, a term for displaced or stateless persons rather than an ethnic group. The last of those would fit this chapter&#x27;s Abram unusually well — a landless man with a private army and treaty relations with local chiefs. A note on the rendering: “allies” in verse 13 is baʿălê ḇᵉrîṯ, literally “masters of a covenant.” This volume holds bᵉrîṯ to “covenant” everywhere else, including the purely political treaties at 21:27, 21:32, 26:28 and 31:44; the idiom is rendered as an idiom here, at the cost of hiding that Abram&#x27;s alliance with three Amorites and the covenant God cuts with him in the next chapter (15:18) are the same word.</p></div>
+<div class="note">
+<span class="ref">14:14</span>
+<p>ḥănîḵāyw (“his trained men”): a hapax legomenon in the Hebrew Bible. Its sense comes from the related root meaning to dedicate or train up, and from the context here — men born in his own household. A cognate has been proposed in second-millennium Egyptian and Canaanite sources, but the identification is not secure. The picture is a private retinue — men born in his own household, so retainers by birth rather than hired — and there are three hundred and eighteen of them, which makes Abram&#x27;s establishment something closer to a small chiefdom than the tent-dwelling wanderer of chapter 13. The number is oddly precise, and later interpreters found meaning in it: the letters of ʾĕlîʿezer, the servant named at 15:2, total 318 by gematria, a reading recorded in rabbinic sources. That is an observation about the number, not an argument about the text. “As far as Dan” is an anachronism: the city is called Laish until the tribe of Dan captures and renames it in Judges 18:29, so the name here belongs to a later hand updating an old itinerary — the same kind of gloss as “Ur of the Chaldeans” at 11:28.</p></div>
+<div class="note">
+<span class="ref">14:18</span>
+<p>malkî-ṣeḏeq meleḵ šālēm (“Melchizedek king of Salem”): three verses — 18, 19 and 20 — and few figures in the Bible occupy so little narrative and draw so much later interpretation. The name is transparent Hebrew — malkî “my king” plus ṣeḏeq “righteousness,” so “my king is righteousness,” or read as a construct, “king of righteousness.” It is a normal Canaanite royal name of a familiar type; compare Adoni-zedek, king of Jerusalem, at Joshua 10:1. šālēm is generally taken as Jerusalem, which Psalm 76:2 puts in poetic parallel with Zion, though the identification is not certain. He is kōhēn lᵉʾēl ʿelyôn, priest of God Most High — a priest of a God he did not learn about from Abram, in Canaan, before Israel exists and centuries before the Aaronic priesthood. The bread and wine he brings out are provisions for men returning from a march; the text says nothing more about them, and everything later read into them is reception rather than exegesis of this verse.</p></div>
+<div class="note">
+<span class="ref">14:19–20</span>
+<p>ʾēl ʿelyôn qōnēh šāmayim wāʾāreṣ (“God Most High, maker of heaven and earth”): ʾēl ʿelyôn pairs the name of the Canaanite high god with an epithet meaning “most high,” and it is used here by a Canaanite priest without apology. qōnēh is the participle of qānâ, whose range runs from “acquire, get” to “create” — the same verb Eve used at 4:1, qānîṯî, “I have gotten a man.” “Maker” follows the ancient versions; the English versions differ here, and several of them read “possessor.” That reading is equally defensible and gives a rather different sense, a God who holds title to everything rather than one who made it. The blessing has two halves in a fixed liturgical shape, blessing the man and then blessing the God who gave the victory. Verse 20&#x27;s final clause, wayyitten-lô maʿăśēr mikkōl, is grammatically ambiguous about who tithes to whom — the Hebrew supplies neither name — though the sense that Abram tithed to the priest is the natural one and is how Hebrews 7:4 takes it. That chapter builds a substantial argument on Melchizedek&#x27;s silence about parentage and death; it is a reading of this passage, and it belongs in a note rather than in the wording here.</p></div>
+<div class="note">
+<span class="ref">14:22</span>
+<p>hărîmōṯî yāḏî ʾel-YHWH ʾēl ʿelyôn (“I have raised my hand to the Lord, God Most High”): raising the hand is the gesture of swearing an oath, and the tense is best read as performative — he is swearing as he speaks. The striking thing is the apposition. Melchizedek blessed him in the name of ʾēl ʿelyôn; Abram answers using the same title and puts YHWH in front of it, identifying the God the Canaanite priest serves with his own. It is one of the clearest places in Genesis where an existing divine title is taken up rather than refused. A textual note bears on exactly this: the Septuagint and the Samaritan Pentateuch are reported to lack “YHWH” here, reading only “God Most High” — a claim to check against a printed critical edition rather than to treat as settled. If that is the older text, the identification is a later clarification; if the Masoretic reading is original, Abram makes it himself. I translated the Masoretic text and record the alternative.</p></div>
+<div class="note">
+<span class="ref">14:23–24</span>
+<p>ʾim-miḥûṭ wᵉʿaḏ śᵉrôḵ-naʿal (“a thread or a sandal strap”): an idiom for the smallest imaginable item, and the refusal is absolute. The reason he gives is not piety in the abstract but a specific danger — lōʾ ṯōʾmar ʾănî heʿĕšartî ʾeṯ-ʾaḇrām, “so that you can never say, ‘I am the one who made Abram rich.’” Read against chapter 12 this is the sharpest thing in the chapter. Abram came up from Egypt very heavy with livestock, silver and gold (13:2), much of it given him by a foreign king on the strength of a lie about his wife (12:16), and he said nothing then. Here he will not accept a thread. The narrator makes no comparison; the two scenes simply stand two chapters apart. Note too that he refuses only for himself: his allies Aner, Eshcol and Mamre are left free to take their share, and he does not impose his oath on them.</p></div>
+</div>
+<nav class="chapnav"><a href="../13/">&larr; Genesis 13</a><a href="../">All chapters</a><a href="../15/">Genesis 15 &rarr;</a></nav>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 11 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 11 -- Babel, and the Line to Abram">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 11 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 11 -- Babel, and the Line to Abram">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 11</h1></header>
+<p class="lede">Babel, and the Line to Abram</p>
+<div class="notes">
+<div class="note">
+<span class="ref">11:1</span>
+<p>śāp̄â ʾeḥāṯ ûḏᵉḇārîm ʾăḥāḏîm (“one language and the same words”): literally “one lip and one set of words” — a doubled expression covering both the sound of speech and its vocabulary, so the unity is complete rather than approximate. Read straight after chapter 10 this is a contradiction: the table of nations has just sorted seventy peoples lilšōnōṯām, by their languages, three times over. The two chapters cannot describe the same moment. See the note at 10:5, 20, 31, which sets out the thematic-arrangement reading (chapter 10 gives the outcome, chapter 11 goes back and explains it) alongside the source-critical one, prefers the thematic reading, and smooths neither. This volume translates both as they stand and does not harmonise either toward the other.</p></div>
+<div class="note">
+<span class="ref">11:2</span>
+<p>bᵉnosʿām miqqeḏem (“as they migrated from the east”): miqqeḏem can be “from the east” or “eastward,” and both are grammatically available. Either way the direction matters, because it is the third movement east in eleven chapters: humankind is driven out and the cherubim stationed east of the garden (3:24), Cain settles in Nod east of Eden (4:16), and now the whole race arrives on the plain of Shinar. East in Genesis is the direction of drift away from where God is. šinʿār is Sumer, southern Mesopotamia, already named in 10:10 as the seat of Nimrod&#x27;s kingdom — so a reader has been told twice where this is going before the story starts.</p></div>
+<div class="note">
+<span class="ref">11:3</span>
+<p>nilbᵉnâ lᵉḇēnîm wᵉniśrᵉp̄â liśrēp̄â (“let us make bricks and fire them hard”): two figura etymologica in one breath — make-bricks bricks, burn-them a burning — and the sound of it is the sound of work chanted in rhythm. The verse then stops the story to explain a building material: “so they had brick for stone, and tar for mortar.” That aside is addressed to someone who builds in stone, which is what you do in Canaan and precisely what you cannot do in alluvial southern Mesopotamia, where there is no stone and the ziggurats were raised from millions of fired mud bricks set in bitumen. The narrator is describing a real and specific technology to an audience who would find it strange. ḥēmār here is the same bitumen that sealed the ark in 6:14.</p></div>
+<div class="note">
+<span class="ref">11:4</span>
+<p>naʿăśeh-lānû šēm (“let us make a name for ourselves”): the object of the whole enterprise, and the phrase is loaded. šēm is “name” in the sense of renown, and it was last used this way at 6:4, of the Nephilim — “the mighty men of old, the men of renown — ʾanšê haššēm, literally “men of the name”,” the last generation before the flood. It is used again immediately after this episode at 12:2, where God tells Abram waʾăḡaddᵉlâ šᵉmeḵā, “I will make your name great.” A name seized and a name given, a chapter apart, is the hinge the book turns on here. The tower wᵉrōʾšô ḇaššāmayim, “with its top in the sky,” is not megalomania reported deadpan but the ordinary idiom of Mesopotamian temple-tower inscriptions, which routinely describe a ziggurat as reaching heaven. And the stated motive is fear: pen-nāp̄ûṣ, “otherwise we will be scattered” — they are building to avoid precisely what 9:1 commanded them to do, which is to fill the earth.</p></div>
+<div class="note">
+<span class="ref">11:5</span>
+<p>wayyēreḏ YHWH lirʾōṯ (“And the Lord came down to see”): the joke of the chapter, and it is a joke with a cold edge. They build a tower whose top is in the sky; God has to descend to get a look at it. The narrator does not comment. bᵉnê hāʾāḏām, “the children of humankind,” is a deliberately diminishing way to name the builders in the same clause as their monument.</p></div>
+<div class="note">
+<span class="ref">11:6–7</span>
+<p>hāḇâ nērᵉḏâ wᵉnāḇᵉlâ (“Come, let us go down and confuse”): God quotes them. They said hāḇâ nilbᵉnâ, “come, let us make bricks,” and hāḇâ niḇneh, “come, let us build”; the reply is hāḇâ nērᵉḏâ, “come, let us go down,” and nāḇᵉlâ is nilbᵉnâ with its consonants pulled out of order, the l and the ḇ changing places — the very sound of the building verb pulled out of order. The mockery is structural, not stated. On the plural “let us,” see the note at 1:26; the same three readings apply here and this passage does nothing to decide between them. Verse 6 is worth weighing carefully before it is preached: lōʾ yibbāṣēr mēhem kōl ʾăšer yāzᵉmû, “nothing they plan to do will be beyond them,” is an assessment of human capability, not an accusation. What God names as the danger is unlimited collective power, and the text does not spell out what is wrong with it.</p></div>
+<div class="note">
+<span class="ref">11:9</span>
+<p>bāḇel kî-šām bālal (“Babel — because there the Lord confused”): a pun, and everyone involved knows it is a pun. The Akkadian name of the city is bāb-ili, “gate of the god,” which is what its own inhabitants called it and which is anything but confusion. The Hebrew narrator hears bālal, “to mix, to confound,” in the same syllables and gives the city that meaning instead — an act of translation that is also an act of judgment on the place. This is folk etymology in the technical sense: not a mistake about the word&#x27;s history, but a claim about what the thing named actually is. Note also that Hebrew bāḇel is simply the word for Babylon everywhere else in the Bible; the tower story and the empire of Isaiah, Jeremiah and Daniel carry one name.</p></div>
+<div class="note">
+<span class="ref">11:10–26</span>
+<p>The genealogy runs the same three-part formula as chapter 5 with two changes, and both are the point. There is no “and he died.” Chapter 5 closed eight of its ten entries with it — 5:5, 8, 11, 14, 17, 20, 27, 31 — every one but Enoch&#x27;s, and Noah&#x27;s is left open; here the formula stops after “had other sons and daughters,” and no totals are given either. And the lifespans collapse — from Shem&#x27;s 600 to Peleg&#x27;s 239, Nahor&#x27;s 148, Terah&#x27;s 205, and on into Abraham&#x27;s 175 and Jacob&#x27;s 147. The long ages do not end at the flood; they decay across ten generations after it, which reads as the world settling toward its ordinary condition rather than as a single verdict. Note also that Peleg reappears here (see 10:25): the line the table of nations declined to follow is the one the book now runs straight to Abram.</p></div>
+<div class="note">
+<p>11:10–26 (the figures)  The three main witnesses disagree systematically about the numbers in this list, exactly as they do in chapter 5. The Masoretic figures are translated here. The Septuagint raises the fathering-ages by a hundred years in most entries, which stretches the interval between the flood and Abram from roughly 290 years to roughly 1,070; the Samaritan Pentateuch differs from both on its own pattern. The Septuagint also inserts Kenan between Arpachshad and Shelah, one more generation than the Hebrew has — the same insertion it makes at 10:24, and the source of the extra name in Luke&#x27;s genealogy at Luke 3:36. The differences are too regular to be copying accidents: someone in each tradition was schematising. Per this project&#x27;s stated limits, treat the specific figures as claims to check against a printed critical edition rather than as settled.</p></div>
+<div class="note">
+<span class="ref">11:28, 31</span>
+<p>ʾûr kaśdîm (“Ur of the Chaldeans”): the kaśdîm, Chaldeans, are a people attested from the early first millennium BCE, several centuries after any plausible date for Abram, so “of the Chaldeans” looks like a later clarifying gloss identifying an older place-name for readers who knew the region under its current owners — the same move as calling a place “Istanbul” in an account of the fourth century. That is a normal feature of a transmitted text and not a problem for it. Which Ur is meant is separately disputed: the great Sumerian city in the far south is the traditional identification and fits kaśdîm, while a northern Ur near Haran would fit the family&#x27;s evident ties to that region much better (24:4, 10; 27:43). The text does not say.</p></div>
+<div class="note">
+<span class="ref">11:30</span>
+<p>wattᵉhî śāray ʿăqārâ ʾên lāh wālāḏ (“Now Sarai was barren; she had no child”): six words in Hebrew, and the entire rest of Genesis proceeds from them. The genealogy has run without interruption from Shem to Terah, generation producing generation as a matter of course, and here it simply stops — and the narrator says the same thing twice, once with the technical term and once in plain words, in case the first was passed over. Everything from 12:1 to the birth of Isaac is the working out of this half-verse. It is the first time in the book that the problem is not human wickedness but human incapacity.</p></div>
+<div class="note">
+<span class="ref">11:31–32</span>
+<p>wayyēṣᵉʾû ʾittām … lāleḵeṯ ʾarṣâ kᵉnaʿan (“and together they set out … to go to the land of Canaan”): Terah is already going to Canaan before God says a word to anyone. The call in 12:1 comes to a man whose father had set out for that destination and stopped short — wayyāḇōʾû ʿaḏ-ḥārān wayyēšᵉḇû šām, “they came as far as Haran and settled there.” Whether 12:1 is therefore a fresh command or the resumption of an interrupted journey is left open by the Hebrew, and the ancient readers split: Acts 7:2–4 has the call reaching Abram in Mesopotamia before Haran, which would make Terah&#x27;s move the first obedience. The chapter ends with a death and a stalled migration, and the next begins with a command; the seam between them is where the whole book turns.</p></div>
+</div>
+<nav class="chapnav"><a href="../10/">&larr; Genesis 10</a><a href="../">All chapters</a><a href="../12/">Genesis 12 &rarr;</a></nav>
+</body>
+</html>

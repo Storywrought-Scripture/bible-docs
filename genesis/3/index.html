@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 3 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 3 -- The Serpent, the Fall, and the Expulsion">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 3 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 3 -- The Serpent, the Fall, and the Expulsion">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 3</h1></header>
+<p class="lede">The Serpent, the Fall, and the Expulsion</p>
+<div class="notes">
+<div class="note">
+<span class="ref">3:1</span>
+<p>ʿārûm (“cunning, shrewd”): the same sound as the ʿărûmmîm (“naked”) of 2:25 — the narrator ties the couple’s innocence to the serpent’s craft on a pun carried across the chapter break. ʿārûm is not always negative (Proverbs uses it for “prudent”), but here it is cunning. Note the distortion: God permitted every tree but one (2:16–17), and the serpent reframes it as “not from any tree,” baiting an exaggeration — and says “God” (ʾĕlōhîm), dropping the personal name YHWH used everywhere else here.</p></div>
+<div class="note">
+<span class="ref">3:2–3</span>
+<p>The woman’s reply quietly alters the command three ways: she drops God’s emphatic “freely eat” (ʾāḵōl tōʾḵēl, 2:16); she adds “and you must not touch it” (not in the original); and she softens the absolute “you will surely die” (môṯ tāmûṯ) to a bare “or you will die” (pen tᵉmuṯûn). The fence around the word is both raised and weakened.</p></div>
+<div class="note">
+<span class="ref">3:4</span>
+<p>lōʾ môṯ tᵉmuṯûn: the serpent throws God’s own emphatic construction back, negated — “you will certainly not die” — a flat contradiction of 2:17.</p></div>
+<div class="note">
+<span class="ref">3:5, 22</span>
+<p>kēʾlōhîm (“like God / like gods”): ʾĕlōhîm is grammatically plural and can mean “God,” “gods,” or “divine beings” — genuinely ambiguous. At 3:22 God says the man has become “like one of us,” the plural of 1:26 (divine council or deliberation). The serpent’s promise was not simply false: 3:22 confirms a real, if ruinous, knowledge of good and evil was gained.</p></div>
+<div class="note">
+<span class="ref">3:6</span>
+<p>“who was with her” (ʿimmāh): the Hebrew puts the man on the scene throughout — present, not absent and later told. Many older translations bury the word; it stands in MT and LXX. The threefold appeal (good for food, delight to the eyes, desirable for wisdom) echoes the trees of 2:9 and adds the lure the serpent supplied.</p></div>
+<div class="note">
+<span class="ref">3:8</span>
+<p>lᵉrûaḥ hayyôm (“in the breeze of the day”): rûaḥ is wind / breath / spirit; the traditional “cool of the day” (the evening breeze) is the common reading, and LXX has “in the afternoon.” A minority hears a theophanic “wind / storm of the day.” miṯhallēḵ (hithpael of hālaḵ) — God moves “to and fro” in the garden as if at home in it.</p></div>
+<div class="note">
+<span class="ref">3:13</span>
+<p>hiššîʾanî (“deceived, tricked me”): “led me astray.” The woman names deception; the man (3:12) names the woman — and implicates God (“the woman you put here with me”).</p></div>
+<div class="note">
+<span class="ref">3:14, 17</span>
+<p>ʾārûr (“cursed”): pronounced here over the serpent and in 3:17 over the ground — but never directly over the man or the woman. Their sentences are spoken, yet the curse-word itself falls on the serpent and the soil. Easily missed, and worth teaching.</p></div>
+<div class="note">
+<span class="ref">3:15</span>
+<p>The crux of the chapter. zeraʿ (“seed, offspring”) is a collective singular: it can mean descendants as a group or be read of a single representative, and the grammar sustains both. The pronoun is masculine singular hûʾ, agreeing with zeraʿ. The LXX makes a striking move: though its word for seed (sperma) is neuter, it uses a masculine pronoun autos (“he”), pointing past the collective to an individual — the seed of the later messianic reading. (The Vulgate’s famous ipsa, “she,” referring to the woman, is a variant against the better Latin ipse, “he,” and against the Hebrew.) šûp̄, used identically of both blows, means “strike, crush, snap at” (LXX read it “lie in wait for, watch”). The same verb governs both clauses, so the difference is not in the verb but the target: a blow to the head is mortal, a blow to the heel is not. KJV’s “bruise… bruise” keeps the single verb; “crush… strike” risks loading the asymmetry into the verb. I kept one verb — “strike… strike” — and let “head” and “heel” carry it.</p></div>
+<div class="note">
+<span class="ref">3:16</span>
+<p>Two cruxes. (1) harbâ ʾarbeh ʿiṣṣᵉḇônēḵ wᵉhērōnēḵ: ʿiṣṣāḇôn is “toil, pain, hardship” — the very word used of the man’s labour in 3:17, binding the two sentences together; the phrase is likely a hendiadys, “your painful labour in childbearing.” (2) tᵉšûqâ (“desire, longing”) + māšal (“rule”): this exact pair recurs at 4:7, where sin’s tᵉšûqâ is toward Cain and he must māšal over it — a contest for mastery. That parallel drives a reading where the woman’s “desire” is a drive to control and “he will rule over you” names the resulting struggle (so ESV 2016: “your desire shall be contrary to your husband”). The older reading takes tᵉšûqâ as relational longing and “he shall rule” as a plain statement of the new hierarchy. The LXX read the noun differently again — apostrophē, “your recourse / turning shall be to your husband.” I rendered the traditional “your desire will be for your husband”; the 4:7 parallel is the strongest case for the harder “contrary to” reading. Teaching should weigh both.</p></div>
+<div class="note">
+<span class="ref">3:19</span>
+<p>ʿāp̄ār (“dust”): “dust you are, and to dust you will return” closes the circle opened at 2:7, where the human was formed from the dust of the ʾăḏāmâ. This is not annihilation-talk but a return to origin — the ground reclaims what was drawn from it.</p></div>
+<div class="note">
+<span class="ref">3:20</span>
+<p>Ḥawwâ (“Eve”) ~ ḥay (“living”): a sound-play — she is named Ḥawwâ because she is “mother of all ḥay (the living).” Note the timing: the man names her life-giver immediately after the death sentence is pronounced — an act that reads as hope, or defiance, against the verdict just spoken. (Also: hā-ʾāḏām, rendered “the human” in ch. 2, I render “the man” through this narrative; it edges into the proper name “Adam” from 3:17 on.)</p></div>
+<div class="note">
+<span class="ref">3:21</span>
+<p>koṯnôṯ ʿôr (“garments of skin”): God’s first act after the sentence is to clothe them — and skin garments imply the death of an animal, the first death in the narrative, God covering what their fig leaves (3:7) could not.</p></div>
+<div class="note">
+<span class="ref">3:22–24</span>
+<p>gāraš (“drove out,” 3:24) is forceful — expelled, banished — stronger than the gentler šillaḥ (“sent out,” 3:23); the narrator uses both, escalating. kᵉrûḇîm (cherubim) are guardian figures (cf. the ark, the temple); the lahaṭ haḥereḇ hammiṯhappeḵeṯ (“the flame of the whirling sword,” a sword-flame turning every way) bars return. Eden is not destroyed but closed, its tree of life now guarded.</p></div>
+</div>
+<nav class="chapnav"><a href="../2/">&larr; Genesis 2</a><a href="../">All chapters</a><a href="../4/">Genesis 4 &rarr;</a></nav>
+</body>
+</html>

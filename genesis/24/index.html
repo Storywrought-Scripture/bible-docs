@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 24 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 24 -- A Wife for Isaac">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 24 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 24 -- A Wife for Isaac">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 24</h1></header>
+<p class="lede">A Wife for Isaac</p>
+<div class="notes">
+<div class="note">
+<span class="ref">24:2, 9</span>
+<p>śîm-nāʾ yāḏᵉḵā taḥaṯ yᵉrēḵî (“Put your hand under my thigh”): a euphemism. yārēḵ is the upper thigh and the loins, and the gesture is understood to involve the genitals — the organ of procreation and, since chapter 17, the place of the covenant sign. The oath is therefore sworn on the very thing at issue: the continuation of the line. It occurs only twice in the Hebrew Bible, here and at 47:29, where Jacob makes Joseph swear about his burial, and on both occasions the matter is the survival of the family beyond the death of the man swearing. I have translated the Hebrew literally and explained it here rather than rendering it as “under my thigh” without comment, which conceals the point, or as something anatomically explicit, which the Hebrew itself declines to be.</p></div>
+<div class="note">
+<span class="ref">24:3–4</span>
+<p>mibbᵉnôṯ hakkᵉnaʿănî (“from the daughters of the Canaanites”): the prohibition is stated without a reason. Nothing here says the Canaanites are wicked or that the objection is religious — that reasoning appears later in Deuteronomy 7:3–4 and is not imported back into the verse. What Abraham gives is a positive requirement, that the wife come from his own kindred, and the effect is to keep the line distinct from the people whose land it has been promised. Note the tension with 23:4, one chapter earlier: he is a stranger among these people, he buys a grave from them, and he will not marry his son to them.</p></div>
+<div class="note">
+<span class="ref">24:7</span>
+<p>malʾāḵô (“his messenger”): rendered as the glossary requires and described no further than the text describes it. Note that the messenger, twice promised (here and at verse 40), never appears in the chapter. What the servant experiences is a well, a girl, and a coincidence of timing, and the narrative treats these as the sending. Whether that is an equivalence the text intends is not stated, but the chapter is conspicuously the least supernatural in the Abraham cycle: God speaks to nobody in it and does nothing visible in it, and it is the longest chapter in Genesis.</p></div>
+<div class="note">
+<p>24:10 (camels)  ʿăśārâ ḡᵉmallîm (“ten camels”): the camels are a standing question. Domesticated camels appear in quantity in the archaeological record of the southern Levant only from around the end of the second millennium BCE, and the excavated evidence from copper-smelting sites in the Aravah points to their introduction there in the tenth or ninth century — well after any date proposed for the patriarchs. Genesis has camels here, at 12:16, 30:43, 31:17, 31:34, 32:7, 32:15 and 37:25. The likeliest account is that the detail belongs to the world of the narrator rather than of the narrative, in the same way that “Ur of the Chaldeans” at 11:28 and “the land of the Philistines” at 21:32 do. A minority argue for limited earlier domestication. I translate what the text says and record the difficulty; per this project&#x27;s stated limits, the archaeological claim is one to check against the published excavation reports.</p></div>
+<div class="note">
+<span class="ref">24:12, 14, 27, 49</span>
+<p>ḥeseḏ (“faithful kindness”): held to the rendering fixed at 19:19, and this chapter is the densest concentration of the word in Genesis — four occurrences, and twice paired with ʾĕmeṯ, truth or reliability — ḥasdô waʾămittô at verse 27 and the bare formula ḥeseḏ weʾĕmeṯ at verse 49. The pairing is the point: ḥeseḏ is not a mood but a way of behaving that can be relied on, and the servant asks God for it and then asks Rebekah&#x27;s family for it in exactly the same words. What is asked of God at verse 12 is asked of human beings at verse 49.</p></div>
+<div class="note">
+<span class="ref">24:14</span>
+<p>ʾōṯāh hōḵaḥtā lᵉʿaḇdᵉḵā lᵉyiṣḥāq (“let her be the one you have appointed”): the servant devises his own sign, and it is worth noticing what he selects for. He does not ask for beauty, wealth or lineage; he asks for a girl who will volunteer to water ten camels — which after a desert journey is a great deal of water, drawn by hand and carried up out of a spring, and represents a long and heavy piece of unasked-for work for a stranger. The test is for ḥeseḏ itself. Whether devising such a test is presumption or faith the text does not say; it says only that the answer arrived before he had finished asking.</p></div>
+<div class="note">
+<span class="ref">24:16</span>
+<p>bᵉṯûlâ wᵉʾîš lōʾ yᵉḏāʿāh (“a young woman, and no man had known her”): bᵉṯûlâ is often rendered “virgin,” but the word&#x27;s core sense is a girl of marriageable age who is still in her father&#x27;s house, and Hebrew signals virginity as such by adding a clause — which is exactly what this verse does. That the narrator felt the need to add “and no man had known her” is itself evidence that bᵉṯûlâ alone did not carry the meaning unambiguously. This matters well beyond Genesis, because it is the same lexical question that stands behind the disputed ʿalmâ of Isaiah 7:14 — and the servant calls this same girl hāʿalmâ when he retells the scene at verse 43, so the chapter uses naʿărā, bᵉṯûlâ and ʿalmâ of one person within thirty verses. Both bᵉṯûlâ and ʿalmâ are rendered “young woman” here. I have translated the noun by its ordinary sense and let the added clause do the work the Hebrew gives it.</p></div>
+<div class="note">
+<span class="ref">24:21</span>
+<p>mištāʾēh (“stood gazing at her in silence”): a rare form and its root is uncertain — most take it from šāʾâ, to gaze, and read a sense of staring in astonishment; others connect it to a root meaning to be stunned, or emend. What is clear from the context is that he watches without speaking while the whole watering is carried out, and the narrator makes the silence explicit maḥărîš. It is a small piece of characterisation in a chapter otherwise full of speech: he refuses to interfere with the sign while it is happening.</p></div>
+<div class="note">
+<span class="ref">24:22</span>
+<p>nezem zāhāḇ beqaʿ mišqālô (“a gold ring for her nose weighing half a shekel”): the weights are given precisely, as they are for the field in the previous chapter, and the effect is again documentary. nezem is a ring that may be worn in the nose or the ear; verse 47 puts it on her nose, which settles it. The gift is made before he asks whose daughter she is, which some read as confidence in the sign and others as a merchant&#x27;s shrewdness. The bracelets at ten shekels are substantial — about a hundred and ten grams of gold.</p></div>
+<div class="note">
+<span class="ref">24:34–49</span>
+<p>The servant&#x27;s speech runs to sixteen verses — the longest in the Abraham narrative, and one of the longest in the book — and it retells at length what the reader has just watched. This is not padding: repetition with variation is a primary technique of Hebrew narrative, and the interest lies in the differences. He omits Abraham&#x27;s insistence that Isaac must not be taken back — the one point most likely to trouble the family. He converts his own doubt at verse 5 (“suppose she is not willing”) into a milder statement, and he reports Abraham&#x27;s oath as allowing release if the family refuses, which is close to what Abraham said but framed as a concession to them. He describes his prayer as spoken “in my heart” at verse 45, where the narrator had him speaking aloud. And he tells the family that Abraham has given Isaac everything he owns before he asks for anything. The differences are the argument of a man negotiating.</p></div>
+<div class="note">
+<span class="ref">24:50</span>
+<p>wayyaʿan lāḇān ûḇᵉṯûʾēl (“And Laban and Bethuel answered”): the brother is named before the father, and the whole chapter has already put Laban forward — he is the one who runs out to the stranger, and the narrator is careful to say that he ran after seeing the gold on his sister&#x27;s arms (verse 30). Bethuel speaks here and nowhere else, and it is Rebekah&#x27;s brother and mother, not her father, who negotiate the departure at verses 53 and 55. Something is going on with this household that the text does not explain; the characterisation of Laban pays off across chapters 29 to 31, and this is where it starts.</p></div>
+<div class="note">
+<span class="ref">24:57–58</span>
+<p>hă·ṯēlᵉḵî ʿim-hāʾîš hazzeh (“Will you go with this man?”): Rebekah is asked, and she answers in a single word — ʾēlēḵ, “I will go.” The consent of a bride is not a normal feature of such arrangements in this literature and the narrator gives it deliberately. The verb is also the same one that runs through Abraham&#x27;s own call: leḵ-lᵉḵā at 12:1 and 22:2, and here a woman saying simply I will go, leaving her country and her kindred and her father&#x27;s house exactly as he did. The parallel is made by vocabulary rather than by comment.</p></div>
+<div class="note">
+<span class="ref">24:60</span>
+<p>wᵉyîraš zarʿēḵ ʾēṯ šaʿar śōnᵉʾāyw (“may your seed take possession of the gate of those who hate them”): the family&#x27;s parting blessing repeats, almost word for word, what God swore to Abraham on the mountain at 22:17 — the possessing of the gate of enemies. The narrator gives the covenant language to a household in Aram-naharaim who have no part in the covenant, and does not remark on it.</p></div>
+<div class="note">
+<span class="ref">24:63</span>
+<p>lāśûaḥ baśśāḏeh (“to walk in the field”): the verb occurs only here and its meaning is genuinely unknown. Proposals: to meditate or muse (the traditional English, from a possible link to śîaḥ, to speak or complain); to stroll; to lament; or an emendation to lāšûaḥ, to bend down, hence to relieve himself. Nothing decides it. I have chosen the neutral “to walk,” which asserts least, and record that “to meditate” — familiar from the King James — rests on a guess rather than on evidence. It is also Isaac&#x27;s first action in the book as an adult.</p></div>
+<div class="note">
+<span class="ref">24:67</span>
+<p>wayyeʾĕhāḇehā (“and he loved her”): the first time in the Bible that a man is said to love his wife. Love has been named before — Abraham&#x27;s for Isaac at 22:2 — but not this. The order of the sentence is worth keeping exactly as the Hebrew has it: he brought her into the tent, he took her, she became his wife, and he loved her; the loving comes last, after the marriage, not before it. hāʾōhelâ śārâ ʾimmô, “into the tent of Sarah his mother,” and the closing wayyinnāḥēm yiṣḥāq ʾaḥărê ʾimmô, “Isaac was comforted after his mother,” bracket the marriage with Sarah&#x27;s death — the chapter that began with an old man arranging his succession ends with the next generation installed in the previous one&#x27;s tent.</p></div>
+</div>
+<nav class="chapnav"><a href="../23/">&larr; Genesis 23</a><a href="../">All chapters</a><a href="../25/">Genesis 25 &rarr;</a></nav>
+</body>
+</html>

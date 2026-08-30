@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 27 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 27 -- The Stolen Blessing">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 27 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 27 -- The Stolen Blessing">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 27</h1></header>
+<p class="lede">The Stolen Blessing</p>
+<div class="notes">
+<div class="note">
+<span class="ref">27:1</span>
+<p>wattiḵhênā ʿênāyw mērᵉʾōṯ (“his eyes were too dim to see”): the chapter&#x27;s engine. Every deception in it works through the other senses — touch, smell, taste and the voice — and the narrator sets the blindness out in the first clause so that the reader watches the mechanism operate. Note that the same failure of sight overtakes Jacob at 48:10 — there a different verb, kāḇᵉḏû, “were heavy” — when he is old and blind and about to cross his hands over two grandsons and bless the younger ahead of the elder. The book repeats this scene with Jacob on the other side of it.</p></div>
+<div class="note">
+<span class="ref">27:4</span>
+<p>baʿăḇûr tᵉḇāreḵᵉḵā nap̄šî (“so that I may bless you”): literally “so that my nep̄eš may bless you.” nep̄eš here is the self, used as an emphatic way of saying “I myself,” and it is rendered simply as the pronoun. This is the same lexical question flagged at 9:4–5 and 12:5 and still open: whether the glossary&#x27;s “being/creature” yields to the ordinary sense when the passage is using the word ordinarily. It is recorded here as another instance rather than as a new departure. Note also that the blessing is treated throughout this chapter as a performative act — something that, once uttered, has effect and cannot be recalled (verse 33), independent of the fraud that obtained it.</p></div>
+<div class="note">
+<span class="ref">27:12</span>
+<p>kimṯaʿtēaʿ (“like a mocker”): from tāʿaʿ, to mock or deceive. Jacob&#x27;s objection to his mother&#x27;s plan is worth reading closely: he does not say the plan is wrong, he says it might not work. His entire stated concern is the risk of detection and the curse that would follow it. The narrator records no moral hesitation from either of them, and passes no verdict of his own on the deception anywhere in the chapter — the only verdicts spoken are Isaac&#x27;s at verse 35, that Jacob came bᵉmirmâ, in deceit, and Esau&#x27;s at verse 36.</p></div>
+<div class="note">
+<span class="ref">27:13</span>
+<p>ʿālay qilᵉlāṯᵉḵā bᵉnî (“Your curse be on me, my son”): Rebekah takes the risk onto herself in three words. She is acting on the oracle given to her at 25:23, which neither Isaac nor Esau is ever said to have been told, and the text never says whether she is fulfilling it or forcing it. What it does say is that she loses him: Jacob leaves in verse 43, for what verse 44 calls “a while,” and stays twenty years, and Rebekah&#x27;s death is never narrated. Her closing line to Jacob at verse 45 — why should I lose the two of you in one day — is the last thing she is recorded saying to him. Her last words in the Bible come one verse later, at 27:46, and they are spoken to Isaac.</p></div>
+<div class="note">
+<span class="ref">27:19–20</span>
+<p>ʾānōḵî ʿēśāw bᵉḵōreḵā (“I am Esau your firstborn”): the flat lie, and then it is compounded. Asked how the hunt went so fast, Jacob answers kî hiqrâ YHWH ʾĕlōheyḵā lᵉp̄ānāy, “because the Lord your God made it happen for me” — invoking God to seal the deception, and notably saying your God rather than mine. The narrator supplies no comment. It is also the moment the deception becomes irreversible: Isaac&#x27;s suspicion is answered by an oath-like appeal, and he asks only to touch him after it.</p></div>
+<div class="note">
+<span class="ref">27:22</span>
+<p>haqqōl qôl yaʿăqōḇ wᵉhayyāḏayim yᵉḏê ʿēśāw (“The voice is the voice of Jacob, but the hands are the hands of Esau”): the sentence around which the chapter is built, and one of the most balanced lines in Hebrew prose — two clauses of identical shape, the evidence divided against itself. Isaac names the truth aloud and then decides against it, on the strength of the sense that can be counterfeited over the sense that cannot. Some readers have taken this, with verse 33&#x27;s trembling, as a sign that Isaac knew or half-knew; the text does not say.</p></div>
+<div class="note">
+<span class="ref">27:27–29</span>
+<p>The blessing is poetry and falls into three parts: fertility (dew, fat places, grain and new wine), dominion over peoples and over the brothers, and the reciprocal curse-and-blessing formula. The last of these — ʾōrᵉreyḵā ʾārûr ûmᵉḇārăḵeyḵā bārûḵ — is the promise given to Abram at 12:3 arriving now through a lie in a dark tent, and the narrator sets it there without remark. miṭṭal haššāmayim ûmišmannê hāʾāreṣ, “from the dew of the heavens and from the fat places of the earth,” names one of the two water sources of the Levantine year, and the good soil, and in that climate dew is not a poetic ornament but the difference between a crop and none.</p></div>
+<div class="note">
+<span class="ref">27:33</span>
+<p>wayyeḥĕraḏ yiṣḥāq ḥărāḏâ gᵉḏōlâ ʿaḏ-mᵉʾōḏ (“Isaac was seized with a very great trembling”): the Hebrew intensifies three times over — he trembled a trembling, great, exceedingly —, and the narrator answers it one verse later with the same construction and one intensifier more, for Esau at verse 34. What he then says is decisive for the theology of the chapter: gam-bārûḵ yihyeh, “and blessed he will stay.” The blessing is not withdrawn, not because Isaac forgives the fraud but because the word once spoken is treated as an accomplished thing. The Hebrew Bible does not elsewhere explain this; it simply assumes it.</p></div>
+<div class="note">
+<span class="ref">27:36</span>
+<p>hăḵî qārāʾ šᵉmô yaʿăqōḇ wayyaʿqᵉḇēnî (“Is he not rightly named Jacob? He has supplanted me”): Esau makes the pun the narrator set up at 25:26. The name was given for ʿāqēḇ, the heel he was gripping; the verb ʿāqaḇ means to take by the heel, hence to supplant, trip up, deceive. Esau&#x27;s line is bitter wordplay and cannot be reproduced in English, where “Jacob” carries no meaning at all — so the pun is noted rather than invented around. The verse carries a second pun the English also cannot hold: bᵉḵōrāṯî, my birthright, and birᵉḵāṯî, my blessing — the same consonants reordered, taken by the same verb lāqaḥ, one clause apart. His two counts, the birthright and the blessing, are exactly the two episodes the book has narrated.</p></div>
+<div class="note">
+<span class="ref">27:39–40</span>
+<p>mišmannê hāʾāreṣ … ûmiṭṭal haššāmayim (“away from the fat places of the earth … and away from the dew of the heavens”): the single most consequential ambiguity in the chapter, and it turns on one preposition. The words are identical to those of Jacob&#x27;s blessing at verse 28, and min can be partitive — “from,” meaning “out of, a share of” — or privative, “away from,” meaning deprived of. Read the first way, Esau receives the same good land his brother did; read the second, he receives its opposite, which is what Edom&#x27;s territory in fact is: dry highland where the dew does not fall. The traditional English versions split here. I have taken it privatively, because the whole force of the scene is that there is nothing left to give — Esau asks whether his father has only one blessing, and Isaac has just said he made Jacob master over him — and because it fits the land Edom occupies. A reader should know the other reading is grammatically just as good. ûp̄āraqtā ʿullô, “you will tear his yoke from off your neck,” looks forward to Edom&#x27;s revolt against Judah under Jehoram (2 Kings 8:20–22).</p></div>
+<div class="note">
+<span class="ref">27:41</span>
+<p>wayyiśṭōm ʿēśāw ʾeṯ-yaʿăqōḇ (“And Esau nursed a grudge”): the verb is śāṭam, of the same family as śiṭnâ, the well Isaac named for hostility at 26:21. Esau&#x27;s plan is stated in his heart and reaches Rebekah anyway — the narrator does not say how, only that “the words of Esau her elder son were told to Rebekah,” which is the second time in the chapter she has come by information she was not given. His resolve to wait until after his father&#x27;s mourning is a detail of some restraint, and the narrative later has Esau meet Jacob with an embrace rather than a sword (33:4).</p></div>
+<div class="note">
+<span class="ref">27:46</span>
+<p>qaṣtî ḇᵉḥayyay mippᵉnê bᵉnôṯ ḥēṯ (“I am disgusted with my life because of the daughters of Heth”): Rebekah gives Isaac an entirely different reason for sending Jacob away from the one she gave Jacob. To her son it is the threat of murder; to her husband it is the Hittite daughters-in-law — which is true as far as it goes (26:34–35) and conceals everything that matters. The chapter that began with a deception carried out with her husband&#x27;s food ends with a deception carried out with her husband&#x27;s opinions, and the narrator again says nothing. The remark also sets up 28:1–5, where Isaac sends Jacob to Paddan-aram for a wife, believing that to be the point of the journey.</p></div>
+</div>
+<nav class="chapnav"><a href="../26/">&larr; Genesis 26</a><a href="../">All chapters</a><a href="../28/">Genesis 28 &rarr;</a></nav>
+</body>
+</html>

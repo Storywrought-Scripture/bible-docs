@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 33 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 33 -- Jacob Meets Esau">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 33 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 33 -- Jacob Meets Esau">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 33</h1></header>
+<p class="lede">Jacob Meets Esau</p>
+<div class="notes">
+<div class="note">
+<span class="ref">33:1–2</span>
+<p>wayyāśem ʾeṯ-haššᵉp̄āḥôṯ wᵉʾeṯ-yalḏêhen riʾšōnâ (“he put the slave women and their children first”): the ordering is a ranking, and the narrator states it without comment. Bilhah and Zilpah and their four sons are placed nearest the danger, Leah and her seven next, and Rachel and Joseph last and safest. It is the same household arithmetic that runs through chapters 29 and 30, now expressed as a marching order. Note also that Jacob has just been told he prevailed with God and men, and his first act is to arrange his family by expendability.</p></div>
+<div class="note">
+<span class="ref">33:3</span>
+<p>wayyištaḥû ʾarṣâ šeḇaʿ pᵉʿāmîm (“bowed to the ground seven times”): a formal act of homage, not a greeting. Repeated prostration is the language of a subject before a superior across the ancient Near East — the Akkadian letters from el-Amarna have Canaanite vassals open by writing that they fall at their overlord&#x27;s feet “seven times and seven times,” though that is a written salutation rather than a described ceremony, and the number there is doubled. What settles the register here is the Hebrew: Jacob has been addressing Esau as “my lord” and himself as “your servant” since 32:4. This is the reversal of the blessing he stole: 27:29 said “be master over your brothers, and may your mother&#x27;s sons bow down to you,” and here the man who obtained that blessing bows seven times to the brother it was taken from, and calls him lord eight times in two chapters. The narrator never remarks on it.</p></div>
+<div class="note">
+<span class="ref">33:4</span>
+<p>wayyiššāqēhû (“and kissed him”): the reunion is told in five quick verbs — ran, embraced, fell on his neck, kissed, wept — and there is no speech from Esau at all until verse 5. The Masoretic Text places extraordinary points (puncta extraordinaria) over the word “and kissed him,” one of fifteen such marked passages in the Hebrew Bible. What the dots mean is not certain: they are usually taken as an ancient scribal mark of doubt or of special attention, and the rabbinic tradition reads them as bearing on the sincerity of the kiss, one line of it holding that Esau meant to bite rather than kiss. Nothing in the consonantal text supports suspicion — the narrative gives Esau nothing but generosity here, and he refuses the gift at verse 9 and takes it only under pressure — so the dots are best read as evidence of later discomfort with an Esau who behaves better than Jacob. Per this project&#x27;s stated limits, the presence and placement of the points is a claim to verify against a printed critical edition.</p></div>
+<div class="note">
+<span class="ref">33:10</span>
+<p>kî ʿal-kēn rāʾîṯî p̄āneyḵā kirʾōṯ pᵉnê ʾĕlōhîm (“For I have seen your face as one sees the face of God”): the sentence ties this chapter to the night before. Jacob named the place Peniel because he had seen God face to face and lived (32:30); now he says the same thing of his brother&#x27;s face. And wattirṣēnî, “you received me favourably,” reports the outcome he had hoped for at 32:20 — though in a different word: rāṣâ, the verb of an offering accepted (Leviticus 1:4), not the nāśāʾ pānîm of the lifted face. The surviving of the two encounters is told in one vocabulary, and the second is the one that could have killed him. Whether the comparison is theological insight or the flattery of a frightened man is not settled by the Hebrew, and both are in character.</p></div>
+<div class="note">
+<span class="ref">33:11</span>
+<p>qaḥ-nāʾ ʾeṯ-birḵāṯî (“Take my blessing, please”): bᵉrāḵâ is used here in its ordinary sense of a present, but it is also, precisely, the word for the thing Jacob took from Esau in chapter 27, and the narrator has chosen it over the minḥâ, “gift,” used everywhere else in this episode (32:13, 18, 20, 21; 33:10). Jacob offers his brother his blessing back, and Esau takes it only after being pressed. The English keeps “blessing” here so the return is visible, with the ordinary sense noted. kî-yeš-lî-ḵōl, “because I have everything,” answers Esau&#x27;s yeš-lî rāḇ, “I have plenty,” in verse 9 — the two men measure their wealth against each other one last time, and the one who was cheated says he has enough first.</p></div>
+<div class="note">
+<span class="ref">33:12–17</span>
+<p>ʿaḏ ʾăšer-ʾāḇōʾ ʾel-ʾăḏōnî śēʿîrâ (“until I come to my lord, to Seir”): Jacob says he will follow to Seir and goes to Succoth instead, in the opposite direction, and the text never has him arrive in Seir at all. He also declines an escort. The stated reasons — nursing flocks, small children — are entirely plausible and the narrator does not call it a lie. But the pattern is the one the whole Jacob cycle has established, and the reader is left to notice that the reconciliation ends with a destination given that is not the destination taken. The two brothers meet once more in the book, at their father&#x27;s grave (35:29), and never speak again. sukkôṯ means “shelters” or “booths,” explained by the shelters he builds for the livestock. And Jacob builds himself a bayiṯ, a house — the only house any patriarch is said to build in Genesis, from a family that has lived in tents since 12:8.</p></div>
+<div class="note">
+<span class="ref">33:18–20</span>
+<p>šālēm (“safely”): the word can be read as an adverb, “in peace, safe and sound,” which is how I have taken it and how most versions do, or as a place name, Shalem, a town near Shechem — the Septuagint takes it as a place. Either way it picks up the language of the vow at 28:21, where Jacob made his return bᵉšālôm, in peace, the condition. qᵉśîṭâ, “pieces of money,” is a unit of unknown value occurring only here, at Joshua 24:32 and at Job 42:11. The purchase is the second piece of land bought outright in Canaan, after Machpelah in chapter 23, and Joseph is buried in it at Joshua 24:32. ʾēl ʾĕlōhê yiśrāʾēl is “El, the God of Israel” — Jacob naming an altar with the new name he was given at the Jabbok, and using ʾēl, the old title, alongside it.</p></div>
+</div>
+<nav class="chapnav"><a href="../32/">&larr; Genesis 32</a><a href="../">All chapters</a><a href="../34/">Genesis 34 &rarr;</a></nav>
+</body>
+</html>

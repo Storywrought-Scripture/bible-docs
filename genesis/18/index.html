@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 18 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 18 -- Three Visitors, and the Argument over Sodom">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 18 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 18 -- Three Visitors, and the Argument over Sodom">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 18</h1></header>
+<p class="lede">Three Visitors, and the Argument over Sodom</p>
+<div class="notes">
+<div class="note">
+<span class="ref">18:1–3</span>
+<p>wayyērāʾ ʾēlāyw YHWH … šᵉlōšâ ʾănāšîm (“The Lord appeared to him” … “three men”): the narrator says God appeared, and what Abraham sees is three men. The chapter then moves between singular and plural without ever explaining the relation: Abraham addresses one (ʾăḏōnāy, verse 3) and then offers food to several (verse 4); they eat in verse 8 and they speak in verse 9; a single speaker answers in verse 10; two of them go on to Sodom at 19:1 and are called malʾāḵîm, messengers, while the Lord stays behind with Abraham. The Hebrew supports several accounts of this and settles none. Christian tradition has read the three as a trinitarian intimation, and Hebrews 13:2 draws on the scene for entertaining angels unawares; both are reception of this passage rather than exegesis of it, and neither belongs in the wording. What the passage itself does is stage an encounter with God as an encounter with strangers who need a meal, and decline to say how those are the same thing. One small pointer worth knowing: the Masoretes pointed ʾăḏōnāy in verse 3 as the divine title rather than as an ordinary “my lord,” so they at least read Abraham as addressing God.</p></div>
+<div class="note">
+<span class="ref">18:4–8</span>
+<p>paṯ-leḥem (“a piece of bread”): the understatement is the joke. He offers a morsel and produces a banquet — šᵉlōš sᵉʾîm qemaḥ sōleṯ, three measures of the finest flour, which is on the order of twenty litres and would feed a large company; a whole calf, tender and good; curds and milk. Five verbs of haste stack up — he ran to meet them (verse 2), hurried into the tent and told Sarah to be quick (verse 6), ran to the herd, and the boy hurried to prepare it (verse 7) — for a man of ninety-nine, not long after the circumcision of chapter 17. And when it is ready he does not sit: wᵉhûʾ ʿōmēḏ ʿălêhem, he stood over them while they ate, which is the posture of a servant waiting on a table. The whole scene is a portrait of hospitality at full stretch, and it is placed immediately before Sodom, whose sin Ezekiel 16:49 will summarise as pride, surfeit of bread, prosperous ease, and refusal to strengthen the poor and needy — a list this scene inverts item by item, down to the bread. The two chapters are a diptych and this is the panel on the left.</p></div>
+<div class="note">
+<span class="ref">18:10, 14</span>
+<p>kāʿēṯ ḥayyâ (“at the time of life”): an obscure phrase that occurs only here, at verse 14, and at 2 Kings 4:16–17, always in an announcement of birth to a barren woman. Literally “about the living time” or “at the reviving time,” it is usually understood as this time next year — a season come round again — and the appointed-time language of verse 14 supports that. I have translated it literally and left the strangeness, because the phrase is evidently a set idiom whose logic is no longer recoverable, and “next spring” would supply a precision the Hebrew has lost.</p></div>
+<div class="note">
+<span class="ref">18:11–12</span>
+<p>ḥāḏal lihyôṯ lᵉśārâ ʾōraḥ kannāšîm (“it had ceased to be with Sarah in the way of women”): the narrator states the medical fact plainly and without euphemism beyond the idiom itself — she is past menopause — because the promise has to be impossible before it can be what the chapter says it is. Sarah&#x27;s reply uses ʿeḏnâ, a word occurring nowhere else in the Hebrew Bible, generally taken as sexual pleasure and connected by some to the root behind ʿēḏen, Eden. She is not only laughing at childbirth. Note her last clause: waʾḏōnî zāqēn, “and my lord is old.” It is the verse 1 Peter 3:6 cites for Sarah calling Abraham lord — in a sentence where she is privately laughing at him.</p></div>
+<div class="note">
+<span class="ref">18:13–15</span>
+<p>lāmmâ zeh ṣāḥăqâ śārâ (“Why is it that Sarah laughed”): God quotes her, and the quotation is not what she said. Sarah said “after I am worn out, am I to have pleasure? — and my lord is old.” God reports it to Abraham as “Am I really going to bear a child, old as I am?” The clause about her husband&#x27;s age is dropped and her own is substituted. The rabbis noticed this and drew a rule from it: that one may alter a report for the sake of peace in a household. Whatever one makes of that, the alteration is in the text and is not a translation artefact. Two further things are worth holding together without harmonising them. She laughed bᵉqirbāh, inside herself, and was answered — which is the point of verse 14&#x27;s hăyippālēʾ miYHWH dāḇār, “is anything too wonderful for the Lord?”, where pālāʾ means surpassing, beyond reach, the root behind “wonders.” And she is challenged for the laugh, where Abraham at 17:17 was not; see the note there. Her denial and the flat contradiction — lōʾ kî ṣāḥāqt, “No. You did laugh.” — are the only words God speaks directly to Sarah in Genesis.</p></div>
+<div class="note">
+<span class="ref">18:17–19</span>
+<p>hamᵉḵasseh ʾănî mēʾaḇrāhām (“Am I going to hide from Abraham”): a divine soliloquy, overheard by the reader and by nobody in the story, and it is the hinge that turns a birth announcement into a legal argument. The reason given is kî yᵉḏaʿtîw, “for I have known him” — yāḏaʿ here in the sense of choosing and acknowledging, as in Amos 3:2, not merely being acquainted. And the purpose clause names what Abraham&#x27;s household is for: laʿăśôṯ ṣᵉḏāqâ ûmišpāṭ, to do righteousness and justice, both held to this volume&#x27;s glossary. That pairing is the standing biblical formula for a rightly ordered society, and it is planted here deliberately, because Abraham is about to use it as a weapon in verse 25. God tells the reader what standard Abraham has been entrusted with, and Abraham immediately holds God to it.</p></div>
+<div class="note">
+<span class="ref">18:20–21</span>
+<p>zaʿăqaṯ sᵉḏōm (“The outcry against Sodom”): zᵉʿāqâ and its twin ṣᵉʿāqâ are the cry of the wronged — it is the word for Abel&#x27;s blood crying from the ground at 4:10, and for Israel&#x27;s cry under Egyptian slavery at Exodus 2:23. The grammar is ambiguous and instructive: it can be the outcry of Sodom or the outcry against it, and the sense the passage needs is the second — the sound made by Sodom&#x27;s victims, reaching God from outside. That is already a statement about what is wrong there, before anyone has even set out for the city at verse 22, and a dozen verses before they reach it at 19:1. ʾērᵉḏâ-nāʾ wᵉʾerʾeh, “I will go down now and see,” is the same descent as 11:5 at Babel, and it does the same work: judgment is shown being investigated rather than assumed. The closing clause, wᵉʾim-lōʾ ʾēḏāʿâ, “and if not, I will know,” is deliberately open-ended and is the opening Abraham walks through.</p></div>
+<div class="note">
+<span class="ref">18:22</span>
+<p>wᵉʾaḇrāhām ʿôḏennû ʿōmēḏ lip̄nê YHWH (“but Abraham was still standing before the Lord”): one of the eighteen tiqqûnê sōp̄ᵉrîm, the scribal emendations recorded in the Masoretic tradition itself. The rabbinic sources state that the original read the other way round — wᵉYHWH ʿôḏennû ʿōmēḏ lip̄nê ʾaḇrāhām, “but the Lord was still standing before Abraham” — and that the scribes reversed the parties because the image of God standing in attendance on a man was thought unfitting. This is not a modern conjecture: it is a change the tradition preserved a memory of and passed on with the text. I have translated the received Masoretic reading, which is what the Hebrew before us says, and record the older one, which is more startling and fits the scene that follows rather well — God waiting while Abraham decides whether to speak. Per this project&#x27;s stated limits, the list of the eighteen is a claim to verify against the printed critical editions and the rabbinic sources before it is taught from.</p></div>
+<div class="note">
+<span class="ref">18:23–25</span>
+<p>hăšōp̄ēṭ kol-hāʾāreṣ lōʾ yaʿăśeh mišpāṭ (“Shall not the Judge of all the earth do justice?”): Abraham draws near — wayyiggaš, a verb used of approaching for confrontation as well as for petition — and argues with God about the ethics of collective punishment. Nothing before this in the Bible prepares for it. The question he presses is not mercy but justice: it is ḥālîlâ lᵉḵā, “far be it from you,” said twice, and the objection is that sweeping the righteous away with the wicked would make the two fare alike, which is a definition of injustice. He is holding God to the standard verse 19 has just said Abraham&#x27;s household exists to keep. And note the ground of the appeal: the fifty righteous do not merely escape — God forgives the whole place on their account, wᵉnāśāʾṯî lᵉḵol-hammāqôm baʿăḇûrām, so that a righteous minority carries a guilty city. God accepts the principle without argument at verse 26.</p></div>
+<div class="note">
+<span class="ref">18:27, 30, 32</span>
+<p>wᵉʾānōḵî ʿāp̄ār wāʾēp̄er (“and I am dust and ashes”): the negotiation is conducted in the language of the court — I have taken it on myself, do not let my Lord be angry, just this once — the same register Judah will use before Joseph at 44:18, here turned on God, and it is the deference of a man who knows exactly how far he is pushing. ʿāp̄ār wāʾēp̄er is a fixed pair (Job 30:19; 42:6) and puns on itself in Hebrew; ʿāp̄ār, dust, is what the human was made from at 2:7 and returns to at 3:19. The descent runs 50, 45, 40, 30, 20, 10 — the steps shortening as the courage required lengthens.</p></div>
+<div class="note">
+<span class="ref">18:32–33</span>
+<p>waʾăḏabbᵉrâ ʾaḵ-happaʿam (“and I will speak just this once”): Abraham stops at ten, and the text does not say why. Nothing indicates God would have refused a lower number; the refusals never come. The usual explanations — that ten is the minimum for a community, or that Abraham has reached the size of Lot&#x27;s household and is really asking about him — are inferences, and the narrator supplies neither. What he supplies instead is verse 33: God went his way when he had finished speaking, and Abraham returned to his place. The bargaining ends because Abraham ends it. And chapter 19 answers the question he did not ask: ten were not found, and the city was destroyed — but Lot was brought out, which is not the principle Abraham argued for and is something else instead.</p></div>
+</div>
+<nav class="chapnav"><a href="../17/">&larr; Genesis 17</a><a href="../">All chapters</a><a href="../19/">Genesis 19 &rarr;</a></nav>
+</body>
+</html>
