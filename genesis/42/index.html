@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 42 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 42 -- The Brothers Come to Egypt">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 42 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 42 -- The Brothers Come to Egypt">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 42</h1></header>
+<p class="lede">The Brothers Come to Egypt</p>
+<div class="notes">
+<div class="note">
+<span class="ref">42:6</span>
+<p>wayyištaḥăwû-lô ʾappayim ʾārṣâ (“and bowed down to him, faces to the ground”): the sheaf dream of 37:7 arriving, and the narrator does not point at it. Joseph is seventeen at 37:2 and thirty at 41:46, and the seven years of plenty have run out (41:53–54), so some twenty years have passed; the text does not date this chapter within the famine more closely than that. He does not need to: the next verse but two has Joseph remembering the dreams at the exact moment he sees it happen. Note that only ten brothers are present. The sheaf dream gives no number — the eleven are the stars of the second dream (37:9), and eleven leaves Benjamin out — which is one reason Joseph&#x27;s subsequent conduct is often read as an attempt to complete the count — he will not let the matter rest until Benjamin is standing there too (43:26; 44:14).</p></div>
+<div class="note">
+<span class="ref">42:7</span>
+<p>wayyiṯnakkēr ʾălêhem (“he made himself a stranger to them”): the verb is the reflexive of nāḵar, to recognise or to treat as foreign, and it is the same root as wayyakkirēm, “recognised them,” in the clause immediately before, and as wayyakkēr again in verse 8. So the Hebrew says in one breath that he recognised them and made himself unrecognisable to them. It is also the root behind hakker-nāʾ, “look it over,” the words the brothers used when they showed his bloodied robe to their father (37:32) and the words Tamar used to Judah (38:25). The whole cycle turns on recognising and failing to recognise, and this verse is its hinge.</p></div>
+<div class="note">
+<span class="ref">42:9</span>
+<p>ʿerwaṯ hāʾāreṣ (“the nakedness of the land”): an idiom for a country&#x27;s undefended points — where it is exposed, and so where an invader would strike. Egypt&#x27;s north-eastern approach was its standing vulnerability and was garrisoned against exactly the kind of Semitic movement the brothers represent, so the accusation is not arbitrary: ten foreign men arriving together at a frontier during a famine is precisely what a border official would look at twice. The charge is plausible enough to be unanswerable, which is what makes it useful to Joseph.</p></div>
+<div class="note">
+<span class="ref">42:13</span>
+<p>wᵉhāʾeḥāḏ ʾênennû (“and one is no more”): three words, and they repeat the same formula to their father at verse 32. They do not say he died; they say he is not. The word for dead does come, but from other mouths and later: Jacob says kî-ʾāḥîw mēṯ, “because his brother is dead,” at verse 38, and at 44:20 Judah quotes it back to Joseph as though it had been said in this very interview — where the record here has ʾênennû. Whether the evasion is guilt, habit, or a lie they have told so long it has become the family&#x27;s phrasing, the narrator does not say. Note that they volunteer the existence of a twelfth brother without being asked — the detail that hands Joseph everything he needs.</p></div>
+<div class="note">
+<span class="ref">42:15, 16</span>
+<p>ḥê p̄arʿōh (“as Pharaoh lives”): an oath sworn by the life of the king. The construction is ordinary Hebrew — ḥê plus the person sworn by, as at 1 Samuel 1:26 and 2 Samuel 11:11 — and what is Egyptian here is the referent, not the form. Oaths by the life of the king are attested in Egyptian legal texts, so the words fit an Egyptian court; how much of the story&#x27;s local colour is period-accurate is disputed, and this note does not settle it. It is also, for a Hebrew reader, conspicuous — Joseph swears by Pharaoh in verse 15 and says ʾeṯ-hāʾĕlōhîm ʾănî yārēʾ, “I fear God,” in verse 18, and the narrative sets the two side by side without comment. The man in front of the brothers is entirely Egyptian in speech and manner; the man they cannot see is not.</p></div>
+<div class="note">
+<span class="ref">42:21</span>
+<p>rāʾînû ṣāraṯ nap̄šô bᵉhiṯḥanᵉnô ʾēlênû (“we saw the distress of his soul when he pleaded with us”): new information, and it is devastating. Chapter 37 narrated the sale in detail and never once said that Joseph spoke — he is silent from the moment they strip him until he reappears in Egypt. Here, some twenty years later, the brothers reveal that he begged them, and that they watched him do it and refused. The narrator withheld it at the time and lets it surface now, out of the mouths of the men who ignored it, at the moment they are frightened. This is Hebrew narrative at its most controlled: the worst fact in the story is delivered as a subordinate clause in someone else&#x27;s dialogue. nep̄eš is rendered “soul” here in the sense of the whole self in extremity; see the standing flag at 9:4–5 and 12:5.</p></div>
+<div class="note">
+<span class="ref">42:22</span>
+<p>wᵉḡam-dāmô hinnēh niḏrāš (“his blood is being required”): Reuben&#x27;s I told you so, and it is characteristic of him — he is right, his plan was adopted and then undone while he was away from the pit (37:22, 29), and he says so now rather than doing anything. His plan at 37:21–22 was itself a delaying tactic with a private motive. The demand for blood is the language of 9:5. Note that the brothers assume Joseph is dead, so they believe they are speaking of a murder.</p></div>
+<div class="note">
+<span class="ref">42:23</span>
+<p>kî hammēlîṣ bênōṯām (“because there was an interpreter between them”): a single clause that does a great deal of work. It explains why the brothers spoke freely in front of him — they took him for a man who could not understand a word — and it confirms that Joseph has been conducting the entire interview through a third party, in Egyptian, which is the last piece of his disguise. It is also the detail that makes the scene at verse 24 possible: he hears his brothers confess, in his own language, without being able to react.</p></div>
+<div class="note">
+<span class="ref">42:24</span>
+<p>wayyissōḇ mēʿălêhem wayyēḇk (“And he turned away from them and wept”): the first of Joseph&#x27;s seven weepings — here, at 43:30, 45:2, 45:14–15, 46:29, 50:1 and 50:17. The first three are bound up with the disguise: hidden here and at 43:30, and uncontrollable at 45:2, where it breaks. The last four come after it is gone. He weeps, comes back, and immediately binds Simeon. The narrative gives no explanation of why Simeon: he is the second son, so Reuben the eldest is spared, and Simeon is one of the two responsible for Shechem in chapter 34. Neither reason is stated.</p></div>
+<div class="note">
+<span class="ref">42:28</span>
+<p>mah-zōʾṯ ʿāśâ ʾĕlōhîm lānû (“What is this that God has done to us?”): the brothers read the returned silver correctly as something happening to them, and wrongly as a threat. It is the only time in the chapter any of them names God, and they do it in fear. The reader knows the silver was Joseph&#x27;s order (verse 25) and does not yet know why he gave it — mercy, provision, or another turn of the screw, since being found with unpaid silver would confirm the charge of dishonesty. The text never says. Note the discrepancy between verse 27, where one man finds his silver on the road, and verse 35, where they all find theirs at home; this is one of the seams in the chapter, and it is left as it stands.</p></div>
+<div class="note">
+<span class="ref">42:36–38</span>
+<p>ʿālay hāyû ḵullānâ (“All of it has come on me”): Jacob&#x27;s speech is entirely about himself, as it was at 34:30 after Shechem — his losses, his bereavement, his grey head. He also says Joseph is no more, and Simeon is no more, using the brothers&#x27; own evasive formula. Reuben offers his father the death of two of his own grandsons as security — which is no security at all, since it would only double the loss. Jacob refuses without touching the offer: his answer at verse 38 is about Benjamin and about himself, and the narrator passes no comment. Contrast Judah at 43:9, who offers himself as surety, which is the offer Jacob accepts and which is where the change in Judah that began in chapter 38 becomes visible. Note bᵉnî, “my son,” of Benjamin, and wᵉhûʾ lᵉḇaddô nišʾār, “he alone is left” — Jacob speaks as though he had two sons and not twelve, which the ten standing in front of him hear him say.</p></div>
+</div>
+<nav class="chapnav"><a href="../41/">&larr; Genesis 41</a><a href="../">All chapters</a><span></span></nav>
+</body>
+</html>

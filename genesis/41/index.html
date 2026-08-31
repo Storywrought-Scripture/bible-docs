@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 41 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 41 -- Pharaoh’s Dreams">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 41 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 41 -- Pharaoh’s Dreams">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 41</h1></header>
+<p class="lede">Pharaoh’s Dreams</p>
+<div class="notes">
+<div class="note">
+<span class="ref">41:8</span>
+<p>ḥarṭummîm (“magicians”): an Egyptian loanword, probably from a term for a lector-priest — a member of the temple class trained in the sacred writings, whose duties included the interpretation of dreams and omens. They appear again as Moses&#x27; opponents at Exodus 7:11. Rendering the word “magicians” is traditional but slightly misleading: these are the credentialed professionals of a real discipline, and the point of the verse is not that superstition failed but that the recognised experts, working with manuals, could produce nothing. Egyptian dream-interpretation handbooks survive, and agricultural and Nile imagery of this kind is among the material they treat.</p></div>
+<div class="note">
+<span class="ref">41:14</span>
+<p>wayᵉḡallaḥ wayᵉḥallēp̄ śimlōṯāyw (“and he shaved and changed his clothes”): a small detail with two things in it. Shaving is Egyptian practice, not Semitic — Egyptians were clean-shaven and wigged, and a Hebrew would ordinarily be bearded — so the verse marks Joseph&#x27;s crossing over into the court. And it is the third garment moment in his story: he was stripped of the ornamented robe by his brothers (37:23), left his cloak in the hand of his master&#x27;s wife (39:12), and now changes clothes to go up out of the pit. He goes from pit to palace with a change of clothing at each turn. Note that the verb for “rushed him out” is wayᵉrîṣuhû, a hurrying, and that habbôr, “the pit,” is again the word used of the cistern at 37:24.</p></div>
+<div class="note">
+<span class="ref">41:16</span>
+<p>bilʿāḏāy ʾĕlōhîm yaʿăneh ʾeṯ-šᵉlôm parʿōh (“It is not in me. God will answer for Pharaoh&#x27;s welfare.”): sharper than his answer to the two officials at 40:8. Standing in front of the king who has just said he heard that Joseph understands dreams, Joseph flatly denies the ability — bilʿāḏāy, “apart from me,” “not in me” — before saying anything else. šālôm here is welfare or well-being, so the sense is that God will give Pharaoh an answer that makes for his peace. Whether the disclaimer is piety, court prudence, or both, the narrative does not say; what it does is put the refusal of credit before the interpretation both times Joseph interprets.</p></div>
+<div class="note">
+<span class="ref">41:17–24</span>
+<p>Pharaoh retells the dreams, and as with the servant&#x27;s speech at 24:34–49 the interest is in the differences. He adds an evaluation the narrator did not give — I have never seen their like for badness in all the land of Egypt — and he adds the detail at verse 21 that the thin cows ate the fat ones and remained as gaunt as before, which is the most disturbing element in the whole dream and appears nowhere in the narrator&#x27;s account. He also drops the fact that the thin cows stood beside the fat ones on the bank. The retelling also shifts vocabulary, three times. The narrator&#x27;s cows are yᵉp̄ôṯ marʾeh, beautiful of appearance; Pharaoh&#x27;s are yᵉp̄ōṯ tōʾar, beautiful of form. The narrator&#x27;s good ears are bᵉrîʾôṯ, plump — the same root as the fat cows — where Pharaoh&#x27;s are mᵉlēʾōṯ, full. And the narrator&#x27;s lean cows are daqqôṯ where Pharaoh&#x27;s are dallôṯ and raqqôṯ. The English carries the first two and cannot carry the third. A frightened man&#x27;s retelling is not identical to the event, and Hebrew narrative regularly exploits that.</p></div>
+<div class="note">
+<span class="ref">41:32</span>
+<p>wᵉʿal hiššānôṯ haḥălôm (“as for the dream being repeated twice”): Joseph supplies a rule of interpretation — doubling means the matter is settled and imminent. It is worth reading back: Joseph&#x27;s own two dreams at 37:5–9 were also a matched pair, sheaves and stars, and by his own principle they were therefore fixed by God from the start. He does not say so, and there is no sign in the text that he has connected the two. The reader is left to.</p></div>
+<div class="note">
+<span class="ref">41:33–36</span>
+<p>wᵉʿattâ yēreʾ p̄arʿōh ʾîš nāḇôn wᵉḥāḵām (“So now let Pharaoh look out a man of discernment and wisdom”): Joseph was not asked for policy. He was asked for an interpretation, and having given it he adds an unrequested administrative proposal, including the appointment of a single official over the whole country, and then says nothing at all about who that should be. Pharaoh draws the conclusion in verse 39. Whether this is prudence, ambition, or simply competence is not stated; Joseph has run a household and a prison before this (39:4, 39:22) and has asked the cupbearer to intervene for him (40:14); what is new is that he is proposing policy for a kingdom. wᵉḥimmēš, “and let him take a fifth” (v. 34), is a denominative verb from ḥāmēš, five — a twenty per cent levy, double the customary tithe, and the beginning of the policy that ends in 47:20–26 with Pharaoh owning the land and the people of Egypt.</p></div>
+<div class="note">
+<span class="ref">41:38</span>
+<p>ʾîš ʾăšer rûaḥ ʾĕlōhîm bô (“a man in whom is the spirit of God”): spoken by Pharaoh, and the phrase can be read at two levels — an Egyptian king saying “a divine spirit,” or the narrator letting a foreigner state the truth of the matter in Israel&#x27;s own vocabulary. Genesis regularly gives outsiders accurate theological statements: Abimelech at 20:4–5, Laban at 30:27, and Pharaoh here. On rûaḥ, this is the same lexical question flagged at 8:1 and still open; here the sense is a divine endowment rather than wind or breath, and it is recorded as an instance rather than a new departure.</p></div>
+<div class="note">
+<span class="ref">41:40</span>
+<p>wᵉʿal-pîḵā yiššaq kol-ʿammî (“and all my people will do as you order”): the verb is contested, and the choice matters, because this is the verse that fixes Joseph&#x27;s relation to the whole Egyptian population. Taken from nāšaq, “kiss,” it gives “at your mouth all my people shall kiss” — a gesture of homage. A second root nāšaq, “be equipped, order oneself,” gives “order themselves by your word,” which is what I have followed. The standard English versions differ here. Either way the clause makes Joseph the mouth through which Egypt is governed, and raq hakkissēʾ, “only by the throne,” is the single reservation Pharaoh keeps for himself.</p></div>
+<div class="note">
+<span class="ref">41:42–43</span>
+<p>ṭabbaʿtô … biḡḏê-šēš … rᵉḇiḏ hazzāhāḇ (“his signet ring … garments of fine linen … the gold chain”): the investiture is at every point consistent with Egyptian court practice. The signet transfers authority to act in the king&#x27;s name; fine linen is the dress of the Egyptian official class; and rᵉḇiḏ hazzāhāḇ is simply a gold neck-ornament, usually connected with the Egyptian gold collar (shebyu) shown in tomb reliefs being placed round the neck of an official the king is honouring. The connection is plausible rather than demonstrable; what the Hebrew says is that a king put gold on his neck. Riding in the second chariot places Joseph immediately below the king. ʾaḇrēḵ, the cry at verse 43, is not understood: proposals include an Egyptian phrase meaning “attention!” or “bow down,” a form related to bereḵ, knee, hence “kneel,” and a title borrowed from Akkadian abarakku, a high steward. I have transliterated it rather than choosing among guesses.</p></div>
+<div class="note">
+<span class="ref">41:45</span>
+<p>ṣāp̄ᵉnaṯ paʿnēaḥ … ʾāsᵉnaṯ baṯ-pôṭî p̄eraʿ kōhēn ʾōn (“Zaphenath-paneah … Asenath daughter of Potiphera priest of On”): the new name is Egyptian and its meaning is disputed; a common proposal reads it as something like “the god speaks and he lives,” which would be a normal Egyptian name-form. ʾōn is Heliopolis, centre of the cult of the sun god Ra, and Potiphera is its priest — so Joseph is married into the Egyptian priesthood, and the narrator reports it entirely without comment or anxiety, in a book that has twice made a point of not taking Canaanite wives (24:3; 28:1). Note that Potiphera and Potiphar are effectively the same name; whether the text intends the same man is not said, and the traditions that identify Asenath as the daughter of Potiphar&#x27;s wife are post-biblical and have no basis in this text.</p></div>
+<div class="note">
+<span class="ref">41:51–52</span>
+<p>mᵉnaššeh … ʾep̄rayim (“Manasseh” … “Ephraim”): the two names are sound-plays — naššanî, “he has made me forget,” and hip̄ranî, “he has made me fruitful.” The first is the one to sit with. Joseph names his firstborn to commemorate that God has made him forget ʾeṯ-kol-ʿămālî wᵉʾēṯ kol-bêṯ ʾāḇî, “all my hardship and all my father&#x27;s house.” He is somewhere between thirty and thirty-seven — verse 46 puts him at thirty before Pharaoh, and verse 50 puts both births before the famine — second in Egypt, married to a priest&#x27;s daughter, and he names a child after the erasure of his family. The second name calls Egypt ʾereṣ ʿonyî, “the land of my affliction,” in the same breath as the fruitfulness — so the forgetting is not as complete as the first name claims. Jacob will take both of these boys as his own at 48:5, and will cross his hands to put the younger ahead of the elder, one more time.</p></div>
+<div class="note">
+<span class="ref">41:56</span>
+<p>wayyip̄taḥ yôsēp̄ ʾeṯ-kol-ʾăšer bāhem (“and Joseph opened all the storehouses”): the Hebrew says “all that was in them,” and there is no antecedent for “them” in the sentence or the one before it — the nearest plural is the cities of verse 48, where the food was put. The granaries are implied throughout and never named. I have supplied them; the Hebrew as it stands is elliptical.</p></div>
+<div class="note">
+<span class="ref">41:57</span>
+<p>wᵉḵol-hāʾāreṣ bāʾû miṣrayᵉmâ (“And all the earth came to Egypt”): ʾereṣ can be the earth or the land, and the phrase is the standard hyperbole of scope. Read on into chapter 42, and among “all the earth” are ten men from Canaan who will bow down to an Egyptian official without recognising him — the sheaf dream of 37:7 arriving. Joseph is seventeen at 37:2 and thirty at 41:46, and the seven years of plenty have now run out, so some twenty years have passed; the text does not date chapter 42 within the famine more closely than that. The narrator does not say that this is why the chapter has dwelt on grain administration.</p></div>
+</div>
+<nav class="chapnav"><a href="../40/">&larr; Genesis 40</a><a href="../">All chapters</a><a href="../42/">Genesis 42 &rarr;</a></nav>
+</body>
+</html>
