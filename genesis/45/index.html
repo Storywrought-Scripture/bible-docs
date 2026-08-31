@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 45 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 45 -- I Am Joseph">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 45 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 45 -- I Am Joseph">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 45</h1></header>
+<p class="lede">I Am Joseph</p>
+<div class="notes">
+<div class="note">
+<span class="ref">45:1–2</span>
+<p>wᵉlōʾ-yāḵōl yôsēp̄ lᵉhiṯʾappēq (“And Joseph could no longer hold himself in”): the verb is the one used of him at 43:31, where he washed his face and held himself in and gave an order. Here the same verb fails. He clears the room first. The text does not say why, and two readings are available — that an Egyptian official&#x27;s collapse is not for Egyptian witnesses, or that his brothers&#x27; crime is not. Then wayyittēn ʾeṯ-qōlô biḇḵî, literally “he gave his voice to weeping,” and verse 2 has the Egyptians hearing it and Pharaoh&#x27;s household hearing it. This is the third of Joseph&#x27;s seven weepings — the list is at 42:24 — and the first that is not hidden.</p></div>
+<div class="note">
+<span class="ref">45:3</span>
+<p>ʾănî yôsēp̄ haʿôḏ ʾāḇî ḥāy (“I am Joseph. Is my father still alive?”): two sentences and no accusation. The second question is startling, because he has been told his father is alive three times already (43:27–28; 44:20, 24–31) — so it is not a request for information but the only thing the man underneath the Egyptian actually wants to know. wᵉlōʾ-yāḵᵉlû ʾeḥāyw laʿănôṯ ʾōṯô kî niḇhălû mippānāyw: they cannot answer, and the word niḇhălû is stronger than surprise — dismayed, terrified. Judah has just finished the longest speech any of Jacob&#x27;s sons makes in Genesis, and the brothers now say nothing at all until verse 15.</p></div>
+<div class="note">
+<span class="ref">45:4</span>
+<p>ʾăšer-mᵉḵartem ʾōṯî miṣrāyᵉmâ (“whom you sold into Egypt”): he names it. Every reading that treats Joseph&#x27;s theology in the next verses as a way of letting them off has to get past this clause, which he repeats in substance at verse 5 — that you sold me here. He states the crime twice before he says a word about God. Note that he says sold, which bears on the tangle at 37:28 and on his own claim at 40:15 that he was stolen; here he attributes the sale to his brothers directly.</p></div>
+<div class="note">
+<span class="ref">45:5–8</span>
+<p>kî lᵉmiḥyâ šᵉlāḥanî ʾĕlōhîm lip̄nêḵem (“because God sent me ahead of you to preserve life”): the theological centre of the Joseph narrative, and it should be stated precisely. Joseph does not say the sale was good, and he does not say they did not do it. He says both things at once: you sold me, and God sent me. Verse 8 goes further — lōʾ-ʾattem šᵉlaḥtem ʾōṯî hēnnâ kî hāʾĕlōhîm, “it was not you who sent me here, but God” — which is a statement about ultimate agency, not a retraction of verse 4. The same double claim returns at 50:20 in its sharpest form: you meant evil against me; God meant it for good. The Hebrew holds the human act and the divine purpose together without resolving how, and this volume does not resolve it either. šᵉʾērîṯ, “a remnant,” and pᵉlêṭâ gᵉḏōlâ, “a great deliverance,” are both words that carry heavy freight in the prophets, used here of a household of seventy people. Verse 7 has lāḵem, “for you,” in both clauses — lāśûm lāḵem šᵉʾērîṯ and ûlᵉhaḥăyôṯ lāḵem lip̄lêṭâ gᵉḏōlâ. Read as a dative of advantage those mean “to establish a remnant for you” and “to keep alive for you a great band of survivors.” I have taken the brothers themselves as the remnant, which is what the narrative goes on to describe, and on that reading pᵉlêṭâ is rendered by its effect rather than as the escaped company itself. The Hebrew does not force the choice.</p></div>
+<div class="note">
+<span class="ref">45:8</span>
+<p>ʾāḇ lᵉp̄arʿōh (“a father to Pharaoh”): not a family relation but a title. Father is attested as an honorific for a high official or counsellor across the ancient Near East. An Egyptian title of similar shape, “god&#x27;s father,” is attested, but its range is disputed — it is primarily a priestly designation, and how far it extended to senior court advisers is not settled. The parallel is suggestive and this note does not press it. Joseph lists three offices in one breath: father to Pharaoh, lord of his household, ruler over all Egypt. The irony sits in the first: the boy whose dreams enraged his family for suggesting they would bow to him now describes himself as father to a king, in a speech asking his own father to come down and live under his protection.</p></div>
+<div class="note">
+<span class="ref">45:10</span>
+<p>ʾereṣ gōšen (“the land of Goshen”): the eastern Delta region, well suited to grazing and on the frontier facing Canaan — which is both why it suits shepherds and why it keeps the family somewhat apart from Egypt proper. Its precise extent is uncertain and the name is not attested in Egyptian records under that form. The choice matters for the whole of Exodus: the Israelites are settled in the district a Semitic population would naturally occupy and which an Egyptian state would naturally watch.</p></div>
+<div class="note">
+<span class="ref">45:22</span>
+<p>ḥălip̄ôṯ śᵉmālōṯ (“changes of clothes”): Joseph gives Benjamin five times what he gives the others — though the Hebrew gives the others an unnumbered plural, ḥălip̄ôṯ śᵉmālōṯ, distributed by lāʾîš, “to each man,” and numbers only Benjamin&#x27;s. Reading the first as one change each is a reading, and it is the reading that produces the ratio the narrator states outright at 43:34 — and the gift is clothing, which is the object that has marked every disaster in his life: the ornamented robe his brothers stripped from him, the garment left in Potiphar&#x27;s wife&#x27;s hand, the change of clothes to stand before Pharaoh. He has just been reconciled to ten men who once hated a favoured brother&#x27;s coat, and his first act is to give a favoured brother five of them. The narrator reports it without comment, and it is hard to read as accidental.</p></div>
+<div class="note">
+<span class="ref">45:24</span>
+<p>ʾal-tirgᵉzû badderek (“Do not fall out on the road”): rāḡaz covers agitation, trembling, quarrelling and anger, and the standard English versions differ here. Given what these ten men are carrying home — that they sold their brother, that their father is about to learn it, and that each of them now has to explain his part — “do not fall out” keeps the likeliest sense and the ambiguity. It is the last thing Joseph says to them, and it is a warning that the reconciliation he has just performed will have to survive a week on the road without him.</p></div>
+<div class="note">
+<span class="ref">45:26–28</span>
+<p>wayyāp̄āḡ libbô (“And his heart went numb”): the verb pûḡ means to grow numb or faint, used of a limb that has lost feeling. Jacob does not rejoice; he goes cold, kî lōʾ-heʾĕmîn lāhem, “because he did not believe them” — and he is right not to, since these are the men who handed him a bloodied coat. What convinces him is not their words but the wagons: he sees state transport sent to carry an old man, and wattᵉḥî rûaḥ yaʿăqōḇ, “the spirit of Jacob came alive.” On rûaḥ see the standing flag at 8:1; here it is animating spirit, the life going back into a man. Note the narrator&#x27;s shift in the last verse — the name changes from Jacob to Israel at the moment he decides to go, as it does at other turning points. His words are raḇ, “enough,” and then a single sentence with no mention of Egypt, rulership or grain: let me go and see him before I die.</p></div>
+</div>
+<nav class="chapnav"><a href="../44/">&larr; Genesis 44</a><a href="../">All chapters</a><span></span></nav>
+</body>
+</html>

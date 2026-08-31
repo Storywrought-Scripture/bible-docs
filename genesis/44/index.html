@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 44 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 44 -- The Cup, and Judah’s Offer">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 44 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 44 -- The Cup, and Judah’s Offer">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 44</h1></header>
+<p class="lede">The Cup, and Judah’s Offer</p>
+<div class="notes">
+<div class="note">
+<span class="ref">44:5, 15</span>
+<p>naḥēš yᵉnaḥēš bô (“by which he certainly practises divination”): the claim is made twice, once by the steward and once by Joseph, and it raises a real question the text does not answer. Lecanomancy — reading omens from the behaviour of oil or other substances dropped into water in a cup — is well attested in Mesopotamian omen literature. How far a comparable cup practice was current in Egypt is not something this note can settle, and the man Joseph is playing is an Egyptian. The verb nāḥaš is the same one Laban used at 30:27, and the practice is later forbidden outright (Leviticus 19:26; Deuteronomy 18:10). Whether Joseph actually divines, or is maintaining an Egyptian persona in front of men who must not recognise him, the narrator declines to say — and it is worth noting that everything he has been shown doing with dreams he explicitly credited to God rather than to technique (40:8; 41:16). The chapter is built on a fabricated theft; the divination claim may be fabricated with it.</p></div>
+<div class="note">
+<span class="ref">44:9</span>
+<p>ʾăšer yimmāṣēʾ ʾittô mēʿăḇāḏeyḵā wāmēṯ (“Whichever of your servants it is found with, let him die”): the brothers volunteer a death sentence and collective slavery, in exactly the manner of Jacob at 31:32 swearing that whoever had Laban&#x27;s gods would not live — not knowing Rachel had them. The pattern is a family habit: a rash oath sworn in confident innocence, over an object the speaker does not know is present. The steward immediately reduces the terms in verse 10, which is the point of the whole staging: the trap must catch one brother and release the others, or it tests nothing.</p></div>
+<div class="note">
+<span class="ref">44:12</span>
+<p>baggāḏôl hēḥēl ûḇaqqāṭōn killâ (“starting with the eldest and finishing with the youngest”): the search is conducted in birth order, exactly as the seating was at 43:33, and the effect is to draw the ordeal out to its last possible moment. The brothers watch ten sacks come up clean — eleven men left the city, Simeon having been given back to them at 43:23 — and the cup is in the eleventh. Then wayyimmāṣēʾ, the passive — “and it was found” — with no agent named. wayyiqrᵉʿû śimlōṯām, “and they tore their clothes,” is the sign of mourning, and it is the same gesture Reuben made at the empty pit (37:29) and Jacob made over the bloodied robe (37:34). Nobody abandons Benjamin. That is the answer to the test, and it is given in a single verse of action before anyone speaks.</p></div>
+<div class="note">
+<span class="ref">44:16</span>
+<p>hāʾĕlōhîm māṣāʾ ʾeṯ-ʿăwōn ʿăḇāḏeyḵā (“God has found out the guilt of your servants”): Judah does not defend Benjamin and does not deny the theft, because he is not talking about the theft. He has no way to explain a cup he knows nobody took, and instead of arguing the case he confesses a guilt that has nothing to do with it. ʿāwōn is guilt in the sense of iniquity together with its consequences. The reader knows what he means and Joseph, standing there, knows too. It is the only time any of them says it to his face while the disguise still holds — the plainer admission at 42:21 was spoken among themselves in his hearing (42:23), and the appeal at 50:17 comes long after he has told them who he is — and it is made in ignorance of who is listening. On the glossary: ṣaddîq/ṣeḏeq are fixed to “righteous,” and the verb ṣāḏaq is not among the fixed terms; “clear ourselves” for niṣṭaddāq departs from the word-group because the clause is a verdict rather than an assessment of character — the same ground recorded at 38:26 and at Exodus 9:27.</p></div>
+<div class="note">
+<span class="ref">44:18–34</span>
+<p>The longest speech any of Jacob&#x27;s sons makes in Genesis — seventeen verses, and it is almost entirely a retelling of what the reader already knows. Its power lies in what it adds and what it leaves out. Judah quotes Jacob directly at verses 27–29 and gives him words the reader has never heard: my wife bore me two sons — Jacob calling Rachel my wife as though the other three women were not, in front of sons born to them, one of whom is repeating it now. He says one went out from me and I said, he has surely been torn to pieces, which is Jacob&#x27;s own phrase, spoken unprompted at 37:33 over the evidence his sons planted (37:31–32). The brothers invented the lie at 37:20 and never had to say it; Jacob supplied the words himself, and Judah gives them back with no acknowledgement of where the robe came from. And he never once mentions the sale. Note also that he shifts the whole ground of the appeal: he asks nothing about justice, evidence or the cup, and argues entirely from what the loss will do to an old man in Canaan.</p></div>
+<div class="note">
+<span class="ref">44:20</span>
+<p>wᵉʾāḥîw mēṯ (“and his brother is dead”): Judah says it flatly, to the brother&#x27;s face. The brothers&#x27; formula at that first interview was the evasive one is no more (42:13, 32); here Judah puts his brother is dead into their mouths as though it had been said then. The plain word for death came from Jacob, at 42:38, and Judah has absorbed it. He believes it. The scene&#x27;s whole effect depends on the reader knowing that the man being addressed as “my lord” is the dead brother, and that he is listening to his own eulogy delivered by the man who proposed selling him.</p></div>
+<div class="note">
+<span class="ref">44:30</span>
+<p>wᵉnap̄šô qᵉšûrâ ḇᵉnap̄šô (“his own life being bound up with the boy&#x27;s life”): literally “his nep̄eš is bound to his nep̄eš.” The image is of two lives tied together so that one cannot be cut without the other. It is a strikingly tender image, and Judah uses it of his father and the son who displaced his own mother&#x27;s children in Jacob&#x27;s affection. nep̄eš is rendered “life” here in the sense of the animating self; see the standing flags at 9:4–5 and 12:5, both still open, and the same choice recorded at 42:21.</p></div>
+<div class="note">
+<span class="ref">44:33</span>
+<p>yēšeḇ-nāʾ ʿaḇdᵉḵā taḥaṯ hannaʿar ʿeḇeḏ laʾḏōnî (“let your servant stay as a slave to my lord instead of the boy”): this is the sentence the entire novella has been built toward. Judah is the man who said at 37:26–27, what profit is there if we kill our brother — come, let us sell him; he is the man who sent his daughter-in-law back to her father&#x27;s house and would have had her burned (38:11, 24); and here he offers to be enslaved in the place of Rachel&#x27;s remaining son, for his father&#x27;s sake, with nothing to gain. taḥaṯ, “instead of, in place of,” is the same preposition used of the ram at 22:13. Joseph&#x27;s test was never about a cup: he arranged a situation in which the brothers could hand over a favoured younger son of Rachel and go home safe, exactly as they once did, and Judah refuses. Joseph breaks in the first verse of the next chapter.</p></div>
+</div>
+<nav class="chapnav"><a href="../43/">&larr; Genesis 43</a><a href="../">All chapters</a><a href="../45/">Genesis 45 &rarr;</a></nav>
+</body>
+</html>

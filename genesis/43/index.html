@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 43 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 43 -- Benjamin Goes Down">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 43 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 43 -- Benjamin Goes Down">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 43</h1></header>
+<p class="lede">Benjamin Goes Down</p>
+<div class="notes">
+<div class="note">
+<span class="ref">43:8–10</span>
+<p>ʾānōḵî ʾeʿerḇennû (“I myself will stand surety for him”): ʿāraḇ is a commercial term — to go bail, to pledge oneself against another&#x27;s debt — and it is the same root Judah pledged on to Tamar, when he left his seal, his cord and his staff as a ʿērāḇôn (38:17–18) — the noun, which is all that chapter uses; the verb occurs nowhere in it. Compare Reuben&#x27;s offer at 42:37, which was to have two of his own sons put to death: an offer that costs Jacob more if it fails and Reuben nothing he has not already risked. Judah offers himself, and Jacob accepts within four verses what he refused outright before. The vocabulary of pledge and forfeit runs from chapter 38 through to 44:32–33, where Judah makes good on this by offering to be enslaved in Benjamin&#x27;s place.</p></div>
+<div class="note">
+<span class="ref">43:11</span>
+<p>mizzimraṯ hāʾāreṣ (“the best products of the land”): the gift list is worth reading against 37:25, where the Ishmaelite caravan that carried Joseph down to Egypt was loaded with gum and balm and myrrh — three of the items here. Jacob, not knowing it, sends after his son the same goods that were travelling with him when he was sold. nᵉḵōʾṯ, gum, ṣŏrî, balm, and lōṭ, myrrh or ladanum, are the shared terms. Note that these are luxury exports from a famine-struck land: Jacob is sending Egypt what Canaan still has when it has no food.</p></div>
+<div class="note">
+<span class="ref">43:14</span>
+<p>waʾănî kaʾăšer šāḵōltî šāḵāltî (“And as for me — if I am bereaved, I am bereaved”): the same resigned construction as Esther&#x27;s if I perish, I perish. Jacob yields, and he yields without hope; the verb šāḵal is the specific word for losing children. ʾēl šadday is the patriarchal title of 17:1 and 28:3 — Isaac used it when he sent Jacob away to Paddan-aram, and Jacob uses it here when he sends his own sons away. raḥămîm, “compassion,” is from the same root as reḥem, womb.</p></div>
+<div class="note">
+<span class="ref">43:18</span>
+<p>lᵉhiṯgōlēl ʿālênû ûlᵉhiṯnappēl ʿālênû (“to roll on us and fall on us”): a violent and slightly odd pair of verbs, conveying being set upon and overwhelmed. The brothers&#x27; fear is legally sound: being found in possession of silver they did not pay would make them thieves, and debt-slavery was the ordinary consequence. They are frightened of exactly the fate they inflicted on Joseph, and they name it — wᵉlāqaḥaṯ ʾōṯānû laʿăḇāḏîm, “and take us as slaves.” The narrator does not point at it.</p></div>
+<div class="note">
+<span class="ref">43:23</span>
+<p>ʾĕlōhêḵem wēʾlōhê ʾăḇîḵem nāṯan lāḵem maṭmôn (“Your God and the God of your father has given you treasure”): an Egyptian house steward tells ten Hebrews that their own God has done this. It is the only statement in the chapter that says God has done something — Jacob at verse 14 and Joseph at verse 29 both name God, but as petition — and it comes from a foreigner who is also, on the reader&#x27;s understanding, covering for his master. The narrator neither endorses nor corrects it. Genesis does this repeatedly — Abimelech at 20:4–5, Pharaoh at 41:38 — and it is one of the quieter features of the book that outsiders keep saying true things about God. šālôm lāḵem, “peace to you,” is the ordinary greeting and here does real work: the men are terrified and he opens by telling them to stop.</p></div>
+<div class="note">
+<span class="ref">43:29</span>
+<p>ʾĕlōhîm yoḥnᵉḵā bᵉnî (“God be gracious to you, my son”): Joseph calls Benjamin bᵉnî, my son, not my brother — the distance of an Egyptian official addressing a young man, and at the same time the only word of affection he can risk. ben-ʾimmô, “his mother&#x27;s son,” is the narrator&#x27;s phrase and marks what nobody in the room knows: these two are the only sons of Rachel, and the ten men standing there are the ones who disposed of the other.</p></div>
+<div class="note">
+<span class="ref">43:30</span>
+<p>kî-niḵmᵉrû raḥămāyw (“because his feelings boiled up”): the verb kāmar denotes growing hot or being stirred, and raḥămîm is the word for compassion whose singular means womb — so the idiom locates strong feeling in the body&#x27;s core. The same phrase describes the true mother before Solomon at 1 Kings 3:26. This is Joseph&#x27;s second weeping (see 42:24), and the sequence is deliberate: he weeps out of sight, washes his face, and gives an order. The verb at verse 31, wayyiṯʾappaq, “he held himself in,” recurs at 45:1, where he finally cannot.</p></div>
+<div class="note">
+<span class="ref">43:32</span>
+<p>kî tôʿēḇâ hîʾ lᵉmiṣrayim (“for that is detestable to the Egyptians”): a triple separation — Joseph alone, the Egyptians alone, the Hebrews alone — and the narrator explains it as an Egyptian food taboo. tôʿēḇâ is the strong word for a thing abhorred, used in the legal texts of practices Israel is to reject; here it is used of Israel&#x27;s ancestors by Egyptians, which is a pointed reversal. Herodotus reports Egyptian avoidance of contact with Greeks at table and of certain foods, and Genesis 46:34 says shepherds specifically are detestable to Egyptians. The detail also does narrative work: Joseph eats apart, so his separateness at the meal requires no explanation.</p></div>
+<div class="note">
+<span class="ref">43:33</span>
+<p>habbᵉḵōr kiḇḵōrāṯô wᵉhaṣṣāʿîr kiṣʿirāṯô (“the firstborn according to his birthright and the youngest according to his youth”): the Hebrew is wayyēšᵉḇû lᵉp̄ānāyw, active and agentless — “and they sat before him.” Who seated them is not said; I have used an English passive to leave the agent open, and the brothers&#x27; astonishment in the same verse is the reason to read Joseph behind it. Seated in exact birth order by a man who cannot possibly know it, and wayyiṯmᵉhû hāʾănāšîm ʾîš ʾel-rēʿēhû, “the men looked at one another in astonishment.” It is the most unnerving thing Joseph does to them, and he does it without a word. Note that the order named is precisely the one the whole book has been overturning — birthright and youth — at a table where the youngest is about to be given five times as much as anyone else.</p></div>
+<div class="note">
+<span class="ref">43:34</span>
+<p>ḥāmēš yāḏôṯ (“five times as much”): a deliberate provocation, and the last piece of the test that runs into chapter 44. The brothers once hated a favoured younger son enough to sell him; Joseph now sits them down and openly favours another younger son in front of them, to see what they do. What they do is drink with him — wayyištû wayyiškᵉrû ʿimmô, they drank and got drunk with him, which the narrator states plainly. Five recurs across the Joseph narrative as a round number — a fifth of the land at 41:34, five portions here, five changes of clothes at 45:22, five brothers presented at 47:2, and the fifth made permanent at 47:24. Nothing in the verse says the brothers resented it, and that is the result Joseph was looking for.</p></div>
+</div>
+<nav class="chapnav"><a href="../42/">&larr; Genesis 42</a><a href="../">All chapters</a><a href="../44/">Genesis 44 &rarr;</a></nav>
+</body>
+</html>
