@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 50 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 50 -- A Coffin in Egypt">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 50 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 50 -- A Coffin in Egypt">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 50</h1></header>
+<p class="lede">A Coffin in Egypt</p>
+<div class="notes">
+<div class="note">
+<span class="ref">50:2–3</span>
+<p>wayyaḥanᵉṭû hārōp̄ᵉʾîm ʾeṯ-yiśrāʾēl (“and the physicians embalmed Israel”): forty days for the embalming and seventy days of national mourning are both consistent with Egyptian practice as it is otherwise known, though this note does not quote a source for that and it should be checked before it is taught. Note that the text says physicians, rōp̄ᵉʾîm, and not a term for a mortuary specialist; readers have taken that as avoiding the religious apparatus of Egyptian burial while accepting its technique, though this note does not quote a source for the distinction either. Jacob and Joseph are the only two people in the Hebrew Bible said to be embalmed. There is no sign anywhere that the narrator finds it objectionable.</p></div>
+<div class="note">
+<span class="ref">50:5</span>
+<p>bᵉqiḇrî ʾăšer kārîṯî lî (“In my grave that I dug for myself”): Jacob&#x27;s instruction as Joseph reports it to Pharaoh is not quite what Jacob said. At 49:29–32 he asked to be buried in the cave Abraham bought, and at 47:29–31 simply to be carried out of Egypt and laid in his fathers&#x27; grave; here it becomes a grave Jacob dug for himself. kārâ can also mean to acquire or purchase, which would remove the discrepancy, and that is one solution. The other is that Joseph is doing what he does throughout the story — presenting a case to power in the form most likely to be granted, since a man&#x27;s own prepared tomb is a stronger claim on an Egyptian ear than a family plot bought by a grandfather. Note also that Joseph does not approach Pharaoh directly but goes through the household, and promises to come back.</p></div>
+<div class="note">
+<span class="ref">50:7–9</span>
+<p>wayyaʿal ʾittô gam-reḵeḇ gam-pārāšîm (“And chariots and horsemen went up with him too”): the funeral procession is an Egyptian state occasion — court officials, elders of the land, chariotry — travelling into Canaan to bury a foreign shepherd. The detail that the little ones and the flocks stayed behind in Goshen is quietly precise: the dependents and the livestock stay, so the party travels with everything it would need to return already left behind. The text does not say whose arrangement that was. It is the arrangement Pharaoh will try to impose on Moses at Exodus 10:24, where he sends the people and keeps the flocks and herds — and there it is Moses who refuses, not a hoof will be left behind (10:26).</p></div>
+<div class="note">
+<span class="ref">50:10–11</span>
+<p>ʾāḇēl miṣrayim (“Abel-mizraim”): a name-play — ʾāḇēl, meadow, heard as ʾēḇel, mourning, so “the mourning of Egypt.” The geography is a real problem: bᵉʿēḇer hayyardēn, “across the Jordan,” is said twice, and Machpelah at Hebron is west of the Jordan, so a procession from Egypt would have no reason to be east of it. Proposals include a route that avoided the direct coastal road, a phrase used loosely for the Jordan region generally, or a separate tradition of a burial east of the river. The Canaanites&#x27; remark is also worth noting: they see the procession and identify it as Egyptian, which is what it looks like — Jacob&#x27;s funeral is observed by the inhabitants of the promised land as a foreign event passing through.</p></div>
+<div class="note">
+<span class="ref">50:15–17</span>
+<p>ʾāḇîḵā ṣiwwâ lip̄nê môṯô (“Your father gave orders before he died”): the narrator never records Jacob saying any such thing, and the brothers deliver it second-hand at exactly the moment they need it. It may be true and unreported; it may be invented. What is certain is that these are men who once let a bloodied robe speak for them rather than say what they had done (37:31–33), and who send a message here rather than face Joseph themselves — and they close the appeal by calling themselves ʿaḇḏê ʾĕlōhê ʾāḇîḵā, “the servants of the God of your father,” which puts the request on ground Joseph cannot easily refuse. Joseph weeps when he hears it, and the text does not say whether he weeps because they are still afraid of him after seventeen years, or because they are still lying to him, or both. Then they arrive in person and say hinnennû lᵉḵā laʿăḇāḏîm, “here we are — your slaves,” which is the dream of 37:7 completed in the most painful form available.</p></div>
+<div class="note">
+<span class="ref">50:19</span>
+<p>hăṯaḥaṯ ʾĕlōhîm ʾānî (“Am I in the place of God?”): the same question Jacob threw at Rachel at 30:2 when she demanded children, there with the longer pronoun — hăṯaḥaṯ ʾĕlōhîm ʾānōḵî — and the only two occurrences in the book. Jacob used it to refuse responsibility for something he could not give; Joseph uses it to refuse a role he could take. The question is a disclaimer of the right to judge: vengeance would require standing where God stands. Note that Joseph does not say the brothers are innocent, and does not say he forgives them — the word never appears in his reply, though they asked for it twice.</p></div>
+<div class="note">
+<span class="ref">50:20</span>
+<p>ʾattem ḥăšaḇtem ʿālay rāʿâ ʾĕlōhîm ḥăšāḇāh lᵉṭōḇâ (“You meant evil against me; God meant it for good”): the theological summit of Genesis, and the whole force of it is in the single verb used twice. ḥāšaḇ is to plan, devise, reckon, intend. The same intention-word is predicated of the brothers and of God over the same event, with opposite objects — evil and good — and the sentence does not explain how both can be true. It does not say the evil was not evil; rāʿâ stands, and Joseph names them as its authors in the same breath. Nor, on the reading taken here, does it say God merely salvaged a bad situation afterwards: the parallel with ḥăšaḇtem pulls the second clause towards prior intent — though ḥāšaḇ is also the reckoning verb of 15:6, and the Hebrew does not close the question. The Hebrew asserts the two and stops, and this volume asserts the two and stops. The purpose clause is modest — lᵉhaḥăyōṯ ʿam-rāḇ, “to keep many people alive,” which is what has actually happened in the story and no more than that. Set beside 45:5–8, where Joseph said the same thing at the moment of revelation, this is the settled version, spoken seventeen years later to men who still cannot believe it.</p></div>
+<div class="note">
+<span class="ref">50:23</span>
+<p>yullᵉḏû ʿal-birkê yôsēp̄ (“were born on Joseph&#x27;s knees”): the adoption gesture of 30:3, where Bilhah bore on Rachel&#x27;s knees. Joseph, whose own two sons were adopted by Jacob in chapter 48, now performs the same act for his great-grandchildren — so the last family scene in Genesis is a man claiming children as his own, which is what the book has been doing since chapter 12. šillēšîm, “to the third generation,” and a hundred and ten years, which Egyptian tradition treated as the ideal span — though this note does not quote a source for that. The narrator gives Joseph an Egyptian death as he gave him an Egyptian career.</p></div>
+<div class="note">
+<span class="ref">50:24–25</span>
+<p>pāqōḏ yip̄qōḏ ʾĕlōhîm ʾeṯḵem (“God will surely attend to you”): the emphatic doubling of pāqaḏ, the verb of 21:1 where the Lord attended to Sarah — noticing with the power to act. This becomes the watchword of the exodus. It is the same doubled verb the elders are given as their message at Exodus 3:16 — there in the perfect, pāqōḏ pāqaḏtî, “I have surely attended to you” — and Exodus 13:19 records Moses taking Joseph&#x27;s bones out of Egypt in fulfilment of this oath, with Joshua 24:32 burying them at Shechem, in the plot Jacob bought. Joseph, second in Egypt, with an Egyptian name, an Egyptian wife and an Egyptian tomb, spends his last recorded words insisting that this is not where his family belongs.</p></div>
+<div class="note">
+<span class="ref">50:26</span>
+<p>wayyîśem bāʾārôn bᵉmiṣrāyim (“and he was put in a coffin in Egypt”): Genesis ends bāʾārôn bᵉmiṣrāyim, “in a coffin in Egypt.” The book stops there. Everything promised from 12:1 onward — the land, the nation, the blessing to the families of the ground — is at this point a family of seventy living as guests in a foreign country, with their patriarch&#x27;s body carried back for burial and their most powerful son embalmed in a box waiting to be moved. ʾārôn is the ordinary word for a chest; it is also the word for the ark of the covenant. The promise is intact and entirely unfulfilled, and the next book opens with the names of those seventy and the sentence that they multiplied. Genesis closes on a held breath.</p></div>
+</div>
+<nav class="chapnav"><a href="../49/">&larr; Genesis 49</a><a href="../">All chapters</a><span></span></nav>
+</body>
+</html>

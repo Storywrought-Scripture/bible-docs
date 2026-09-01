@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 47 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 47 -- Before Pharaoh, and the Buying of Egypt">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 47 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 47 -- Before Pharaoh, and the Buying of Egypt">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 47</h1></header>
+<p class="lede">Before Pharaoh, and the Buying of Egypt</p>
+<div class="notes">
+<div class="note">
+<span class="ref">47:7, 10</span>
+<p>wayᵉḇāreḵ yaʿăqōḇ ʾeṯ-parʿōh (“and Jacob blessed Pharaoh”): stated twice, framing the audience. An old shepherd, a stateless refugee from a famine, blesses the most powerful man on earth — and blessing runs downward from the greater to the lesser, which is the point the writer of Hebrews later makes of Melchizedek and Abraham (Hebrews 7:7). The narrator does not remark on it. Note also that Pharaoh&#x27;s one question is about Jacob&#x27;s age, which suggests the old man&#x27;s appearance was itself remarkable; a hundred and ten years is the ideal lifespan in Egyptian tradition — though this note does not quote a source for that — and it is the age this book gives Joseph twice over (50:22, 26); Jacob claims a hundred and thirty and calls it short.</p></div>
+<div class="note">
+<span class="ref">47:9</span>
+<p>mᵉʿaṭ wᵉrāʿîm hāyû yᵉmê šᵉnê ḥayyay (“Few and hard have been the days of the years of my life”): Jacob&#x27;s own verdict on his life, and it is bleak. rāʿîm is “evil, bad, hard” — the word used of the years of famine. He calls his hundred and thirty years few, measured against Abraham&#x27;s hundred and seventy-five and Isaac&#x27;s hundred and eighty, and he calls them mᵉḡûray, “my wanderings” or sojournings, the word for living as a resident alien. There is no mention of the promise, of God, or of his sons. It is the bleakest of Jacob&#x27;s summings-up of his own life — set it beside 32:10, where he says he is too small for the faithful kindness shown him, and 48:15–16, where the same man names his life as shepherded and redeemed — and the assessment is of a man who has been afraid, bereaved and on the move for most of it.</p></div>
+<div class="note">
+<span class="ref">47:11</span>
+<p>ʾereṣ raʿmᵉsēs (“the land of Rameses”): an anachronism of the same kind as “Ur of the Chaldeans” (11:28) and “the land of the Philistines” (21:32). Rameses is the name of a Delta city built in the thirteenth century BCE and named for the pharaoh Ramesses II, and it appears again at Exodus 1:11, as one of the store-cities the Israelites are forced to build, and at Exodus 12:37 as the place they march out from. The narrator uses the name his readers would know for the district called Goshen everywhere else in the chapter. Note the grim symmetry: the place given to Israel as ʾăḥuzzâ, a holding, is the place they will later be conscripted to build.</p></div>
+<div class="note">
+<span class="ref">47:13–26</span>
+<p>The most uncomfortable passage in the Joseph narrative. The sequence is precise and it is a ratchet: Joseph takes the people&#x27;s silver, then their livestock, then their land, and finally the people themselves, who propose their own enslavement because they have nothing else left to sell. The initiative is theirs each time — they come to him at verse 15, again at verse 18, and it is they who propose the sale of themselves at verse 19 — but he sets the terms, and the terms end with a whole population as ʿăḇāḏîm lᵉp̄arʿōh, Pharaoh&#x27;s slaves, and a permanent twenty per cent levy written into law. The priests are exempt (verse 22), which is a note about who holds power in Egypt and is stated without comment. The narrator passes no verdict of any kind. He does not call it wise administration and he does not call it exploitation; he reports it and adds ʿaḏ hayyôm hazzeh, “to this day,” as though explaining the origin of an institution his readers lived under. What the reader is left to weigh is the shape of it: a man who was sold as a slave, and whose descendants will be enslaved in this same country, is here the architect of a nation&#x27;s servitude — and the root of what the Egyptians become, ע־ב־ד, is the root Exodus 1:13–14 will work over Israel — with the noun itself returning at Exodus 13:3, “the house of slaves.” One further note on the rendering: ʾăḏāmâ, held to “ground” or “soil” elsewhere in this volume, is rendered “land” throughout verses 18–26, where it denotes farmland being bought and sold and “soil” will not carry the transaction. The chapter therefore renders both ʾăḏāmâ and ʾreṣ as “land,” and in verse 20 both stand in one sentence — ʾaḏmaṯ miṣrayim that Joseph buys, hāʾāreṣ that becomes Pharaoh&#x27;s. What the Egyptians sell is the ʾăḏāmâ, the soil of 3:17 and 4:2.</p></div>
+<div class="note">
+<span class="ref">47:21</span>
+<p>heʿĕḇîr ʾōṯô leʿārîm (“he moved them into the cities”): the Masoretic Text says the people were transferred to the cities, which would be a resettlement — plausibly to bring the population to the grain stores, and plausibly to break their attachment to land that was no longer theirs. The Samaritan Pentateuch and the Septuagint read heʿĕḇîḏ, ד for ר, giving “he made them slaves” or “he reduced them to servitude” — one letter&#x27;s difference in the consonants, and it makes the verse state outright what the surrounding verses describe. The standard English versions divide over it. I have translated the Masoretic reading and record the variant, since the enslavement is explicit in verses 19, 23 and 25 in any case and does not need to be imported into verse 21.</p></div>
+<div class="note">
+<span class="ref">47:25</span>
+<p>heḥĕyiṯānû (“You have kept us alive”): the Egyptians thank the man who has just taken everything they own, and there is no irony in their mouths — they mean it, and by the text&#x27;s own account it is true, since the alternative was starving. This is the hardest sentence in the chapter to read straight. The same verb in the causative stands at 45:7, ûlᵉhaḥăyôṯ, “to keep alive”; the cognate noun miḥyâ is what Joseph says at 45:5, to preserve life. Whether the chapter is offering that as vindication or as an unbearable double meaning, it does not say.</p></div>
+<div class="note">
+<span class="ref">47:29</span>
+<p>śîm-nāʾ yāḏᵉḵā taḥaṯ yᵉrēḵî (“put your hand under my thigh”): the second and last occurrence of the gesture, the first being Abraham&#x27;s servant at 24:2, and on both occasions the oath concerns what happens to the family after the death of the man swearing. On the euphemism see the note at 24:2. ḥeseḏ weʾĕmeṯ, “faithful kindness and truth,” is held to the glossary rendering; the pairing is the same formula used at 24:27 and 24:49, and it is here asked of a son by a father who has no way of enforcing it and knows it.</p></div>
+<div class="note">
+<span class="ref">47:31</span>
+<p>wayyištaḥû yiśrāʾēl ʿal-rōʾš hammiṭṭâ (“And Israel bowed down at the head of the bed”): a famous crux resting on the vowels alone. The unpointed Hebrew ה־מ־ט־ה can be read as hammiṭṭâ, “the bed,” which the Masoretic vocalisation gives and which I have followed, or as hammaṭṭeh, “the staff.” The Septuagint read it as the staff — “he bowed down on the top of his staff” — and Hebrews 11:21 quotes the Greek, which is why Hebrews has the staff where the Hebrew has the bed. Nothing in the consonants decides it; the bed suits a dying man who has just been raised to swear an oath, and the staff suits a traveller&#x27;s image of a lifetime&#x27;s wandering. The gesture itself may be worship, or simply the exhaustion of an old man sinking back once the promise is given.</p></div>
+</div>
+<nav class="chapnav"><a href="../46/">&larr; Genesis 46</a><a href="../">All chapters</a><a href="../48/">Genesis 48 &rarr;</a></nav>
+</body>
+</html>

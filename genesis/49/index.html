@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genesis 49 - Translation Notes</title>
+<meta name="description" content="Translation notes on the weighty choices in Genesis 49 -- The Blessing of Jacob">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Genesis 49 - Translation Notes">
+<meta property="og:description" content="Translation notes on the weighty choices in Genesis 49 -- The Blessing of Jacob">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, h3, h4, p, ol, ul, figure { margin: 0; padding: 0; }
+  ol, ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ------------------------------------------------------------------
+     The palette and the face are not chosen here. They are measured from
+     tools/build_chapter.py, which builds the printed volume this page
+     fronts: Georgia throughout, ink 1A1A1A, navy 1F3864 on headings,
+     grey 555555 on the italic epigraph, 999999 hairline rules. A reader
+     arriving from a video description should recognise the page as the
+     same object as the chapters.
+     ------------------------------------------------------------------ */
+  :root {
+    --paper:   #fdfdfb;
+    --panel:   #f6f5f1;
+    --ink:     #1a1a1a;
+    --quiet:   #555555;
+    --rule:    #999999;
+    --hair:    #dedcd6;
+    --navy:    #1f3864;
+    --navy-soft:#43608f;
+    --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #14161a;
+      --panel:   #1b1e24;
+      --ink:     #e7e5e0;
+      --quiet:   #9b978f;
+      --rule:    #4a4f58;
+      --hair:    #2b2f36;
+      --navy:    #a3b9e0;
+      --navy-soft:#8ba3cd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #14161a;
+    --panel:   #1b1e24;
+    --ink:     #e7e5e0;
+    --quiet:   #9b978f;
+    --rule:    #4a4f58;
+    --hair:    #2b2f36;
+    --navy:    #a3b9e0;
+    --navy-soft:#8ba3cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+  }
+
+  /* ---- masthead: the chapter files' title block, verbatim in shape ---- */
+  .masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume {
+    font-size: .72rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    margin: 0 0 2.4rem;
+  }
+  h1 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -.005em;
+    margin: 0 0 .55rem;
+    text-wrap: balance;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .standfirst {
+    font-style: italic;
+    color: var(--quiet);
+    text-align: center;
+    margin: 1.6rem 0 0;
+    font-size: 1.02rem;
+  }
+
+  /* ---- contents ---- */
+  nav.toc {
+    margin: 3.4rem 0 0;
+    padding: 1.5rem 1.6rem;
+    background: var(--panel);
+    border: 1px solid var(--hair);
+  }
+  nav.toc h2 {
+    font-size: .7rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 .5rem; line-height: 1.4; }
+  nav.toc li:last-child { margin-bottom: 0; }
+  nav.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover, nav.toc a:focus-visible { border-bottom-color: var(--navy); }
+  nav.toc .num {
+    display: inline-block;
+    min-width: 2.4em;
+    color: var(--quiet);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- movements ---- */
+  .movement { margin-top: 5rem; }
+  .movement > .banner {
+    border-top: 2px solid var(--navy);
+    padding-top: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+  .movement .banner h2 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin: 0 0 .3rem;
+    line-height: 1.25;
+  }
+  .movement .banner p {
+    margin: 0;
+    font-style: italic;
+    color: var(--quiet);
+    font-size: .97rem;
+  }
+
+  h3 {
+    color: var(--navy);
+    font-size: 1.12rem;
+    margin: 2.9rem 0 1rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  h3 .numeral {
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--navy-soft);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+  h4 {
+    font-size: .74rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--quiet);
+    font-weight: 400;
+    margin: 2.3rem 0 .9rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  p { margin: 0 0 1.15rem; }
+  .run { font-weight: 700; }
+
+  /* the seven steps */
+  ol.steps { list-style: none; counter-reset: step; margin: 1.4rem 0 1.2rem; padding: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 1.05rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .04em;
+    color: var(--navy);
+    font-weight: 700;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fleuron {
+    text-align: center;
+    color: var(--rule);
+    font-size: 1.3rem;
+    margin: 3rem 0 1rem;
+  }
+  .sdg {
+    text-align: center;
+    font-style: italic;
+    color: var(--quiet);
+    margin: 0;
+  }
+
+  /* ---- the disclosure block, and the colophon ---- */
+  .disclosure {
+    margin-top: 3.2rem;
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--navy);
+    background: var(--panel);
+  }
+  .disclosure p { margin: 0; font-size: .98rem; }
+  .disclosure p + p { margin-top: .9rem; }
+
+  footer {
+    margin-top: 5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--hair);
+    color: var(--quiet);
+    font-size: .88rem;
+  }
+  footer p { margin: 0 0 .7rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 700px) {
+    body { font-size: 18px; padding-left: 2rem; padding-right: 2rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<style>
+  .notes { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .note { margin: 0 0 1.65rem; }
+  .note .ref { display: block; font-weight: 700; color: var(--navy); letter-spacing: .01em;
+               margin-bottom: .3rem; }
+  .note p { line-height: 1.65; }
+  .chapnav { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+             margin: 2.5rem auto 0; max-width: var(--measure); padding: 1.25rem 1.25rem 0;
+             border-top: 1px solid var(--hair); font-size: .95rem; }
+  .chapnav a { color: var(--navy); text-decoration: none; }
+  .chapnav a:hover { text-decoration: underline; }
+  .toc { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem 5rem; }
+  .toc li { margin: 0 0 .85rem; }
+  .toc a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sub { display: block; color: var(--quiet); font-weight: 400; font-style: italic; }
+  .lede { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem;
+          color: var(--quiet); font-style: italic; line-height: 1.6; }
+  header.page { max-width: var(--measure); margin: 0 auto; padding: 3rem 1.25rem 1.5rem; }
+  header.page h1 { font-size: 1.9rem; line-height: 1.2; color: var(--ink); }
+  header.page .kicker { display: block; font-size: .8rem; letter-spacing: .18em;
+                        text-transform: uppercase; color: var(--quiet); margin-bottom: .6rem; }
+</style>
+
+</head>
+<body>
+
+<header class="page"><span class="kicker">Translation notes</span><h1>Genesis 49</h1></header>
+<p class="lede">The Blessing of Jacob</p>
+<div class="notes">
+<div class="note">
+<p>49:1–27 (the poem)  A general warning that governs every note below. This is among the oldest Hebrew in the Bible — archaic vocabulary, compressed syntax, rare forms, and several words that occur nowhere else — and it is genuinely obscure in places. Where the English below reads smoothly, that smoothness is frequently a decision rather than a fact, and the ancient versions disagree with the Masoretic Text and with each other far more here than in the surrounding prose. Readers should treat the whole chapter as a place where translations diverge for good reasons. The sayings are also not all blessings: Reuben&#x27;s (3–4) and Simeon and Levi&#x27;s (5–7) are indictments and Issachar&#x27;s (14–15) is close to one, and verse 28 calls the whole set blessings anyway. They function as tribal oracles, describing character, territory and destiny together, and several plainly presuppose the tribes settled in Canaan.</p></div>
+<div class="note">
+<span class="ref">49:1</span>
+<p>bᵉʾaḥărîṯ hayyāmîm (“in the days to come”): literally “in the after-part of the days.” In later prophetic and apocalyptic usage the phrase acquires the sense of a final age — “the last days” — and the King James renders it so here. In earlier texts it means simply the future, days ahead, without eschatological freight. I have translated it in the earlier sense, since importing the later meaning into a chapter about tribal territories would be exactly the anachronism this volume&#x27;s method forbids; the developed sense is a real feature of the phrase&#x27;s later history and is recorded here rather than in the text.</p></div>
+<div class="note">
+<span class="ref">49:4</span>
+<p>paḥaz kammayim (“Turbulent as water”): paḥaz occurs as a noun only here and its sense is uncertain — recklessness, wantonness, instability, or a boiling over. “Unstable as water” is the traditional English. Whatever the precise force, the verdict is clear: the firstborn loses his precedence, and the reason is 35:22, Reuben&#x27;s act with Bilhah, which the narrator reported there in one sentence and left. Note the striking shift at the end of the verse from second person to third: he went up onto my couch — the effect is of a man breaking off and speaking of his son to the others rather than to him. The change of person is in the Hebrew and is kept.</p></div>
+<div class="note">
+<span class="ref">49:5–7</span>
+<p>mᵉḵērōṯêhem (“their trade”): a word of uncertain meaning — proposals include swords, plans, or wares, from a root for trading. The indictment is chapter 34, the destruction of Shechem, and this is Jacob&#x27;s verdict on it at last: at the time he objected only that they had made him a stench among the neighbours (34:30). Here he curses the anger rather than the men — ʾārûr ʾappām, “cursed be their anger” — which is a distinction the wording preserves. ʿiqqᵉrû-šôr, “they hamstrung an ox,” is not reported in chapter 34; hamstringing is the standard way of disabling captured draught animals and appears at Joshua 11:6. Some read šôr, ox, as a collective for the men of the city. The sentence pronounced on them is fulfilled in the tribal history: Simeon&#x27;s allotment is swallowed inside Judah&#x27;s (Joshua 19:1–9) and vanishes, and Levi receives no territory at all — though in Levi&#x27;s case the scattering becomes the priesthood.</p></div>
+<div class="note">
+<span class="ref">49:8–9</span>
+<p>yᵉhûḏâ ʾattâ yôḏûḵā ʾaḥeyḵā (“Judah — you, your brothers will praise”): a pun on the name, from yāḏâ, to praise, the same play Leah made at 29:35. The lion imagery attaches to Judah permanently from here — gûr ʾaryēh, a lion&#x27;s cub, then a crouching lion, then lāḇîʾ, a lioness, which stands last in the sequence; the escalation is the effect of the order as it stands. Note that Judah&#x27;s oracle is the longest of any brother except Joseph&#x27;s, and that the man being addressed is the one who proposed selling Joseph and then offered himself in Benjamin&#x27;s place. The tribe&#x27;s ascendancy under David is what the oracle presupposes.</p></div>
+<div class="note">
+<span class="ref">49:10</span>
+<p>ʿaḏ kî-yāḇōʾ šîlōh (“until tribute comes to him”): the most contested phrase in Genesis, and no reading is secure. The consonants שילה admit at least four constructions. (1) A proper name, Shiloh — “until Shiloh comes” — which is the King James rendering and the basis of a long messianic tradition; against it, Shiloh elsewhere is a place, and “until Shiloh comes” is grammatically odd for a place. (2) šellōh, “that which is his,” giving until he comes to whom it belongs — supported by the Septuagint, the Syriac and the Targums, and echoed at Ezekiel 21:27. (3) šay lōh, “tribute to him,” a division of the same consonants that yields a clean parallel with the second half of the verse, and the obedience of the peoples is his — and tribute-bringing is the standard image of submission to a king. (4) An emendation to mōšᵉlōh, “his ruler.” I have followed (3), because it requires no emendation, produces a coherent couplet with the following line, and fits the plain subject of the oracle, which is Judah&#x27;s rule over the other tribes; it also avoids importing a messianic reading into the wording. That said, (2) has the weight of the ancient versions behind it and is the strongest competitor, and readers should know that the traditional “Shiloh” of the English Bibles rests on treating an obscure word as a name. šēḇeṭ and mᵉḥōqēq are the sceptre and the ruler&#x27;s staff — the latter can also mean “lawgiver,” which is how the King James took it; from between his feet is probably a euphemism for descendants, as at Deuteronomy 28:57.</p></div>
+<div class="note">
+<span class="ref">49:11–12</span>
+<p>kibbēs bayyayin lᵉḇušô (“He washes his clothes in wine”): an image of absurd abundance — a man tethers his donkey to a vine, which would strip it, and launders in wine because there is that much of it. dam ʿănāḇîm, “the blood of grapes,” is a standing poetic phrase (Deuteronomy 32:14). Verse 12 is ambiguous in a way that matters: ḥaḵlîlî ʿênayim miyyāyin can be “his eyes are darker than wine” or “his eyes are dull/red from wine,” depending on whether min is comparative or causal — the same kind of question about the range of min as at 27:39, where it is partitive against privative. I have taken the comparative, which reads as a description of vigour rather than of drunkenness and fits the surrounding abundance.</p></div>
+<div class="note">
+<span class="ref">49:14–15</span>
+<p>ḥămōr gārem (“a strong-boned donkey”): gerem is bone, so either a raw-boned, gaunt animal or a strong-boned, powerful one; the versions split, and the following lines suggest strength that is put to servile use. hammišpᵉṯayim, “the saddlebags,” is a dual noun whose reference is not recovered; proposals include sheepfolds or pens, saddlebags or panniers, and two hearths. I have taken the pack-animal sense, since the subject is a donkey, and the standard English versions differ here. The image is the same either way — the animal lying down where its load sits. The oracle is the harshest thing in the poem that is not an outright curse: Issachar sees that rest and good land are pleasant, and accepts forced labour to keep them — wayᵉhî lᵉmas-ʿōḇēḏ, the exact term for a corvée gang. The territory of Issachar lay in the fertile Jezreel valley, on the trade routes, where Canaanite city-states retained power longest.</p></div>
+<div class="note">
+<span class="ref">49:16–18</span>
+<p>dān yāḏîn ʿammô (“Dan will judge his people”): a pun on the name, from dîn, to judge. The serpent image is of a small tribe that fights by ambush rather than by weight, bringing down a horseman by striking at the heel — and Samson, the Danite, wins by stratagem rather than by weight. Verse 18 is the strangest line in the chapter: lîšûʿāṯᵉḵā qiwwîṯî YHWH, “for your deliverance I wait, Lord” — a sudden first-person prayer, addressed to God, dropped into the middle of a series of tribal oracles with no connection to what precedes or follows. Explanations include a scribal insertion, a liturgical response, and an old man&#x27;s interjection mid-poem. Nothing accounts for it satisfactorily and I have left it exactly where it stands.</p></div>
+<div class="note">
+<span class="ref">49:19–21</span>
+<p>Three short oracles, two of them built on sound. Gad: gāḏ gᵉḏûḏ yᵉḡûḏennû wᵉhûʾ yāḡuḏ ʿāqēḇ — four of the six words built on the same consonants, three of them consecutive, which no English can reproduce; the sense is that raiders will raid him and he will raid them back, or come at their rear. Asher: the name is from the root of ʾōšer, happiness — the note at 30:13 gives Leah&#x27;s bᵉʾōšrî, “in my happiness” — and the oracle of rich food and royal delicacies matches the sense of the name rather than playing on its consonants. Naphtali: ʾayyālâ šᵉluḥâ hannōṯēn ʾimrê-šāp̄er, “a doe let loose, giving beautiful words,” which is what the Masoretic Text says and is decidedly odd — an alternative vocalisation of the same consonants yields “a spreading terebinth putting forth beautiful boughs,” which coheres better as an image, and the Septuagint reflects something closer to that. I have translated the Masoretic reading and recorded the alternative.</p></div>
+<div class="note">
+<span class="ref">49:22</span>
+<p>bēn pōrāṯ yôsēp̄ (“A fruitful son is Joseph”): obscure. pōrāṯ is generally connected to pārâ, to be fruitful, giving “a fruitful bough” — the traditional English — but the grammar of the whole line is awkward. A competing proposal reads pereʾ, wild ass, giving “Joseph is a wild colt, a wild colt by a spring,” with the following line about “daughters” or “wild asses” climbing a wall rather than branches — which fits the animal imagery used of every other brother in the poem and is favoured by a number of modern scholars. I have kept the fruitfulness reading, which the vocalisation supports, and record that the animal reading is serious.</p></div>
+<div class="note">
+<span class="ref">49:24–26</span>
+<p>ʾăḇîr yaʿăqōḇ … rōʿeh ʾeḇen yiśrāʾēl (“the Mighty One of Jacob … the Shepherd, the Stone of Israel”): a cluster of archaic divine titles, several of them occurring only here or almost only here, which is one of the strongest arguments for the poem&#x27;s antiquity. ʾăḇîr yaʿăqōḇ recurs at Isaiah 49:26 and Psalm 132:2; ʾeḇen yiśrāʾēl, “the Stone of Israel,” does not recur as a divine title and its syntax is unclear — “the Shepherd, the Stone of Israel” is one construal among several. The blessings of verse 25 are cosmic and fertile: heavens above, tᵉhôm, the deep, lying beneath — the same word as at 1:2 — and šāḏayim wārāḥam, breasts and womb. Verse 26 is the most heavily emended in the chapter. hôray is a plural of hôreh, “my progenitors,” and the line can be construed as the Masoretic Text stands, though with difficulty — note that ʿaḏ is bound forward there, so hôray ʿaḏ is a unit only after the emendation. I have followed the widely adopted repointing harᵉrê ʿaḏ, “the ancient mountains,” which parallels “everlasting hills” and which the Septuagint and the Samaritan Pentateuch are reported to support — a reading to check against a printed critical edition rather than to treat as settled. The Masoretic reading is defensible; the emendation is a choice, not a necessity. wᵉʾēṯ šadday, “and with the Almighty”: ʾēṯ is the preposition “with,” which breaks the parallel with mēʾēl ʾāḇîḵā, “from the God of your father,” in the same line. A widely noted alternative reads wᵉʾēl šadday, differing by one letter, which restores the parallel and yields “and El Shaddai — may he bless you.” I have translated the Masoretic reading and record the alternative. nᵉzîr ʾeḥāyw is “the one set apart from his brothers,” or possibly “the prince among his brothers.”</p></div>
+<div class="note">
+<span class="ref">49:29–33</span>
+<p>ʾel-mᵉʿāraṯ haśśāḏeh (“in the cave that is in the field”): Jacob&#x27;s last act is to specify a burial plot by legal description — the field, the cave, the seller, the location — exactly as chapter 23 recorded the purchase. He names those already there: Abraham and Sarah, Isaac and Rebekah, and Leah. That is the only notice of Leah&#x27;s burial anywhere in the Bible, and the only indication that she had died, and it comes from Jacob, and he places himself beside her rather than beside Rachel, whom he buried on a road (35:19; 48:7) and has just mentioned again. The narrator does not comment. wayyeʾĕsōp̄ raḡlāyw ʾel-hammiṭṭâ, “he gathered his feet up into the bed,” is a precise physical detail: he has been sitting up since 48:2, and he lies down.</p></div>
+</div>
+<nav class="chapnav"><a href="../48/">&larr; Genesis 48</a><a href="../">All chapters</a><a href="../50/">Genesis 50 &rarr;</a></nav>
+</body>
+</html>
